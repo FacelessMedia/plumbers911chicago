@@ -387,6 +387,76 @@ section { padding: 3rem 0; }
 /* ===== PRINT STYLES ===== */
 @media print { .site-header, .main-nav, .prefooter-cta, .site-footer, .mobile-call-bar, .skip-link { display: none !important; } main { padding: 0; } }
 
+/* ===== Items 51-75: UX Polish ===== */
+
+/* Item 52: Years in business counter */
+.years-counter { font-size: 2.5rem; font-weight: 800; color: var(--red); line-height: 1; }
+.years-label { font-size: .85rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: .05em; }
+
+/* Item 53: Emergency pulsing indicator */
+.emergency-pulse { display: inline-block; width: 10px; height: 10px; background: #22c55e; border-radius: 50%; margin-right: .5rem; animation: pulse-dot 1.5s ease-in-out infinite; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .5; transform: scale(1.3); } }
+
+/* Item 55: Service card hover zoom */
+.service-card:hover, .post-card:hover, .location-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,.12); }
+
+/* Item 58: Responsive tables */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
+@media (max-width: 640px) { .content-body table { min-width: 500px; } .content-body { overflow-x: auto; } }
+
+/* Item 60: FAQ accordion smooth animation */
+.faq-item summary { cursor: pointer; font-weight: 600; padding: .75rem 0; border-bottom: 1px solid var(--gray-200); list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::before { content: '+'; display: inline-block; width: 1.5rem; font-weight: 700; color: var(--red); }
+.faq-item[open] summary::before { content: '−'; }
+.faq-item p { padding: .75rem 0 .75rem 1.5rem; color: var(--gray-500); }
+
+/* Item 61: Breadcrumb styling */
+.breadcrumb { font-size: .85rem; margin-bottom: 1rem; }
+.breadcrumb a { color: rgba(255,255,255,.7); }
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb span { color: rgba(255,255,255,.9); }
+
+/* Item 64: Blockquote styling */
+.content-body blockquote { border-left: 4px solid var(--red); padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--light); font-style: italic; color: var(--gray-700); border-radius: 0 6px 6px 0; }
+
+/* Item 65: Card shadow depth on hover */
+.feature-card, .value-card, .info-card { transition: transform .3s ease, box-shadow .3s ease; }
+.feature-card:hover, .value-card:hover, .info-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+
+/* Item 67: Blog category pills */
+.cat-pill { display: inline-block; padding: .2rem .6rem; background: var(--light); border: 1px solid var(--gray-200); border-radius: 20px; font-size: .75rem; font-weight: 600; color: var(--gray-500); text-decoration: none; margin-right: .3rem; margin-bottom: .3rem; }
+.cat-pill:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+
+/* Item 68: Author bio section */
+.author-bio { display: flex; gap: 1rem; align-items: center; padding: 1.25rem; background: var(--light); border-radius: 8px; margin: 2rem 0; }
+.author-bio-avatar { width: 60px; height: 60px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 800; font-size: 1.2rem; flex-shrink: 0; }
+.author-bio-name { font-weight: 700; color: var(--gray-900); }
+.author-bio-desc { font-size: .85rem; color: var(--gray-500); margin-top: .25rem; }
+
+/* Item 69: Last Updated date */
+.last-updated { font-size: .8rem; color: var(--gray-500); margin-bottom: 1rem; }
+
+/* Item 72: Count-up animation */
+.count-up { font-size: 2.5rem; font-weight: 800; color: var(--red); }
+
+/* Item 74: Social proof counter */
+.social-proof-strip { background: var(--light); padding: .75rem 0; text-align: center; font-size: .9rem; color: var(--gray-500); }
+.social-proof-strip strong { color: var(--gray-900); }
+
+/* Item 75: Seasonal banner */
+.seasonal-banner { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); color: var(--white); padding: .6rem 1rem; text-align: center; font-size: .85rem; }
+.seasonal-banner a { color: #a8dadc; font-weight: 600; }
+
+/* Item 63: Loading skeleton */
+.skeleton { background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-200) 50%, var(--gray-100) 75%); background-size: 200% 100%; animation: skeleton-loading 1.5s infinite; border-radius: 4px; }
+@keyframes skeleton-loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+/* Item 51: Testimonial card styling */
+.testimonial-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.testimonial-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+.testimonial-card em { color: var(--gray-900); font-size: 1.05rem; }
+
 /* ===== Phase 155: Focus-visible for accessibility ===== */
 :focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
 a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }

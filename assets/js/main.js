@@ -110,6 +110,42 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // === Item 68: Author bio on blog posts ===
+  if (document.querySelector('.blog-post .content-body')) {
+    var bio = document.createElement('div');
+    bio.className = 'author-bio';
+    bio.innerHTML = '<div class="author-bio-avatar">P9</div><div><div class="author-bio-name">Plumbers 911 Chicago</div><div class="author-bio-desc">Licensed, bonded & insured plumbers serving 188+ cities in the Chicago metro. Available 24/7 for emergencies.</div></div>';
+    var cb = document.querySelector('.blog-post .content-body');
+    if (cb) cb.appendChild(bio);
+  }
+
+  // === Item 72: Count-up animation for stat numbers ===
+  if ('IntersectionObserver' in window) {
+    document.querySelectorAll('.count-up, .stat-number').forEach(function(el) {
+      var target = parseInt(el.textContent.replace(/[^0-9]/g, ''));
+      if (!target) return;
+      var suffix = el.textContent.replace(/[0-9,]/g, '');
+      var counted = false;
+      var cobs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting && !counted) {
+            counted = true;
+            var start = 0, duration = 1500, startTime = null;
+            function animate(ts) {
+              if (!startTime) startTime = ts;
+              var progress = Math.min((ts - startTime) / duration, 1);
+              el.textContent = Math.floor(progress * target).toLocaleString() + suffix;
+              if (progress < 1) requestAnimationFrame(animate);
+            }
+            requestAnimationFrame(animate);
+            cobs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      cobs.observe(el);
+    });
+  }
+
   // === Phase 148: Social share buttons for blog posts ===
   var blogPost = document.querySelector('.blog-post');
   if (blogPost) {
