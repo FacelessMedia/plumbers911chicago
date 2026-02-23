@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
   if (toggle && nav) {
     toggle.addEventListener('click', function() {
       nav.classList.toggle('open');
+      var list = nav.querySelector('.nav-list');
+      if (list) {
+        list.style.display = list.style.display === 'flex' ? 'none' : 'flex';
+      }
     });
   }
 });
