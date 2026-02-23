@@ -182,13 +182,22 @@ def write_page(url_path, html):
 
 
 def normalize_urls(html):
-    """Convert absolute plumbers911chicago.com URLs to relative paths and clean Rank Math variables."""
-    html = html.replace("https://plumbers911chicago.com/", "/")
-    html = html.replace("http://plumbers911chicago.com/", "/")
+    """Convert absolute plumbers911chicago.com URLs to relative paths in body only.
+    Preserves absolute URLs in <head> (canonical, OG tags, schema)."""
     # Clean Rank Math SEO variables that weren't resolved
     html = html.replace(" %sep% %sitename%", "")
     html = html.replace("%sep%", "-")
     html = html.replace("%sitename%", "Plumbers 911 Chicago")
+
+    # Split at </head> to preserve head URLs but normalize body links
+    parts = html.split("</head>", 1)
+    if len(parts) == 2:
+        body = re.sub(
+            r'href="https://plumbers911chicago\.com/',
+            r'href="/',
+            parts[1]
+        )
+        html = parts[0] + "</head>" + body
     return html
 
 
@@ -201,6 +210,153 @@ def build_page(base_tpl, content_tpl_str, ctx):
     page_html = render(page_html, full_ctx)
     page_html = normalize_urls(page_html)
     return page_html
+
+
+# ================================================================
+# EXCLUDED PAGES (Phase 1 — Site Architecture)
+# Dead locations, Arlington Heights service sub-pages, dead blogs
+# Full redirect map: see REDIRECTS.md
+# ================================================================
+
+DEAD_LOCATION_SLUGS = {
+    "wonder-lake", "riverside", "grayslake", "niles", "hebron", "spring-valley",
+    "deerfield", "lincolnshire", "calumet-city", "dana", "hampshire", "streator",
+    "salem", "westchester", "rutland", "russell", "union", "zion",
+    "lake-in-the-hills", "wheeling", "thorton", "riverdale", "gurnee", "highwood",
+    "willowbrook", "mokena", "ringwood", "darien", "hines", "lake-zurich",
+    "sandwich", "glendale-heights", "garden-prairie", "lemont", "round-lake",
+    "willow-springs", "river-grove", "batavia", "sugar-grove", "river-forest",
+    "vernon-hills", "kaneville", "itasca", "antioch", "malta", "shorewood",
+    "villa-park", "west-chicago", "minonk", "big-rock", "rolling-meadows",
+    "shabbona", "frankfort", "south-holland", "hoffman-estates", "yorkville",
+    "worth", "kingston", "st-charles", "downers-grove",
+}
+
+DEAD_BLOG_SLUGS = {
+    "can-drain-cleaner-damage-pipes",
+    "what-can-you-put-in-your-garbage-disposal",
+    "how-does-a-gas-tankless-water-heater-work",
+    "what-can-i-use-at-home-to-unclog-a-drain",
+    "why-wont-my-sump-pump-stop-running",
+    "what-causes-bathroom-sink-to-clog",
+    "do-water-heater-blankets-work",
+}
+
+
+def is_arlington_service_page(url_path):
+    """Check if this is an Arlington Heights service sub-page (not the main city page)."""
+    return "/arlington-heights-il-plumbing/" in url_path and url_path.strip("/") != "arlington-heights-il-plumbing"
+
+
+def generate_redirects_json():
+    """Generate Vercel-compatible redirects config."""
+    redirects = []
+
+    # Dead locations → /service-area/
+    for slug in DEAD_LOCATION_SLUGS:
+        redirects.append({
+            "source": "/" + slug + "-il-plumbing/:path*",
+            "destination": "/service-area/",
+            "permanent": True,
+        })
+
+    # Arlington Heights service sub-pages → main city page
+    redirects.append({
+        "source": "/arlington-heights-il-plumbing/:service((?!index\\.html$).+)",
+        "destination": "/arlington-heights-il-plumbing/",
+        "permanent": True,
+    })
+
+    # Dead blog posts → /blog/
+    for slug in DEAD_BLOG_SLUGS:
+        redirects.append({
+            "source": "/" + slug + "/",
+            "destination": "/blog/",
+            "permanent": True,
+        })
+        redirects.append({
+            "source": "/blog/" + slug + "/",
+            "destination": "/blog/",
+            "permanent": True,
+        })
+
+    # request-a-call-back → contact
+    redirects.append({
+        "source": "/request-a-call-back/",
+        "destination": "/contact-us/",
+        "permanent": True,
+    })
+
+    return redirects
+
+
+def generate_404_page(base_tpl, global_ctx):
+    """Generate a custom 404 page."""
+    content = """
+<section class="page-hero">
+  <div class="container" style="text-align:center; padding: 4rem 0;">
+    <h1>Page Not Found</h1>
+    <p style="color:rgba(255,255,255,.8); font-size:1.1rem; margin: 1rem 0 2rem;">
+      Sorry, the page you're looking for doesn't exist or has been moved.
+    </p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a href="/" class="btn btn-primary">Go to Homepage</a>
+      <a href="/service-area/" class="btn btn-cta-outline" style="color:#fff; border-color:rgba(255,255,255,.4);">View Service Area</a>
+      <a href="tel:8337586911" class="btn btn-cta-outline" style="color:#fff; border-color:rgba(255,255,255,.4);">Call 833-758-6911</a>
+    </div>
+  </div>
+</section>
+"""
+    ctx = {**global_ctx, "page_type": "404",
+           "canonical_path": "/404.html",
+           "breadcrumb_schema": "",
+           "seo": {"title": "Page Not Found", "description": "The page you're looking for doesn't exist."}}
+    page_html = base_tpl.replace("{{> content}}", content)
+    page_html = render(page_html, ctx)
+    page_html = normalize_urls(page_html)
+    return page_html
+
+
+def make_breadcrumb_schema(crumbs):
+    """Generate BreadcrumbList JSON-LD from list of (name, url) tuples."""
+    items = []
+    for i, (name, url) in enumerate(crumbs, 1):
+        items.append({
+            "@type": "ListItem",
+            "position": i,
+            "name": name,
+            "item": "https://plumbers911chicago.com" + url if not url.startswith("http") else url,
+        })
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": items,
+    }
+    return json.dumps(schema)
+
+
+def make_canonical(url_path):
+    """Create canonical path with trailing slash."""
+    p = url_path.strip("/")
+    return "/" + p + "/" if p else "/"
+
+
+def generate_xml_sitemap(built_pages):
+    """Generate XML sitemap from list of built URL paths."""
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>']
+    lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+    for path in sorted(built_pages):
+        url = "https://plumbers911chicago.com" + path
+        if not url.endswith("/"):
+            url += "/"
+        priority = "1.0" if path == "/" else "0.8" if "/chicago-il-plumbing/" in path else "0.6"
+        lines.append("  <url>")
+        lines.append("    <loc>" + url + "</loc>")
+        lines.append("    <changefreq>monthly</changefreq>")
+        lines.append("    <priority>" + priority + "</priority>")
+        lines.append("  </url>")
+    lines.append("</urlset>")
+    return "\n".join(lines)
 
 
 def build():
@@ -218,6 +374,9 @@ def build():
         os.makedirs(ASSETS_DIST, exist_ok=True)
         os.makedirs(os.path.join(ASSETS_DIST, "css"), exist_ok=True)
 
+    # Track all built pages for sitemap
+    built_pages = []
+
     # Load global data
     site_meta = load_json("site_meta.json")
     navigation = load_json("navigation.json")
@@ -226,11 +385,14 @@ def build():
     categories = load_json("categories.json")
     tags = load_json("tags.json")
 
+    # Filter location_index to only include kept locations
+    location_index_filtered = [l for l in location_index if l.get("city_slug") not in DEAD_LOCATION_SLUGS]
+
     global_ctx = {
         "site": site_meta,
         "navigation": navigation,
         "service_index": service_index,
-        "location_index": location_index,
+        "location_index": location_index_filtered,
         "categories": categories,
         "tags": tags,
         "current_year": "2026",
@@ -245,67 +407,100 @@ def build():
     home_tpl = load_template("home.html")
     if home_pages:
         home = home_pages[0]
-        ctx = {**global_ctx, **home, "page_type": "home"}
+        ctx = {**global_ctx, **home, "page_type": "home",
+               "canonical_path": "/",
+               "breadcrumb_schema": ""}
         if home.get("seo"):
             ctx["seo"] = home["seo"]
         html = build_page(base_tpl, home_tpl, ctx)
         write_page("/", html)
+        built_pages.append("/")
         print("  / (home)")
 
-    # --- SERVICES ---
+    # --- SERVICES (Chicago only — skip Arlington Heights sub-pages) ---
     services = load_json("services.json")
     svc_tpl = load_template("service.html")
+    svc_built = 0
+    svc_skipped = 0
     for svc in services:
-        ctx = {**global_ctx, **svc, "page_type": "service"}
+        if is_arlington_service_page(svc.get("url_path", "")):
+            svc_skipped += 1
+            continue
+        cp = make_canonical(svc["url_path"])
+        crumbs = [("Home", "/"), ("Services", "/chicago-il-plumbing/"), (svc.get("service_name", svc.get("title", "")), cp)]
+        ctx = {**global_ctx, **svc, "page_type": "service",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if svc.get("seo"):
             ctx["seo"] = svc["seo"]
         html = build_page(base_tpl, svc_tpl, ctx)
         write_page(svc["url_path"], html)
-    print("  " + str(len(services)) + " service pages")
+        built_pages.append(svc["url_path"])
+        svc_built += 1
+    print("  " + str(svc_built) + " service pages (" + str(svc_skipped) + " Arlington Heights sub-pages removed)")
 
-    # --- LOCATIONS ---
+    # --- LOCATIONS (skip dead locations) ---
     locations = load_json("locations.json")
     loc_tpl = load_template("location.html")
+    loc_built = 0
+    loc_skipped = 0
     for loc in locations:
-        ctx = {**global_ctx, **loc, "page_type": "location"}
+        city_slug = loc.get("city_slug", "")
+        if city_slug in DEAD_LOCATION_SLUGS:
+            loc_skipped += 1
+            continue
+        cp = make_canonical(loc["url_path"])
+        city_name = loc.get("city_name", loc.get("title", ""))
+        crumbs = [("Home", "/"), ("Service Area", "/service-area/"), (city_name + ", IL", cp)]
+        ctx = {**global_ctx, **loc, "page_type": "location",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if loc.get("seo"):
             ctx["seo"] = loc["seo"]
-        # Add nearby locations (simple: same first letter or nearby in alpha sort)
-        idx = next((i for i, l in enumerate(location_index) if l["city_slug"] == loc.get("city_slug")), 0)
+        idx = next((i for i, l in enumerate(location_index_filtered) if l["city_slug"] == city_slug), 0)
         start = max(0, idx - 3)
-        nearby = [l for l in location_index[start:start+7] if l["city_slug"] != loc.get("city_slug")]
+        nearby = [l for l in location_index_filtered[start:start+7] if l["city_slug"] != city_slug]
         ctx["nearby_locations"] = nearby[:6]
         html = build_page(base_tpl, loc_tpl, ctx)
         write_page(loc["url_path"], html)
-    print("  " + str(len(locations)) + " location pages")
+        built_pages.append(loc["url_path"])
+        loc_built += 1
+    print("  " + str(loc_built) + " location pages (" + str(loc_skipped) + " dead locations removed)")
 
-    # --- BLOG POSTS ---
+    # --- BLOG POSTS (skip dead posts) ---
     blog_posts = load_json("blog_posts.json")
+    kept_posts = [p for p in blog_posts if p["slug"] not in DEAD_BLOG_SLUGS]
+    removed_posts = [p for p in blog_posts if p["slug"] in DEAD_BLOG_SLUGS]
     post_tpl = load_template("blog_post.html")
-    for post in blog_posts:
-        ctx = {**global_ctx, **post, "page_type": "blog-post"}
+    for post in kept_posts:
+        cp = make_canonical("/blog/" + post["slug"])
+        crumbs = [("Home", "/"), ("Blog", "/blog/"), (post.get("title", ""), cp)]
+        ctx = {**global_ctx, **post, "page_type": "blog-post",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if post.get("seo"):
             ctx["seo"] = post["seo"]
-        # Format date
         date_str = post.get("date", "")
         ctx["date_formatted"] = date_str[:10] if date_str else ""
-        # Related posts (others in same category)
         post_cats = [c["slug"] for c in post.get("categories", [])]
-        related = [p for p in blog_posts if p["id"] != post["id"] and any(c["slug"] in post_cats for c in p.get("categories", []))]
+        related = [p for p in kept_posts if p["id"] != post["id"] and any(c["slug"] in post_cats for c in p.get("categories", []))]
         ctx["related_posts"] = related[:3]
         html = build_page(base_tpl, post_tpl, ctx)
-        # Blog posts go under /blog/slug/
         write_page("/blog/" + post["slug"], html)
-    print("  " + str(len(blog_posts)) + " blog posts")
+        built_pages.append("/blog/" + post["slug"])
+    print("  " + str(len(kept_posts)) + " blog posts (" + str(len(removed_posts)) + " removed)")
 
-    # --- BLOG INDEX ---
+    # --- BLOG INDEX (only kept posts) ---
     blog_idx_tpl = load_template("blog_index.html")
-    ctx = {**global_ctx, "blog_posts": blog_posts, "page_type": "blog", "active_all": True,
-           "seo": {"title": "Blog", "description": "Plumbing tips and resources from Plumbers 911 Chicago."}}
+    ctx = {**global_ctx, "blog_posts": kept_posts, "page_type": "blog", "active_all": True,
+           "canonical_path": "/blog/",
+           "breadcrumb_schema": make_breadcrumb_schema([("Home", "/"), ("Blog", "/blog/")]),
+           "seo": {"title": "Plumbing Blog - Tips & Resources", "description": "Expert plumbing tips, guides, and resources from the Plumbers 911 Chicago team."}}
     for p in ctx["blog_posts"]:
         p["date_formatted"] = p.get("date", "")[:10]
     html = build_page(base_tpl, blog_idx_tpl, ctx)
     write_page("/blog", html)
+    built_pages.append("/blog")
     print("  /blog (index)")
 
     # --- ABOUT ---
@@ -313,11 +508,16 @@ def build():
     about_tpl = load_template("about.html")
     if about_pages:
         pg = about_pages[0]
-        ctx = {**global_ctx, **pg, "page_type": "about"}
+        cp = make_canonical(pg["url_path"])
+        crumbs = [("Home", "/"), ("About Us", cp)]
+        ctx = {**global_ctx, **pg, "page_type": "about",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, about_tpl, ctx)
         write_page(pg["url_path"], html)
+        built_pages.append(pg["url_path"])
         print("  " + pg["url_path"])
 
     # --- CONTACT ---
@@ -325,22 +525,32 @@ def build():
     contact_tpl = load_template("contact.html")
     if contact_pages:
         pg = contact_pages[0]
-        ctx = {**global_ctx, **pg, "page_type": "contact"}
+        cp = make_canonical(pg["url_path"])
+        crumbs = [("Home", "/"), ("Contact Us", cp)]
+        ctx = {**global_ctx, **pg, "page_type": "contact",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, contact_tpl, ctx)
         write_page(pg["url_path"], html)
+        built_pages.append(pg["url_path"])
         print("  " + pg["url_path"])
 
     # --- LEGAL ---
     legal_pages = load_json("pages_legal.json")
     legal_tpl = load_template("legal.html")
     for pg in legal_pages:
-        ctx = {**global_ctx, **pg, "page_type": "legal"}
+        cp = make_canonical(pg["url_path"])
+        crumbs = [("Home", "/"), (pg.get("title", "Legal"), cp)]
+        ctx = {**global_ctx, **pg, "page_type": "legal",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, legal_tpl, ctx)
         write_page(pg["url_path"], html)
+        built_pages.append(pg["url_path"])
         print("  " + pg["url_path"])
 
     # --- SERVICE AREA ---
@@ -348,27 +558,75 @@ def build():
     sa_tpl = load_template("service_area.html")
     if sa_pages:
         pg = sa_pages[0]
-        ctx = {**global_ctx, **pg, "page_type": "service-area"}
+        cp = make_canonical(pg["url_path"])
+        crumbs = [("Home", "/"), ("Service Area", cp)]
+        ctx = {**global_ctx, **pg, "page_type": "service-area",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, sa_tpl, ctx)
         write_page(pg["url_path"], html)
+        built_pages.append(pg["url_path"])
         print("  " + pg["url_path"])
 
-    # --- GENERIC PAGES ---
+    # --- GENERIC PAGES (skip request-a-call-back) ---
     gen_pages = load_json("pages_page.json")
     gen_tpl = load_template("page.html")
+    gen_built = 0
     for pg in gen_pages:
-        ctx = {**global_ctx, **pg, "page_type": "page"}
+        if pg.get("slug") == "request-a-call-back":
+            continue
+        cp = make_canonical(pg["url_path"])
+        crumbs = [("Home", "/"), (pg.get("title", ""), cp)]
+        ctx = {**global_ctx, **pg, "page_type": "page",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, gen_tpl, ctx)
         write_page(pg["url_path"], html)
-    print("  " + str(len(gen_pages)) + " generic pages")
+        built_pages.append(pg["url_path"])
+        gen_built += 1
+    print("  " + str(gen_built) + " generic pages")
 
-    # Count total files
-    total = sum(len(files) for _, _, files in os.walk(DIST_DIR) if any(f.endswith(".html") for f in files))
-    print("\nBuild complete! " + str(total) + " HTML files in " + DIST_DIR)
+    # --- 404 PAGE ---
+    html_404 = generate_404_page(base_tpl, global_ctx)
+    write_page("/404", html_404)
+    print("  /404 (custom error page)")
+
+    # --- XML SITEMAP ---
+    sitemap_xml = generate_xml_sitemap(built_pages)
+    with open(os.path.join(DIST_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write(sitemap_xml)
+    print("  /sitemap.xml (" + str(len(built_pages)) + " URLs)")
+
+    # --- ROBOTS.TXT ---
+    robots = "User-agent: *\nAllow: /\n\nSitemap: https://plumbers911chicago.com/sitemap.xml\n"
+    with open(os.path.join(DIST_DIR, "robots.txt"), "w", encoding="utf-8") as f:
+        f.write(robots)
+    print("  /robots.txt")
+
+    # --- VERCEL CONFIG WITH REDIRECTS ---
+    redirects = generate_redirects_json()
+    vercel_config = {
+        "trailingSlash": True,
+        "cleanUrls": True,
+        "redirects": redirects,
+    }
+    with open(os.path.join(DIST_DIR, "vercel.json"), "w", encoding="utf-8") as f:
+        json.dump(vercel_config, f, indent=2)
+    print("  vercel.json (" + str(len(redirects)) + " redirects)")
+
+    # Count total
+    total = sum(1 for _, _, files in os.walk(DIST_DIR) for f in files if f.endswith(".html"))
+    print("\n" + "=" * 50)
+    print("BUILD COMPLETE!")
+    print("  HTML pages: " + str(total))
+    print("  Pages removed: " + str(loc_skipped + svc_skipped + len(removed_posts) + 1))
+    print("  Redirects configured: " + str(len(redirects)))
+    print("  Output: " + DIST_DIR)
+    print("=" * 50)
 
 
 if __name__ == "__main__":
