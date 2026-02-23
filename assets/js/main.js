@@ -85,6 +85,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // === Phase 144: Auto-generate TOC from H2 headings ===
+  var tocContainer = document.querySelector('.toc');
+  if (!tocContainer) {
+    var article = document.querySelector('.content-body');
+    if (article && document.querySelector('.blog-post')) {
+      var headings = article.querySelectorAll('h2[id]');
+      if (headings.length >= 3) {
+        var toc = document.createElement('nav');
+        toc.className = 'auto-toc';
+        toc.innerHTML = '<strong>In This Article:</strong>';
+        var ol = document.createElement('ol');
+        headings.forEach(function(h) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = '#' + h.id;
+          a.textContent = h.textContent;
+          li.appendChild(a);
+          ol.appendChild(li);
+        });
+        toc.appendChild(ol);
+        article.insertBefore(toc, article.firstChild);
+      }
+    }
+  }
+
+  // === Phase 148: Social share buttons for blog posts ===
+  var blogPost = document.querySelector('.blog-post');
+  if (blogPost) {
+    var shareDiv = document.createElement('div');
+    shareDiv.className = 'share-buttons';
+    shareDiv.innerHTML = '<strong>Share:</strong> ' +
+      '<a href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href) + '" target="_blank" rel="noopener" class="share-btn share-fb">Facebook</a> ' +
+      '<a href="https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title) + '" target="_blank" rel="noopener" class="share-btn share-tw">X/Twitter</a> ' +
+      '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href) + '" target="_blank" rel="noopener" class="share-btn share-li">LinkedIn</a> ' +
+      '<button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent=\'Copied!\'">Copy Link</button>';
+    var postFooter = blogPost.querySelector('.post-footer .container');
+    if (postFooter) postFooter.appendChild(shareDiv);
+  }
+
   // === Phase 164: Phone click tracking ===
   document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
     link.addEventListener('click', function() {

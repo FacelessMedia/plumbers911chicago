@@ -387,6 +387,27 @@ section { padding: 3rem 0; }
 /* ===== PRINT STYLES ===== */
 @media print { .site-header, .main-nav, .prefooter-cta, .site-footer, .mobile-call-bar, .skip-link { display: none !important; } main { padding: 0; } }
 
+/* ===== Phase 155: Focus-visible for accessibility ===== */
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+.btn:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+
+/* ===== Phase 144: Auto-TOC styling ===== */
+.auto-toc { background: var(--light); border: 1px solid var(--gray-200); border-radius: 6px; padding: 1.25rem; margin-bottom: 2rem; }
+.auto-toc strong { display: block; margin-bottom: .5rem; font-size: .95rem; }
+.auto-toc ol { margin: 0; padding-left: 1.25rem; list-style: decimal; }
+.auto-toc li { margin-bottom: .3rem; font-size: .9rem; }
+.auto-toc a { color: var(--blue); }
+
+/* ===== Phase 148: Social share buttons ===== */
+.share-buttons { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--gray-200); display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+.share-btn { display: inline-block; padding: .35rem .75rem; border-radius: 4px; font-size: .8rem; font-weight: 600; color: var(--white); text-decoration: none; border: none; cursor: pointer; font-family: inherit; }
+.share-fb { background: #1877f2; }
+.share-tw { background: #1da1f2; }
+.share-li { background: #0a66c2; }
+.share-copy { background: var(--gray-500); color: var(--white); }
+.share-btn:hover { opacity: .85; color: var(--white); }
+
 /* ===== Phase 141: Dark Mode ===== */
 @media (prefers-color-scheme: dark) {
   :root { --white: #1a1a2e; --light: #222; --gray-100: #2a2a3e; --gray-200: #333; --gray-300: #444; --gray-500: #999; --gray-700: #ccc; --gray-900: #eee; }
