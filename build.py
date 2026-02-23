@@ -232,6 +232,30 @@ DEAD_LOCATION_SLUGS = {
     "worth", "kingston", "st-charles", "downers-grove",
 }
 
+# ================================================================
+# INDEXABLE LOCATION PAGES — only these get "index, follow"
+# Based on GSC data: pages with clicks OR 5,000+ impressions in 18 months
+# All other location pages get "noindex, follow" to avoid doorway page penalty
+# ================================================================
+INDEXABLE_LOCATION_SLUGS = {
+    # Locations with clicks (from GSC data)
+    "park-ridge", "joliet", "park-forest", "cicero", "marengo",
+    "bartlett", "hickory-hills", "chicago-heights", "oak-brook", "elmhurst",
+    "monee", "north-aurora", "ottawa", "mundelein", "channahon",
+    "clarendon-hills", "hometown", "glenwood", "berwyn", "justice",
+    "maple-park", "elgin", "lake-villa", "olympia-fields", "highland-park",
+    "blue-island", "mount-prospect", "homewood", "mendota", "chicago-ridge",
+    "addison", "lyons", "south-elgin", "dekalb", "gilberts", "lockport",
+    "algonquin", "waukegan", "lansing", "lake-bluff", "lake-forest",
+    "braidwood", "maywood", "plano", "hanover-park", "posen",
+    "blackstone", "marseilles", "manhattan", "harvey",
+    # Locations with 0 clicks but 5,000+ impressions (showing search demand)
+    "orland-park", "palos-heights", "flossmoor", "morton-grove",
+    "franklin-park", "wilmette", "steger", "hazel-crest", "palos-hills",
+    "bellwood", "glencoe", "matteson", "naperville", "oak-lawn",
+    "des-plaines", "crete", "barrington", "arlington-heights",
+}
+
 DEAD_BLOG_SLUGS = {
     "can-drain-cleaner-damage-pipes",
     "what-can-you-put-in-your-garbage-disposal",
@@ -310,6 +334,7 @@ def generate_404_page(base_tpl, global_ctx):
     ctx = {**global_ctx, "page_type": "404",
            "canonical_path": "/404.html",
            "breadcrumb_schema": "",
+           "robots_meta": "noindex, nofollow",
            "seo": {"title": "Page Not Found", "description": "The page you're looking for doesn't exist."}}
     page_html = base_tpl.replace("{{> content}}", content)
     page_html = render(page_html, ctx)
@@ -374,8 +399,11 @@ def build():
         os.makedirs(ASSETS_DIST, exist_ok=True)
         os.makedirs(os.path.join(ASSETS_DIST, "css"), exist_ok=True)
 
-    # Track all built pages for sitemap
+    # Track all built pages for sitemap (only indexable ones go in sitemap)
     built_pages = []
+    noindex_count = 0
+    ROBOTS_INDEX = "index, follow, max-snippet:-1, max-image-preview:large"
+    ROBOTS_NOINDEX = "noindex, follow"
 
     # Load global data
     site_meta = load_json("site_meta.json")
@@ -409,7 +437,8 @@ def build():
         home = home_pages[0]
         ctx = {**global_ctx, **home, "page_type": "home",
                "canonical_path": "/",
-               "breadcrumb_schema": ""}
+               "breadcrumb_schema": "",
+               "robots_meta": ROBOTS_INDEX}
         if home.get("seo"):
             ctx["seo"] = home["seo"]
         html = build_page(base_tpl, home_tpl, ctx)
@@ -430,7 +459,8 @@ def build():
         crumbs = [("Home", "/"), ("Services", "/chicago-il-plumbing/"), (svc.get("service_name", svc.get("title", "")), cp)]
         ctx = {**global_ctx, **svc, "page_type": "service",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         if svc.get("seo"):
             ctx["seo"] = svc["seo"]
         html = build_page(base_tpl, svc_tpl, ctx)
@@ -452,9 +482,11 @@ def build():
         cp = make_canonical(loc["url_path"])
         city_name = loc.get("city_name", loc.get("title", ""))
         crumbs = [("Home", "/"), ("Service Area", "/service-area/"), (city_name + ", IL", cp)]
+        is_indexable = city_slug in INDEXABLE_LOCATION_SLUGS
         ctx = {**global_ctx, **loc, "page_type": "location",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX if is_indexable else ROBOTS_NOINDEX}
         if loc.get("seo"):
             ctx["seo"] = loc["seo"]
         idx = next((i for i, l in enumerate(location_index_filtered) if l["city_slug"] == city_slug), 0)
@@ -463,9 +495,12 @@ def build():
         ctx["nearby_locations"] = nearby[:6]
         html = build_page(base_tpl, loc_tpl, ctx)
         write_page(loc["url_path"], html)
-        built_pages.append(loc["url_path"])
+        if is_indexable:
+            built_pages.append(loc["url_path"])
+        else:
+            noindex_count += 1
         loc_built += 1
-    print("  " + str(loc_built) + " location pages (" + str(loc_skipped) + " dead locations removed)")
+    print("  " + str(loc_built) + " location pages (" + str(loc_skipped) + " removed, " + str(noindex_count) + " noindexed)")
 
     # --- BLOG POSTS (skip dead posts) ---
     blog_posts = load_json("blog_posts.json")
@@ -477,7 +512,8 @@ def build():
         crumbs = [("Home", "/"), ("Blog", "/blog/"), (post.get("title", ""), cp)]
         ctx = {**global_ctx, **post, "page_type": "blog-post",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         if post.get("seo"):
             ctx["seo"] = post["seo"]
         date_str = post.get("date", "")
@@ -495,6 +531,7 @@ def build():
     ctx = {**global_ctx, "blog_posts": kept_posts, "page_type": "blog", "active_all": True,
            "canonical_path": "/blog/",
            "breadcrumb_schema": make_breadcrumb_schema([("Home", "/"), ("Blog", "/blog/")]),
+           "robots_meta": ROBOTS_INDEX,
            "seo": {"title": "Plumbing Blog - Tips & Resources", "description": "Expert plumbing tips, guides, and resources from the Plumbers 911 Chicago team."}}
     for p in ctx["blog_posts"]:
         p["date_formatted"] = p.get("date", "")[:10]
@@ -512,7 +549,8 @@ def build():
         crumbs = [("Home", "/"), ("About Us", cp)]
         ctx = {**global_ctx, **pg, "page_type": "about",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, about_tpl, ctx)
@@ -529,7 +567,8 @@ def build():
         crumbs = [("Home", "/"), ("Contact Us", cp)]
         ctx = {**global_ctx, **pg, "page_type": "contact",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, contact_tpl, ctx)
@@ -545,7 +584,8 @@ def build():
         crumbs = [("Home", "/"), (pg.get("title", "Legal"), cp)]
         ctx = {**global_ctx, **pg, "page_type": "legal",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, legal_tpl, ctx)
@@ -562,7 +602,8 @@ def build():
         crumbs = [("Home", "/"), ("Service Area", cp)]
         ctx = {**global_ctx, **pg, "page_type": "service-area",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, sa_tpl, ctx)
@@ -633,7 +674,8 @@ def build():
         crumbs = [("Home", "/"), (hub["title"], cp)]
         ctx = {**global_ctx, **hub, "page_type": "page",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         html = build_page(base_tpl, page_tpl, ctx)
         write_page(hub["url_path"], html)
         built_pages.append(hub["url_path"])
@@ -650,7 +692,8 @@ def build():
         crumbs = [("Home", "/"), (pg.get("title", ""), cp)]
         ctx = {**global_ctx, **pg, "page_type": "page",
                "canonical_path": cp,
-               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, gen_tpl, ctx)
