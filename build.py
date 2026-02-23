@@ -29,8 +29,28 @@ def load_template(name):
         return f.read()
 
 
+def find_matching_end(template, open_tag, close_tag, start=0):
+    """Find matching closing tag handling nesting."""
+    depth = 1
+    pos = start
+    while depth > 0 and pos < len(template):
+        next_open = template.find(open_tag, pos)
+        next_close = template.find(close_tag, pos)
+        if next_close == -1:
+            return -1
+        if next_open != -1 and next_open < next_close:
+            depth += 1
+            pos = next_open + len(open_tag)
+        else:
+            depth -= 1
+            if depth == 0:
+                return next_close
+            pos = next_close + len(close_tag)
+    return -1
+
+
 def render(template_str, ctx):
-    """Simple template renderer supporting {{var}}, {{{html}}}, {{#each}}, {{#if}}."""
+    """Template renderer supporting {{var}}, {{{html}}}, {{#each}}, {{#if}}/{{else}}, nested blocks."""
     output = template_str
 
     # Handle {{{raw_html}}} (triple braces = unescaped)
@@ -40,53 +60,67 @@ def render(template_str, ctx):
 
     output = re.sub(r"\{\{\{(.+?)\}\}\}", replace_raw, output)
 
-    # Handle {{#each items}}...{{/each}}
-    def replace_each(m):
-        var_name = m.group(1).strip()
-        body = m.group(2)
-        items = resolve_var(var_name, ctx)
-        if not items or not isinstance(items, list):
-            return ""
-        result = []
-        for item in items:
-            child_ctx = {**ctx, **item}
-            # Support {{../parent_var}} for parent context
-            for k, v in ctx.items():
-                child_ctx["../" + k] = v
-            result.append(render(body, child_ctx))
-        return "".join(result)
+    # Process block helpers iteratively to handle nesting properly
+    changed = True
+    iterations = 0
+    while changed and iterations < 20:
+        changed = False
+        iterations += 1
 
-    # Process nested #each from inside out
-    for _ in range(5):
-        output = re.sub(
-            r"\{\{#each\s+(\S+?)\}\}(.*?)\{\{/each\}\}",
-            replace_each,
-            output,
-            flags=re.DOTALL,
+        # Find innermost {{#each ...}}...{{/each}} (no nested #each inside)
+        each_match = re.search(
+            r"\{\{#each\s+(\S+?)\}\}((?:(?!\{\{#each\b).)*?)\{\{/each\}\}",
+            output, re.DOTALL
         )
+        if each_match:
+            changed = True
+            var_name = each_match.group(1).strip()
+            body = each_match.group(2)
+            items = resolve_var(var_name, ctx)
+            if not items or not isinstance(items, list):
+                replacement = ""
+            else:
+                parts = []
+                for item in items:
+                    child_ctx = {**ctx}
+                    if isinstance(item, dict):
+                        child_ctx.update(item)
+                    for k, v in ctx.items():
+                        child_ctx["../" + k] = v
+                    parts.append(render(body, child_ctx))
+                replacement = "".join(parts)
+            output = output[:each_match.start()] + replacement + output[each_match.end():]
+            continue
 
-    # Handle {{#if var}}...{{/if}}
-    def replace_if(m):
-        var_name = m.group(1).strip()
-        body = m.group(2)
-        val = resolve_var(var_name, ctx)
-        if val and val != "0" and val != "false":
-            return render(body, ctx)
-        return ""
-
-    for _ in range(5):
-        output = re.sub(
-            r"\{\{#if\s+(.+?)\}\}(.*?)\{\{/if\}\}",
-            replace_if,
-            output,
-            flags=re.DOTALL,
+        # Find innermost {{#if ...}}...{{/if}} with optional {{else}}
+        if_match = re.search(
+            r"\{\{#if\s+(.+?)\}\}((?:(?!\{\{#if\b).)*?)\{\{/if\}\}",
+            output, re.DOTALL
         )
+        if if_match:
+            changed = True
+            var_name = if_match.group(1).strip()
+            inner = if_match.group(2)
+            val = resolve_var(var_name, ctx)
+            # Split on {{else}}
+            else_parts = re.split(r"\{\{else\}\}", inner, maxsplit=1)
+            true_body = else_parts[0]
+            false_body = else_parts[1] if len(else_parts) > 1 else ""
+            truthy = val and val != "0" and val != "false" and val != [] and val != ""
+            if truthy:
+                replacement = render(true_body, ctx)
+            else:
+                replacement = render(false_body, ctx)
+            output = output[:if_match.start()] + replacement + output[if_match.end():]
+            continue
 
     # Handle {{variable}}
     def replace_var(m):
         key = m.group(1).strip()
         val = resolve_var(key, ctx)
-        if val is None:
+        if val is None or val == "":
+            return ""
+        if isinstance(val, (list, dict)):
             return ""
         return escape_html(str(val))
 
@@ -128,6 +162,13 @@ def write_page(url_path, html):
         f.write(html)
 
 
+def normalize_urls(html):
+    """Convert absolute plumbers911chicago.com URLs to relative paths."""
+    html = html.replace("https://plumbers911chicago.com/", "/")
+    html = html.replace("http://plumbers911chicago.com/", "/")
+    return html
+
+
 def build_page(base_tpl, content_tpl_str, ctx):
     """Render content template, inject into base layout."""
     content_html = render(content_tpl_str, ctx)
@@ -135,6 +176,7 @@ def build_page(base_tpl, content_tpl_str, ctx):
     # Replace the {{> content}} partial in base with the rendered content
     page_html = base_tpl.replace("{{> content}}", content_html)
     page_html = render(page_html, full_ctx)
+    page_html = normalize_urls(page_html)
     return page_html
 
 
