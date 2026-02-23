@@ -430,23 +430,44 @@
 
   <!-- ===== MAIN CONTENT ===== -->
   <main id="main-content" role="main">
-    <!-- Template: LOCATION / CITY PAGE -->
-<!-- Extends: _base.html -->
+    <!-- Template: LOCATION / CITY PAGE (Phase 36 redesign) -->
 <!-- Data source: data/locations.json -->
-<!-- Each location has: id, title, slug, city_slug, city_name, state, url_path, content, seo, images -->
 
 <section class="page-hero page-hero--location">
   <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/service-area/">Service Area</a> &rsaquo; <span>Fort Sheridan, IL</span>
+    </nav>
     <h1>Plumber in Fort Sheridan, IL</h1>
-    <p class="hero-subtitle">Licensed Plumbing Services in Fort Sheridan &amp; Surrounding Areas</p>
-    <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+    <p class="hero-location">Licensed, Bonded &amp; Insured &bull; Available 24/7 &bull; Free Estimates</p>
+    <div class="hero-actions">
+      <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+      <a href="/contact-us/" class="btn btn-cta-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">Get Free Estimate</a>
+    </div>
   </div>
 </section>
 
-<section class="location-intro">
-  <div class="container">
-    <article class="content-body">
-      <nav aria-label="breadcrumbs"><p>Home</p></nav>		
+<section class="location-main">
+  <div class="container service-grid-layout">
+
+    <article class="service-content-col">
+      <div class="trust-strip">
+        <span class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          Licensed &amp; Insured
+        </span>
+        <span class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          24/7 Emergency Service
+        </span>
+        <span class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Serving Fort Sheridan
+        </span>
+      </div>
+
+      <div class="content-body">
+        <nav aria-label="breadcrumbs"><p>Home</p></nav>		
 			<h1>Your Trusted Plumbers in Fort Sheridan</h1>		
 		<p>Experiencing a plumbing issue in your home or business? Call <strong data-start="262" data-end="295">1-833-PLUM-911 (833-758-6911)</strong> to connect with a <strong data-start="314" data-end="339">trusted local plumber</strong> through <strong data-start="348" data-end="364">Plumbers 911</strong>.</p><p data-start="369" data-end="912">Fort Sheridan, IL, is a <strong data-start="393" data-end="431">historic and picturesque community</strong> nestled along the shores of <strong data-start="460" data-end="477">Lake Michigan</strong>. Whether you live in a <strong data-start="501" data-end="528">renovated historic home</strong> or a <strong data-start="534" data-end="554">modern residence</strong>, plumbing issues can arise at any time. From <strong data-start="600" data-end="661">clogged drains and leaking pipes to water heater failures</strong>, you need a <strong data-start="674" data-end="710">licensed and experienced plumber</strong> who can fix the problem <strong data-start="735" data-end="765">quickly and professionally</strong>. That’s where <strong data-start="780" data-end="796">Plumbers 911</strong> comes in—we connect you with <strong data-start="826" data-end="852">trusted local plumbers</strong> who are available to handle your plumbing needs <strong data-start="901" data-end="909">24/7</strong>.</p><p data-start="914" data-end="1246">Our <strong data-start="918" data-end="956">network of highly skilled plumbers</strong> serves both <strong data-start="969" data-end="1010">residential and commercial properties</strong> in <strong data-start="1014" data-end="1057">Fort Sheridan and the surrounding areas</strong>. Whether you're near <strong data-start="1079" data-end="1096">Sheridan Road</strong> or close to <strong data-start="1109" data-end="1142">Fort Sheridan Forest Preserve</strong>, our <strong data-start="1148" data-end="1174">licensed professionals</strong> provide <strong data-start="1183" data-end="1243">fast, efficient plumbing services whenever you need them</strong>.</p>		
 			<h2>Why Hire Our Fort Sheridan Plumbers?
@@ -477,277 +498,309 @@
 			<h2>Hire a Fort Sheridan Plumber Today
 </h2>		
 		<p>When a <strong data-start="4278" data-end="4300">plumbing emergency</strong> arises, you need <strong data-start="4318" data-end="4338">expert help fast</strong>. Call <strong data-start="4345" data-end="4394">Plumbers 911 at 1-833-PLUM-911 (833-758-6911)</strong> today to connect with a <strong data-start="4419" data-end="4452">trusted Fort Sheridan plumber</strong> who can <strong data-start="4461" data-end="4510">resolve your issue quickly and professionally</strong>.</p>
+      </div>
+
+      <h2>Plumbing Services Available in Fort Sheridan, IL</h2>
+      <div class="location-services-grid">
+        
+        <a href="/chicago-il-plumbing/emergency-plumber/" class="service-card">
+          <h3>Emergency Plumber</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/emergency-plumber/" class="service-card">
+          <h3>Emergency Plumber</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/residential-plumbing/" class="service-card">
+          <h3>Residential Plumbing</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/residential-plumbing/" class="service-card">
+          <h3>Residential Plumbing</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/residential-plumbing-coupon/" class="service-card">
+          <h3>Residential Plumbing</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/commercial-plumbing/" class="service-card">
+          <h3>Commercial Plumbing</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/commercial-plumbing/" class="service-card">
+          <h3>Commercial Plumbing</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/bathroom-remodeling/" class="service-card">
+          <h3>Bathroom Remodeling</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/bathroom-remodeling/" class="service-card">
+          <h3>Bathroom Remodeling</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/toilet-install/" class="service-card">
+          <h3>Toilet Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/toilet-install/" class="service-card">
+          <h3>Toilet Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/kitchen-remodeling/" class="service-card">
+          <h3>Kitchen Remodeling</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/kitchen-remodeling/" class="service-card">
+          <h3>Kitchen Remodeling</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/dishwasher-install/" class="service-card">
+          <h3>Dishwasher Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/dishwasher-install/" class="service-card">
+          <h3>Dishwasher Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/faucet-repair/" class="service-card">
+          <h3>Faucet Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/faucet-repair/" class="service-card">
+          <h3>Faucet Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/garbage-disposal-installation/" class="service-card">
+          <h3>Garbage Disposal Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/garbage-disposal-installation/" class="service-card">
+          <h3>Garbage Disposal Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-cleaning/" class="service-card">
+          <h3>Sewer Cleaning</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-cleaning/" class="service-card">
+          <h3>Sewer Cleaning</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-replacement/" class="service-card">
+          <h3>Sewer Replacement</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-replacement/" class="service-card">
+          <h3>Sewer Replacement</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-camera-inspection/" class="service-card">
+          <h3>Sewer Camera Inspection</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-camera-inspection/" class="service-card">
+          <h3>Sewer Camera Inspection</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-cleanout-installation/" class="service-card">
+          <h3>Sewer Cleanout Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sewer-cleanout-installation/" class="service-card">
+          <h3>Sewer Cleanout Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/drain-cleaning/" class="service-card">
+          <h3>Drain Cleaning</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/drain-cleaning/" class="service-card">
+          <h3>Drain Cleaning</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/drain-replacement/" class="service-card">
+          <h3>Drain Replacement</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/drain-replacement/" class="service-card">
+          <h3>Drain Replacement</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-heater-repair/" class="service-card">
+          <h3>Water Heater Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-heater-repair/" class="service-card">
+          <h3>Water Heater Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-heater-installation/" class="service-card">
+          <h3>Water Heater Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-heater-installation/" class="service-card">
+          <h3>Water Heater Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/tankless-water-heater-repair/" class="service-card">
+          <h3>Tankless Water Heater Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/tankless-water-heater-repair/" class="service-card">
+          <h3>Tankless Water Heater Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/tankless-water-heater-installation/" class="service-card">
+          <h3>Tankless Water Heater Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/tankless-water-heater-installation/" class="service-card">
+          <h3>Tankless Water Heater Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/backflow-testing-installation/" class="service-card">
+          <h3>Backflow Testing &amp; Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/backflow-testing-installation/" class="service-card">
+          <h3>Backflow Testing &amp; Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/whole-house-repiping/" class="service-card">
+          <h3>Whole House Repiping</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/whole-house-repiping/" class="service-card">
+          <h3>Whole House Repiping</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-softener-installation/" class="service-card">
+          <h3>Water Softener Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-softener-installation/" class="service-card">
+          <h3>Water Softener Installation</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-filter-installation-replacement/" class="service-card">
+          <h3>Water Filter Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-filter-installation-replacement/" class="service-card">
+          <h3>Water Filter Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/frozen-broken-pipe-repair/" class="service-card">
+          <h3>Frozen &amp; Broken Pipe Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/frozen-broken-pipe-repair/" class="service-card">
+          <h3>Frozen &amp; Broken Pipe Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/gas-line-install-repair/" class="service-card">
+          <h3>Gas Line Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/gas-line-install-repair/" class="service-card">
+          <h3>Gas Line Services</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sump-pump-install-replacement/" class="service-card">
+          <h3>Sump Pump Installation &amp; Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sump-pump-install-replacement/" class="service-card">
+          <h3>Sump Pump Installation &amp; Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sump-pump-battery-backup-install/" class="service-card">
+          <h3>Sump Pump Battery Backup</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/sump-pump-battery-backup-install/" class="service-card">
+          <h3>Sump Pump Battery Backup</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-leak-detection-repair/" class="service-card">
+          <h3>Water Leak Detection &amp; Repair</h3>
+        </a>
+        
+        <a href="/chicago-il-plumbing/water-leak-detection-repair/" class="service-card">
+          <h3>Water Leak Detection &amp; Repair</h3>
+        </a>
+        
+      </div>
     </article>
+
+    <aside class="service-sidebar-col">
+      <div class="sidebar-cta">
+        <h3>Need a Plumber in Fort Sheridan?</h3>
+        <p>Our licensed plumbers serve Fort Sheridan and surrounding areas. Available 24/7.</p>
+        <a href="tel:8337586911" class="btn btn-primary btn-block">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.49a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.01l-2.2 2.23z"/></svg>
+          Call 833-758-6911
+        </a>
+        <a href="/contact-us/" class="btn btn-outline btn-block">Request a Call Back</a>
+      </div>
+
+      <div class="sidebar-form-mini">
+        <h4>Quick Quote Request</h4>
+        <form method="post" action="/api/contact">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="hidden" name="city" value="Fort Sheridan">
+          <button type="submit" class="btn btn-submit">Get Free Quote</button>
+        </form>
+      </div>
+    </aside>
+
   </div>
 </section>
 
-<section class="location-services">
+<section class="cta-banner">
   <div class="container">
-    <h2>Plumbing Services in Fort Sheridan, IL</h2>
-    <div class="services-grid">
-      
-      <a href="/-il-plumbing/emergency-plumber/" class="service-card">
-        <h3>Emergency Plumber</h3>
-      </a>
-      
-      <a href="/-il-plumbing/emergency-plumber/" class="service-card">
-        <h3>Emergency Plumber</h3>
-      </a>
-      
-      <a href="/-il-plumbing/residential-plumbing/" class="service-card">
-        <h3>Residential Plumbing</h3>
-      </a>
-      
-      <a href="/-il-plumbing/residential-plumbing/" class="service-card">
-        <h3>Residential Plumbing</h3>
-      </a>
-      
-      <a href="/-il-plumbing/residential-plumbing-coupon/" class="service-card">
-        <h3>Residential Plumbing</h3>
-      </a>
-      
-      <a href="/-il-plumbing/commercial-plumbing/" class="service-card">
-        <h3>Commercial Plumbing</h3>
-      </a>
-      
-      <a href="/-il-plumbing/commercial-plumbing/" class="service-card">
-        <h3>Commercial Plumbing</h3>
-      </a>
-      
-      <a href="/-il-plumbing/bathroom-remodeling/" class="service-card">
-        <h3>Bathroom Remodeling</h3>
-      </a>
-      
-      <a href="/-il-plumbing/bathroom-remodeling/" class="service-card">
-        <h3>Bathroom Remodeling</h3>
-      </a>
-      
-      <a href="/-il-plumbing/toilet-install/" class="service-card">
-        <h3>Toilet Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/toilet-install/" class="service-card">
-        <h3>Toilet Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/kitchen-remodeling/" class="service-card">
-        <h3>Kitchen Remodeling</h3>
-      </a>
-      
-      <a href="/-il-plumbing/kitchen-remodeling/" class="service-card">
-        <h3>Kitchen Remodeling</h3>
-      </a>
-      
-      <a href="/-il-plumbing/dishwasher-install/" class="service-card">
-        <h3>Dishwasher Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/dishwasher-install/" class="service-card">
-        <h3>Dishwasher Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/faucet-repair/" class="service-card">
-        <h3>Faucet Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/faucet-repair/" class="service-card">
-        <h3>Faucet Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/garbage-disposal-installation/" class="service-card">
-        <h3>Garbage Disposal Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/garbage-disposal-installation/" class="service-card">
-        <h3>Garbage Disposal Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-cleaning/" class="service-card">
-        <h3>Sewer Cleaning</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-cleaning/" class="service-card">
-        <h3>Sewer Cleaning</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-replacement/" class="service-card">
-        <h3>Sewer Replacement</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-replacement/" class="service-card">
-        <h3>Sewer Replacement</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-camera-inspection/" class="service-card">
-        <h3>Sewer Camera Inspection</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-camera-inspection/" class="service-card">
-        <h3>Sewer Camera Inspection</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-cleanout-installation/" class="service-card">
-        <h3>Sewer Cleanout Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sewer-cleanout-installation/" class="service-card">
-        <h3>Sewer Cleanout Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/drain-cleaning/" class="service-card">
-        <h3>Drain Cleaning</h3>
-      </a>
-      
-      <a href="/-il-plumbing/drain-cleaning/" class="service-card">
-        <h3>Drain Cleaning</h3>
-      </a>
-      
-      <a href="/-il-plumbing/drain-replacement/" class="service-card">
-        <h3>Drain Replacement</h3>
-      </a>
-      
-      <a href="/-il-plumbing/drain-replacement/" class="service-card">
-        <h3>Drain Replacement</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-heater-repair/" class="service-card">
-        <h3>Water Heater Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-heater-repair/" class="service-card">
-        <h3>Water Heater Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-heater-installation/" class="service-card">
-        <h3>Water Heater Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-heater-installation/" class="service-card">
-        <h3>Water Heater Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/tankless-water-heater-repair/" class="service-card">
-        <h3>Tankless Water Heater Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/tankless-water-heater-repair/" class="service-card">
-        <h3>Tankless Water Heater Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/tankless-water-heater-installation/" class="service-card">
-        <h3>Tankless Water Heater Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/tankless-water-heater-installation/" class="service-card">
-        <h3>Tankless Water Heater Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/backflow-testing-installation/" class="service-card">
-        <h3>Backflow Testing &amp; Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/backflow-testing-installation/" class="service-card">
-        <h3>Backflow Testing &amp; Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/whole-house-repiping/" class="service-card">
-        <h3>Whole House Repiping</h3>
-      </a>
-      
-      <a href="/-il-plumbing/whole-house-repiping/" class="service-card">
-        <h3>Whole House Repiping</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-softener-installation/" class="service-card">
-        <h3>Water Softener Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-softener-installation/" class="service-card">
-        <h3>Water Softener Installation</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-filter-installation-replacement/" class="service-card">
-        <h3>Water Filter Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-filter-installation-replacement/" class="service-card">
-        <h3>Water Filter Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/frozen-broken-pipe-repair/" class="service-card">
-        <h3>Frozen &amp; Broken Pipe Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/frozen-broken-pipe-repair/" class="service-card">
-        <h3>Frozen &amp; Broken Pipe Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/gas-line-install-repair/" class="service-card">
-        <h3>Gas Line Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/gas-line-install-repair/" class="service-card">
-        <h3>Gas Line Services</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sump-pump-install-replacement/" class="service-card">
-        <h3>Sump Pump Installation &amp; Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sump-pump-install-replacement/" class="service-card">
-        <h3>Sump Pump Installation &amp; Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sump-pump-battery-backup-install/" class="service-card">
-        <h3>Sump Pump Battery Backup</h3>
-      </a>
-      
-      <a href="/-il-plumbing/sump-pump-battery-backup-install/" class="service-card">
-        <h3>Sump Pump Battery Backup</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-leak-detection-repair/" class="service-card">
-        <h3>Water Leak Detection &amp; Repair</h3>
-      </a>
-      
-      <a href="/-il-plumbing/water-leak-detection-repair/" class="service-card">
-        <h3>Water Leak Detection &amp; Repair</h3>
-      </a>
-      
-    </div>
-  </div>
-</section>
-
-<section class="location-cta">
-  <div class="container">
-    <h2>Need a Plumber in Fort Sheridan?</h2>
-    <p>Our team of licensed, bonded, and insured plumbing professionals serve Fort Sheridan and the surrounding IL area. Available 24/7 for emergency service.</p>
+    <h2>Ready for Professional Plumbing Service in Fort Sheridan?</h2>
+    <p>Contact Plumbers 911 Chicago. Licensed, bonded, and insured. Serving Fort Sheridan, IL and surrounding areas.</p>
     <div class="cta-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
-      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+      <a href="/contact-us/" class="btn btn-outline btn-lg">Request Call Back</a>
     </div>
   </div>
 </section>
 
 <section class="nearby-locations">
-  <div class="container">
+  <div class="container" style="text-align:center;">
     <h2>Nearby Service Areas</h2>
-    <ul class="location-list">
+    <div class="nearby-grid">
       
-      <li><a href="/evergreen-park-il-plumbing">Evergreen Park, IL</a></li>
+      <a href="/evergreen-park-il-plumbing" class="location-card">
+        <h3>Evergreen Park, IL</h3>
+      </a>
       
-      <li><a href="/flossmoor-il-plumbing">Flossmoor, IL</a></li>
+      <a href="/flossmoor-il-plumbing" class="location-card">
+        <h3>Flossmoor, IL</h3>
+      </a>
       
-      <li><a href="/forest-park-il-plumbing">Forest Park, IL</a></li>
+      <a href="/forest-park-il-plumbing" class="location-card">
+        <h3>Forest Park, IL</h3>
+      </a>
       
-      <li><a href="/fox-river-grove-il-plumbing">Fox River Grove, IL</a></li>
+      <a href="/fox-river-grove-il-plumbing" class="location-card">
+        <h3>Fox River Grove, IL</h3>
+      </a>
       
-      <li><a href="/fox-valley-il-plumbing">Fox Valley, IL</a></li>
+      <a href="/fox-valley-il-plumbing" class="location-card">
+        <h3>Fox Valley, IL</h3>
+      </a>
       
-      <li><a href="/franklin-park-il-plumbing">Franklin Park, IL</a></li>
+      <a href="/franklin-park-il-plumbing" class="location-card">
+        <h3>Franklin Park, IL</h3>
+      </a>
       
-    </ul>
-    <a href="/service-area/" class="btn btn-outline">View All Service Areas</a>
+    </div>
+    <a href="/service-area/" class="btn btn-outline" style="margin-top:1.5rem;">View All Service Areas</a>
   </div>
 </section>
 

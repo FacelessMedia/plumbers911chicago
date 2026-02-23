@@ -257,6 +257,11 @@ p { margin-bottom: 1rem; }
 .related-link { display: inline-block; padding: .4rem .85rem; background: var(--light); border: 1px solid var(--gray-200); border-radius: 4px; font-size: .85rem; color: var(--gray-700); }
 .related-link:hover { background: var(--red); color: var(--white); border-color: var(--red); }
 
+/* ===== LOCATION PAGE (Phase 36) ===== */
+.location-main { padding: 2.5rem 0; }
+.location-services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .75rem; margin-top: 1rem; margin-bottom: 2rem; }
+.nearby-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: .75rem; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+
 /* ===== CARDS (service/location) ===== */
 .service-card, .location-card { background: var(--white); border-radius: 4px; padding: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); border: 1px solid var(--gray-200); transition: all .2s; text-decoration: none; display: block; }
 .service-card:hover, .location-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.1); transform: translateY(-2px); border-color: var(--red); color: var(--gray-900); }

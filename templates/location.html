@@ -1,56 +1,99 @@
-<!-- Template: LOCATION / CITY PAGE -->
-<!-- Extends: _base.html -->
+<!-- Template: LOCATION / CITY PAGE (Phase 36 redesign) -->
 <!-- Data source: data/locations.json -->
-<!-- Each location has: id, title, slug, city_slug, city_name, state, url_path, content, seo, images -->
 
 <section class="page-hero page-hero--location">
   <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/service-area/">Service Area</a> &rsaquo; <span>{{city_name}}, {{state}}</span>
+    </nav>
     <h1>Plumber in {{city_name}}, {{state}}</h1>
-    <p class="hero-subtitle">Licensed Plumbing Services in {{city_name}} &amp; Surrounding Areas</p>
-    <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
-  </div>
-</section>
-
-<section class="location-intro">
-  <div class="container">
-    <article class="content-body">
-      {{{content}}}
-    </article>
-  </div>
-</section>
-
-<section class="location-services">
-  <div class="container">
-    <h2>Plumbing Services in {{city_name}}, {{state}}</h2>
-    <div class="services-grid">
-      {{#each service_index}}
-      <a href="/{{../city_slug}}-il-plumbing/{{service_slug}}/" class="service-card">
-        <h3>{{service_name}}</h3>
-      </a>
-      {{/each}}
+    <p class="hero-location">Licensed, Bonded &amp; Insured &bull; Available 24/7 &bull; Free Estimates</p>
+    <div class="hero-actions">
+      <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+      <a href="/contact-us/" class="btn btn-cta-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">Get Free Estimate</a>
     </div>
   </div>
 </section>
 
-<section class="location-cta">
+<section class="location-main">
+  <div class="container service-grid-layout">
+
+    <article class="service-content-col">
+      <div class="trust-strip">
+        <span class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          Licensed &amp; Insured
+        </span>
+        <span class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          24/7 Emergency Service
+        </span>
+        <span class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Serving {{city_name}}
+        </span>
+      </div>
+
+      <div class="content-body">
+        {{{content}}}
+      </div>
+
+      <h2>Plumbing Services Available in {{city_name}}, {{state}}</h2>
+      <div class="location-services-grid">
+        {{#each service_index}}
+        <a href="/chicago-il-plumbing/{{service_slug}}/" class="service-card">
+          <h3>{{service_name}}</h3>
+        </a>
+        {{/each}}
+      </div>
+    </article>
+
+    <aside class="service-sidebar-col">
+      <div class="sidebar-cta">
+        <h3>Need a Plumber in {{city_name}}?</h3>
+        <p>Our licensed plumbers serve {{city_name}} and surrounding areas. Available 24/7.</p>
+        <a href="tel:8337586911" class="btn btn-primary btn-block">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.49a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.01l-2.2 2.23z"/></svg>
+          Call 833-758-6911
+        </a>
+        <a href="/contact-us/" class="btn btn-outline btn-block">Request a Call Back</a>
+      </div>
+
+      <div class="sidebar-form-mini">
+        <h4>Quick Quote Request</h4>
+        <form method="post" action="/api/contact">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="hidden" name="city" value="{{city_name}}">
+          <button type="submit" class="btn btn-submit">Get Free Quote</button>
+        </form>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<section class="cta-banner">
   <div class="container">
-    <h2>Need a Plumber in {{city_name}}?</h2>
-    <p>Our team of licensed, bonded, and insured plumbing professionals serve {{city_name}} and the surrounding {{state}} area. Available 24/7 for emergency service.</p>
+    <h2>Ready for Professional Plumbing Service in {{city_name}}?</h2>
+    <p>Contact Plumbers 911 Chicago. Licensed, bonded, and insured. Serving {{city_name}}, IL and surrounding areas.</p>
     <div class="cta-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
-      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+      <a href="/contact-us/" class="btn btn-outline btn-lg">Request Call Back</a>
     </div>
   </div>
 </section>
 
 <section class="nearby-locations">
-  <div class="container">
+  <div class="container" style="text-align:center;">
     <h2>Nearby Service Areas</h2>
-    <ul class="location-list">
+    <div class="nearby-grid">
       {{#each nearby_locations}}
-      <li><a href="{{url_path}}">{{city_name}}, {{state}}</a></li>
+      <a href="{{url_path}}" class="location-card">
+        <h3>{{city_name}}, {{state}}</h3>
+      </a>
       {{/each}}
-    </ul>
-    <a href="/service-area/" class="btn btn-outline">View All Service Areas</a>
+    </div>
+    <a href="/service-area/" class="btn btn-outline" style="margin-top:1.5rem;">View All Service Areas</a>
   </div>
 </section>
