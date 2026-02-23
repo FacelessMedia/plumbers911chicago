@@ -1,12 +1,36 @@
-<!-- Template: SERVICE AREA PAGE -->
-<!-- Extends: _base.html -->
+<!-- Template: SERVICE AREA PAGE (Phase 50 redesign) -->
 <!-- Data source: data/pages_service_area.json + data/location_index.json -->
 
 <section class="page-hero page-hero--service-area">
   <div class="container">
-    <h1>Our Service Area</h1>
-    <p>Currently Serving 244+ Cities in 14 Counties Throughout Illinois</p>
-    <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <span>Service Area</span>
+    </nav>
+    <h1>Plumbers 911 Chicago Service Area</h1>
+    <p>Licensed Plumbing Professionals Serving 188+ Cities Across Illinois</p>
+    <div class="hero-actions">
+      <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+      <a href="/contact-us/" class="btn btn-cta-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">Get Free Estimate</a>
+    </div>
+  </div>
+</section>
+
+<section class="service-area-stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">188+</span>
+        <span class="stat-label">Cities Served</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Emergency Service</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Licensed &amp; Insured</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -23,10 +47,13 @@
 <section class="location-directory">
   <div class="container">
     <h2>Find a Plumber Near You</h2>
+    <p style="text-align:center; color:#6c757d; margin-bottom:1.5rem;">Search for your city below or browse our complete service area. All cities have access to our full range of plumbing services.</p>
 
     <div class="location-search">
-      <input type="text" id="location-search" placeholder="Search by city name..." aria-label="Search cities">
+      <input type="text" id="location-search" placeholder="Type your city name..." aria-label="Search cities">
     </div>
+
+    <p id="location-count" style="text-align:center; font-size:.85rem; color:#6c757d; margin-bottom:1rem;"></p>
 
     <div class="location-grid" id="location-grid">
       {{#each location_index}}
@@ -41,22 +68,31 @@
 <section class="cta-banner">
   <div class="container">
     <h2>Don't See Your City?</h2>
-    <p>We may still be able to help. Give us a call to check if we serve your area.</p>
+    <p>We may still be able to help. Our service area is growing. Give us a call to check availability in your area.</p>
     <div class="cta-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
-      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+      <a href="/contact-us/" class="btn btn-outline btn-lg">Request Call Back</a>
     </div>
   </div>
 </section>
 
 <script>
-  // Simple client-side city search filter
-  document.getElementById('location-search').addEventListener('input', function(e) {
-    var query = e.target.value.toLowerCase();
+  document.addEventListener('DOMContentLoaded', function() {
     var cards = document.querySelectorAll('.location-card');
-    cards.forEach(function(card) {
-      var city = card.getAttribute('data-city').toLowerCase();
-      card.style.display = city.includes(query) ? '' : 'none';
+    var countEl = document.getElementById('location-count');
+    var total = cards.length;
+    countEl.textContent = 'Showing all ' + total + ' cities';
+
+    document.getElementById('location-search').addEventListener('input', function(e) {
+      var query = e.target.value.toLowerCase();
+      var visible = 0;
+      cards.forEach(function(card) {
+        var city = card.getAttribute('data-city').toLowerCase();
+        var show = city.includes(query);
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      countEl.textContent = query ? 'Showing ' + visible + ' of ' + total + ' cities' : 'Showing all ' + total + ' cities';
     });
   });
 </script>
