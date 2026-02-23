@@ -101,12 +101,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://plumbers911chicago.com/blog/cook-county-plumbing-services/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://plumbers911chicago.com/blog/do-hot-water-heater-blankets-work/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://plumbers911chicago.com/blog/drain-cleaning-cost-chicago/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://plumbers911chicago.com/blog/dupage-county-plumbing-services/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -156,7 +166,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://plumbers911chicago.com/blog/plumbing-faq/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://plumbers911chicago.com/blog/prevent-frozen-pipes-chicago-winter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://plumbers911chicago.com/blog/reviews/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -167,6 +187,11 @@
   </url>
   <url>
     <loc>https://plumbers911chicago.com/blog/signs-you-need-sewer-line-replacement/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://plumbers911chicago.com/blog/sitemap/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -207,6 +232,11 @@
   </url>
   <url>
     <loc>https://plumbers911chicago.com/blog/why-water-bill-so-high-hidden-leaks/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://plumbers911chicago.com/blog/will-county-plumbing-services/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
