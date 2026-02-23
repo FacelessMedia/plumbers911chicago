@@ -1,10 +1,37 @@
-<!-- Template: ABOUT PAGE -->
-<!-- Extends: _base.html -->
+<!-- Template: ABOUT PAGE (Phase 70+74 improvements) -->
 <!-- Data source: data/pages_about.json -->
 
 <section class="page-hero page-hero--about">
   <div class="container">
-    <h1>{{title}}</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <span>About Us</span>
+    </nav>
+    <h1>About Plumbers 911 Chicago</h1>
+    <p>Licensed, Bonded &amp; Insured Plumbing Professionals Serving Illinois</p>
+  </div>
+</section>
+
+<!-- Phase 70: Trust badges strip -->
+<section class="trust-banner">
+  <div class="container">
+    <div class="trust-banner-grid">
+      <div class="trust-banner-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        <div><strong>Licensed &amp; Insured</strong><br><small>All plumbers fully credentialed</small></div>
+      </div>
+      <div class="trust-banner-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <div><strong>24/7 Emergency Service</strong><br><small>Available nights, weekends, holidays</small></div>
+      </div>
+      <div class="trust-banner-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div><strong>Satisfaction Guaranteed</strong><br><small>We stand behind every job</small></div>
+      </div>
+      <div class="trust-banner-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><strong>188+ Cities Served</strong><br><small>Across the Chicago metro area</small></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -17,19 +44,42 @@
 </section>
 
 <section class="about-values">
-  <div class="container">
+  <div class="container" style="text-align:center;">
+    <h2>Why Choose Plumbers 911 Chicago?</h2>
     <div class="values-grid">
       <div class="value-card">
-        <h3>Licensed &amp; Insured</h3>
-        <p>All of our plumbing professionals are fully licensed, bonded, and insured for your protection.</p>
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        <h3>Fully Vetted Professionals</h3>
+        <p>Every plumber in our network passes a rigorous vetting process. Background checks, license verification, and insurance confirmation — guaranteed.</p>
       </div>
       <div class="value-card">
-        <h3>24/7 Availability</h3>
-        <p>Plumbing emergencies don't wait, and neither do we. Our team is available around the clock.</p>
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        <h3>Transparent Pricing</h3>
+        <p>No surprises, no hidden fees. You receive a detailed, written estimate before any work begins. If the price changes, we discuss it with you first.</p>
       </div>
       <div class="value-card">
-        <h3>Satisfaction Guaranteed</h3>
-        <p>We stand behind our work with a satisfaction guarantee on every service call.</p>
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h3>Fast Response Times</h3>
+        <p>For emergencies, we typically dispatch a licensed plumber within 30-60 minutes. For scheduled service, we offer same-day and next-day appointments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-stats">
+  <div class="container">
+    <div class="stats-grid" style="max-width:800px;">
+      <div class="stat-card">
+        <span class="stat-number">188+</span>
+        <span class="stat-label">Cities Served</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Emergency Service</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">30+</span>
+        <span class="stat-label">Plumbing Services</span>
       </div>
     </div>
   </div>
@@ -37,11 +87,11 @@
 
 <section class="cta-banner">
   <div class="container">
-    <h2>Ready to Get Started?</h2>
-    <p>Contact Plumbers 911 Chicago for fast, reliable plumbing service.</p>
+    <h2>Ready to Experience the Plumbers 911 Difference?</h2>
+    <p>Contact us today for fast, reliable, and professional plumbing service throughout Chicago and Illinois.</p>
     <div class="cta-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
-      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+      <a href="/contact-us/" class="btn btn-outline btn-lg">Request Call Back</a>
     </div>
   </div>
 </section>
