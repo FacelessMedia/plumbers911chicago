@@ -1,0 +1,60 @@
+<!-- Template: BLOG INDEX (listing) -->
+<!-- Extends: _base.html -->
+<!-- Data source: data/blog_posts.json -->
+
+<section class="page-hero page-hero--blog">
+  <div class="container">
+    <h1>Plumbing Tips &amp; Resources</h1>
+    <p>Expert advice from the Plumbers 911 Chicago team</p>
+  </div>
+</section>
+
+<section class="blog-listing">
+  <div class="container">
+
+    <div class="blog-filters">
+      <ul class="category-filter">
+        <li><a href="/blog/" class="{{#if active_all}}active{{/if}}">All</a></li>
+        {{#each categories}}
+        <li><a href="/category/{{slug}}/" class="{{#if active}}active{{/if}}">{{name}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="posts-grid">
+      {{#each blog_posts}}
+      <article class="post-card">
+        {{#if featured_image_url}}
+        <img src="{{featured_image_url}}" alt="{{title}}" class="post-card-image" loading="lazy">
+        {{/if}}
+        <div class="post-card-body">
+          <div class="post-card-meta">
+            {{#each categories}}
+            <span class="post-category">{{name}}</span>
+            {{/each}}
+            <time datetime="{{date}}">{{date_formatted}}</time>
+          </div>
+          <h2><a href="{{url_path}}">{{title}}</a></h2>
+          {{#if excerpt}}
+          <p>{{excerpt}}</p>
+          {{/if}}
+          <a href="{{url_path}}" class="read-more">Read More &rarr;</a>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+
+    {{#if pagination}}
+    <nav class="pagination" aria-label="Blog pagination">
+      {{#if pagination.prev}}
+      <a href="{{pagination.prev}}" class="btn btn-outline">&larr; Newer Posts</a>
+      {{/if}}
+      <span class="page-info">Page {{pagination.current}} of {{pagination.total}}</span>
+      {{#if pagination.next}}
+      <a href="{{pagination.next}}" class="btn btn-outline">Older Posts &rarr;</a>
+      {{/if}}
+    </nav>
+    {{/if}}
+
+  </div>
+</section>

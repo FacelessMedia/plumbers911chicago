@@ -1,0 +1,66 @@
+<!-- Template: BLOG POST (single) -->
+<!-- Extends: _base.html -->
+<!-- Data source: data/blog_posts.json -->
+<!-- Each post has: id, title, slug, url_path, date, modified, author, content, excerpt, seo, images, categories, tags, featured_image_id -->
+
+<article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="container">
+      <div class="post-meta">
+        {{#each categories}}
+        <a href="/category/{{slug}}/" class="post-category">{{name}}</a>
+        {{/each}}
+        <time datetime="{{date}}" itemprop="datePublished">{{date_formatted}}</time>
+      </div>
+      <h1 itemprop="headline">{{title}}</h1>
+      {{#if featured_image_url}}
+      <img src="{{featured_image_url}}" alt="{{title}}" class="post-featured-image" itemprop="image" loading="lazy">
+      {{/if}}
+    </div>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="container">
+      {{{content}}}
+    </div>
+  </div>
+
+  <footer class="post-footer">
+    <div class="container">
+      {{#if tags.length}}
+      <div class="post-tags">
+        <strong>Tags:</strong>
+        {{#each tags}}
+        <a href="/tag/{{slug}}/" class="tag">{{name}}</a>
+        {{/each}}
+      </div>
+      {{/if}}
+    </div>
+  </footer>
+</article>
+
+<section class="post-cta">
+  <div class="container">
+    <h2>Need Plumbing Help?</h2>
+    <p>Our licensed plumbers are available 24/7. Call now or request a callback.</p>
+    <div class="cta-actions">
+      <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+    </div>
+  </div>
+</section>
+
+<section class="related-posts">
+  <div class="container">
+    <h2>Related Articles</h2>
+    <div class="posts-grid">
+      {{#each related_posts}}
+      <a href="{{url_path}}" class="post-card">
+        <h3>{{title}}</h3>
+        <time datetime="{{date}}">{{date_formatted}}</time>
+      </a>
+      {{/each}}
+    </div>
+    <a href="/blog/" class="btn btn-outline">View All Posts</a>
+  </div>
+</section>

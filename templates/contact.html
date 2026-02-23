@@ -1,0 +1,72 @@
+<!-- Template: CONTACT PAGE -->
+<!-- Extends: _base.html -->
+<!-- Data source: data/pages_contact.json -->
+
+<section class="page-hero page-hero--contact">
+  <div class="container">
+    <h1>{{title}}</h1>
+    <p>Get in touch with our plumbing experts</p>
+  </div>
+</section>
+
+<section class="contact-content">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-form-wrap">
+        <h2>Schedule Your Plumbing Service Appointment</h2>
+        <form id="contact-form" method="post" action="/api/contact">
+          <div class="form-group">
+            <label for="zip">Zip Code <span class="required">*</span></label>
+            <input type="text" id="zip" name="zip" pattern="\d{5}" placeholder="Zip Code" required>
+            <small>Please provide the Zip Code where the plumbing service is being requested.</small>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Your Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="888-888-8888" required>
+            <small>Please provide your phone number for us to contact you.</small>
+          </div>
+          <p class="form-urgent">
+            <strong>If you are in need of immediate plumbing service please call
+            <a href="tel:8337586911">833-758-6911</a></strong>
+          </p>
+          <button type="submit" class="btn btn-primary">Request Call Back</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-card">
+          <h3>Call Us</h3>
+          <a href="tel:8337586911" class="phone-number">833-758-6911</a>
+          <p>Available 24/7 for emergency service</p>
+        </div>
+        <div class="info-card">
+          <h3>Email</h3>
+          <a href="mailto:Support@Plumbers911Chicago.com">Support@Plumbers911Chicago.com</a>
+        </div>
+        <div class="info-card">
+          <h3>Service Area</h3>
+          <p>Serving 244+ cities across 14 counties in Illinois</p>
+          <a href="/service-area/">View Full Service Area</a>
+        </div>
+      </div>
+
+    </div>
+
+    {{#if content}}
+    <div class="content-body">
+      {{{content}}}
+    </div>
+    {{/if}}
+  </div>
+</section>

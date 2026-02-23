@@ -1,0 +1,57 @@
+<!-- Template: SERVICE PAGE -->
+<!-- Extends: _base.html -->
+<!-- Data source: data/services.json -->
+<!-- Each service object has: id, title, slug, service_slug, service_name, url_path, content, seo, images -->
+
+<section class="page-hero page-hero--service">
+  <div class="container">
+    <h1>{{service_name}}</h1>
+    <p class="hero-location">Chicago, IL &amp; Surrounding Areas</p>
+    <a href="tel:8337586911" class="btn btn-primary">Call 833-758-6911</a>
+  </div>
+</section>
+
+<article class="service-content">
+  <div class="container">
+    <div class="content-body">
+      {{{content}}}
+    </div>
+  </div>
+</article>
+
+<aside class="service-sidebar">
+  <div class="container">
+    <div class="sidebar-cta">
+      <h3>Need {{service_name}}?</h3>
+      <p>Our licensed plumbers are available 24/7 for emergency and scheduled service.</p>
+      <a href="tel:8337586911" class="btn btn-primary btn-block">Call 833-758-6911</a>
+      <a href="/contact/" class="btn btn-outline btn-block">Request a Call Back</a>
+    </div>
+
+    <div class="sidebar-services">
+      <h4>Our Services</h4>
+      <ul>
+        {{#each service_index}}
+        <li><a href="{{url_path}}">{{service_name}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="sidebar-areas">
+      <h4>Service Areas</h4>
+      <p>We serve 244+ cities across Illinois.</p>
+      <a href="/service-area/">View All Locations</a>
+    </div>
+  </div>
+</aside>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Ready to Schedule Your Service?</h2>
+    <p>Contact Plumbers 911 Chicago for fast, reliable {{service_name}} service.</p>
+    <div class="cta-actions">
+      <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+    </div>
+  </div>
+</section>

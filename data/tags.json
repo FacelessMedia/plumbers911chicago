@@ -1,0 +1,297 @@
+[
+  {
+    "id": "46",
+    "slug": "backflow",
+    "name": "backflow"
+  },
+  {
+    "id": "33",
+    "slug": "bathroom",
+    "name": "bathroom"
+  },
+  {
+    "id": "34",
+    "slug": "bathroom-faucet",
+    "name": "bathroom faucet"
+  },
+  {
+    "id": "35",
+    "slug": "bathroom-sink",
+    "name": "bathroom sink"
+  },
+  {
+    "id": "36",
+    "slug": "bathtub",
+    "name": "bathtub"
+  },
+  {
+    "id": "79",
+    "slug": "bleach",
+    "name": "bleach"
+  },
+  {
+    "id": "74",
+    "slug": "cast-iron",
+    "name": "cast iron"
+  },
+  {
+    "id": "66",
+    "slug": "copper-pipe",
+    "name": "copper pipe"
+  },
+  {
+    "id": "21",
+    "slug": "dishwasher",
+    "name": "dishwasher"
+  },
+  {
+    "id": "44",
+    "slug": "drain",
+    "name": "drain"
+  },
+  {
+    "id": "56",
+    "slug": "drain-cleaner",
+    "name": "drain cleaner"
+  },
+  {
+    "id": "22",
+    "slug": "faucet",
+    "name": "faucet"
+  },
+  {
+    "id": "54",
+    "slug": "frozen-pipe",
+    "name": "frozen pipe"
+  },
+  {
+    "id": "23",
+    "slug": "garbage-disposal",
+    "name": "garbage disposal"
+  },
+  {
+    "id": "43",
+    "slug": "gas-line",
+    "name": "gas line"
+  },
+  {
+    "id": "51",
+    "slug": "grease-trap",
+    "name": "grease trap"
+  },
+  {
+    "id": "48",
+    "slug": "hot-tub",
+    "name": "hot tub"
+  },
+  {
+    "id": "64",
+    "slug": "hot-water",
+    "name": "hot water"
+  },
+  {
+    "id": "60",
+    "slug": "hot-water-tank",
+    "name": "hot water tank"
+  },
+  {
+    "id": "71",
+    "slug": "hydro-jet",
+    "name": "hydro jet"
+  },
+  {
+    "id": "59",
+    "slug": "hydro-jetting",
+    "name": "hydro jetting"
+  },
+  {
+    "id": "69",
+    "slug": "indoor-plumbing",
+    "name": "indoor plumbing"
+  },
+  {
+    "id": "57",
+    "slug": "inspection",
+    "name": "inspection"
+  },
+  {
+    "id": "37",
+    "slug": "kitchen",
+    "name": "kitchen"
+  },
+  {
+    "id": "38",
+    "slug": "kitchen-faucet",
+    "name": "kitchen faucet"
+  },
+  {
+    "id": "39",
+    "slug": "kitchen-sink",
+    "name": "kitchen sink"
+  },
+  {
+    "id": "72",
+    "slug": "liquid-plumber",
+    "name": "liquid plumber"
+  },
+  {
+    "id": "70",
+    "slug": "main-line",
+    "name": "main line"
+  },
+  {
+    "id": "75",
+    "slug": "main-water-line",
+    "name": "main water line"
+  },
+  {
+    "id": "78",
+    "slug": "permit",
+    "name": "permit"
+  },
+  {
+    "id": "52",
+    "slug": "pex",
+    "name": "pex"
+  },
+  {
+    "id": "40",
+    "slug": "piping",
+    "name": "piping"
+  },
+  {
+    "id": "63",
+    "slug": "plumber-putty",
+    "name": "plumber putty"
+  },
+  {
+    "id": "77",
+    "slug": "plumbing-contractor",
+    "name": "plumbing contractor"
+  },
+  {
+    "id": "50",
+    "slug": "plumbing-license",
+    "name": "plumbing license"
+  },
+  {
+    "id": "55",
+    "slug": "plumbing-snake",
+    "name": "plumbing snake"
+  },
+  {
+    "id": "67",
+    "slug": "plumbing-solder",
+    "name": "plumbing solder"
+  },
+  {
+    "id": "73",
+    "slug": "plumbing-system",
+    "name": "plumbing system"
+  },
+  {
+    "id": "65",
+    "slug": "plumbing-tape",
+    "name": "plumbing tape"
+  },
+  {
+    "id": "58",
+    "slug": "plumbing-vent",
+    "name": "plumbing vent"
+  },
+  {
+    "id": "49",
+    "slug": "pvc",
+    "name": "pvc"
+  },
+  {
+    "id": "24",
+    "slug": "septic-tank",
+    "name": "septic tank"
+  },
+  {
+    "id": "25",
+    "slug": "sewer",
+    "name": "sewer"
+  },
+  {
+    "id": "26",
+    "slug": "shower",
+    "name": "shower"
+  },
+  {
+    "id": "27",
+    "slug": "sink",
+    "name": "sink"
+  },
+  {
+    "id": "62",
+    "slug": "slab-leak",
+    "name": "slab leak"
+  },
+  {
+    "id": "28",
+    "slug": "sump-pump",
+    "name": "sump pump"
+  },
+  {
+    "id": "45",
+    "slug": "tankless-water-heater",
+    "name": "tankless water heater"
+  },
+  {
+    "id": "29",
+    "slug": "toilet",
+    "name": "toilet"
+  },
+  {
+    "id": "68",
+    "slug": "warranty",
+    "name": "warranty"
+  },
+  {
+    "id": "30",
+    "slug": "washing-machine",
+    "name": "washing machine"
+  },
+  {
+    "id": "47",
+    "slug": "water-filter",
+    "name": "water filter"
+  },
+  {
+    "id": "41",
+    "slug": "water-filtration",
+    "name": "water filtration"
+  },
+  {
+    "id": "76",
+    "slug": "water-hammer",
+    "name": "water hammer"
+  },
+  {
+    "id": "31",
+    "slug": "water-heater",
+    "name": "water heater"
+  },
+  {
+    "id": "42",
+    "slug": "water-leak",
+    "name": "water leak"
+  },
+  {
+    "id": "61",
+    "slug": "water-pipe",
+    "name": "water pipe"
+  },
+  {
+    "id": "53",
+    "slug": "water-pressure",
+    "name": "water pressure"
+  },
+  {
+    "id": "32",
+    "slug": "water-softener",
+    "name": "water softener"
+  }
+]

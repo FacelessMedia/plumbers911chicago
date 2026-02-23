@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{seo.title}} | {{site.title}}</title>
+  <meta name="description" content="{{seo.description}}">
+  {{#if seo.canonical_url}}
+  <link rel="canonical" href="{{seo.canonical_url}}">
+  {{/if}}
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="page-{{page_type}}">
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="/assets/images/logo.png" alt="Plumbers 911 Chicago" width="285" height="80">
+      </a>
+      <a href="tel:8337586911" class="header-phone">833-758-6911</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          {{#each navigation}}
+          <li class="nav-item {{#if children}}has-children{{/if}}">
+            {{#if url}}
+            <a href="{{url}}">{{title}}</a>
+            {{else}}
+            <span class="nav-label">{{title}}</span>
+            {{/if}}
+            {{#if children}}
+            <ul class="nav-submenu">
+              {{#each children}}
+              <li>
+                {{#if is_label}}
+                <span class="submenu-label">{{title}}</span>
+                {{else}}
+                <a href="{{url}}">{{title}}</a>
+                {{/if}}
+              </li>
+              {{/each}}
+            </ul>
+            {{/if}}
+          </li>
+          {{/each}}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+    {{> content}}
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/images/logo-white.png" alt="Plumbers 911 Chicago" width="285" height="80">
+        <p>Licensed, Bonded & Insured Plumbing Professionals</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <ul>
+          {{#each service_index}}
+          <li><a href="{{url_path}}">{{service_name}}</a></li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><a href="tel:8337586911">833-758-6911</a></p>
+        <p><a href="/contact/">Request a Call Back</a></p>
+        <p><a href="/service-area/">View Service Area</a></p>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; {{current_year}} Plumbers 911 Chicago. All rights reserved.</p>
+        <a href="/privacy-policy/">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

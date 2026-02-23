@@ -1,0 +1,56 @@
+<!-- Template: LOCATION / CITY PAGE -->
+<!-- Extends: _base.html -->
+<!-- Data source: data/locations.json -->
+<!-- Each location has: id, title, slug, city_slug, city_name, state, url_path, content, seo, images -->
+
+<section class="page-hero page-hero--location">
+  <div class="container">
+    <h1>Plumber in {{city_name}}, {{state}}</h1>
+    <p class="hero-subtitle">Licensed Plumbing Services in {{city_name}} &amp; Surrounding Areas</p>
+    <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+  </div>
+</section>
+
+<section class="location-intro">
+  <div class="container">
+    <article class="content-body">
+      {{{content}}}
+    </article>
+  </div>
+</section>
+
+<section class="location-services">
+  <div class="container">
+    <h2>Plumbing Services in {{city_name}}, {{state}}</h2>
+    <div class="services-grid">
+      {{#each service_index}}
+      <a href="/{{../city_slug}}-il-plumbing/{{service_slug}}/" class="service-card">
+        <h3>{{service_name}}</h3>
+      </a>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="location-cta">
+  <div class="container">
+    <h2>Need a Plumber in {{city_name}}?</h2>
+    <p>Our team of licensed, bonded, and insured plumbing professionals serve {{city_name}} and the surrounding {{state}} area. Available 24/7 for emergency service.</p>
+    <div class="cta-actions">
+      <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+    </div>
+  </div>
+</section>
+
+<section class="nearby-locations">
+  <div class="container">
+    <h2>Nearby Service Areas</h2>
+    <ul class="location-list">
+      {{#each nearby_locations}}
+      <li><a href="{{url_path}}">{{city_name}}, {{state}}</a></li>
+      {{/each}}
+    </ul>
+    <a href="/service-area/" class="btn btn-outline">View All Service Areas</a>
+  </div>
+</section>

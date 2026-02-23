@@ -1,0 +1,458 @@
+[
+  {
+    "service_name": "Emergency Plumber",
+    "service_slug": "emergency-plumber",
+    "url_path": "/chicago-il-plumbing/emergency-plumber",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "service_name": "Emergency Plumber",
+    "service_slug": "emergency-plumber",
+    "url_path": "/arlington-heights-il-plumbing/emergency-plumber",
+    "seo": {
+      "seo_score": "27"
+    }
+  },
+  {
+    "service_name": "Residential Plumbing",
+    "service_slug": "residential-plumbing",
+    "url_path": "/chicago-il-plumbing/residential-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Residential Plumbing",
+    "service_slug": "residential-plumbing",
+    "url_path": "/arlington-heights-il-plumbing/residential-plumbing",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Residential Plumbing",
+    "service_slug": "residential-plumbing-coupon",
+    "url_path": "/chicago-il-plumbing/residential-plumbing-coupon",
+    "seo": {
+      "seo_score": "27"
+    }
+  },
+  {
+    "service_name": "Commercial Plumbing",
+    "service_slug": "commercial-plumbing",
+    "url_path": "/chicago-il-plumbing/commercial-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Commercial Plumbing",
+    "service_slug": "commercial-plumbing",
+    "url_path": "/arlington-heights-il-plumbing/commercial-plumbing",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Bathroom Remodeling",
+    "service_slug": "bathroom-remodeling",
+    "url_path": "/chicago-il-plumbing/bathroom-remodeling",
+    "seo": {
+      "seo_score": "31"
+    }
+  },
+  {
+    "service_name": "Bathroom Remodeling",
+    "service_slug": "bathroom-remodeling",
+    "url_path": "/arlington-heights-il-plumbing/bathroom-remodeling",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Toilet Services",
+    "service_slug": "toilet-install",
+    "url_path": "/chicago-il-plumbing/toilet-install",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Toilet Services",
+    "service_slug": "toilet-install",
+    "url_path": "/arlington-heights-il-plumbing/toilet-install",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Kitchen Remodeling",
+    "service_slug": "kitchen-remodeling",
+    "url_path": "/chicago-il-plumbing/kitchen-remodeling",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Kitchen Remodeling",
+    "service_slug": "kitchen-remodeling",
+    "url_path": "/arlington-heights-il-plumbing/kitchen-remodeling",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Dishwasher Installation",
+    "service_slug": "dishwasher-install",
+    "url_path": "/chicago-il-plumbing/dishwasher-install",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Dishwasher Installation",
+    "service_slug": "dishwasher-install",
+    "url_path": "/arlington-heights-il-plumbing/dishwasher-install",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Faucet Services",
+    "service_slug": "faucet-repair",
+    "url_path": "/chicago-il-plumbing/faucet-repair",
+    "seo": {
+      "seo_score": "31"
+    }
+  },
+  {
+    "service_name": "Faucet Services",
+    "service_slug": "faucet-repair",
+    "url_path": "/arlington-heights-il-plumbing/faucet-repair",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Garbage Disposal Services",
+    "service_slug": "garbage-disposal-installation",
+    "url_path": "/chicago-il-plumbing/garbage-disposal-installation",
+    "seo": {
+      "seo_score": "23"
+    }
+  },
+  {
+    "service_name": "Garbage Disposal Services",
+    "service_slug": "garbage-disposal-installation",
+    "url_path": "/arlington-heights-il-plumbing/garbage-disposal-installation",
+    "seo": {
+      "seo_score": "26"
+    }
+  },
+  {
+    "service_name": "Sewer Cleaning",
+    "service_slug": "sewer-cleaning",
+    "url_path": "/chicago-il-plumbing/sewer-cleaning",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Sewer Cleaning",
+    "service_slug": "sewer-cleaning",
+    "url_path": "/arlington-heights-il-plumbing/sewer-cleaning",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Sewer Replacement",
+    "service_slug": "sewer-replacement",
+    "url_path": "/chicago-il-plumbing/sewer-replacement",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Sewer Replacement",
+    "service_slug": "sewer-replacement",
+    "url_path": "/arlington-heights-il-plumbing/sewer-replacement",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Sewer Camera Inspection",
+    "service_slug": "sewer-camera-inspection",
+    "url_path": "/chicago-il-plumbing/sewer-camera-inspection",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Sewer Camera Inspection",
+    "service_slug": "sewer-camera-inspection",
+    "url_path": "/arlington-heights-il-plumbing/sewer-camera-inspection",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Sewer Cleanout Installation",
+    "service_slug": "sewer-cleanout-installation",
+    "url_path": "/chicago-il-plumbing/sewer-cleanout-installation",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Sewer Cleanout Installation",
+    "service_slug": "sewer-cleanout-installation",
+    "url_path": "/arlington-heights-il-plumbing/sewer-cleanout-installation",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Drain Cleaning",
+    "service_slug": "drain-cleaning",
+    "url_path": "/chicago-il-plumbing/drain-cleaning",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "service_name": "Drain Cleaning",
+    "service_slug": "drain-cleaning",
+    "url_path": "/arlington-heights-il-plumbing/drain-cleaning",
+    "seo": {
+      "seo_score": "26"
+    }
+  },
+  {
+    "service_name": "Drain Replacement",
+    "service_slug": "drain-replacement",
+    "url_path": "/chicago-il-plumbing/drain-replacement",
+    "seo": {
+      "seo_score": "32"
+    }
+  },
+  {
+    "service_name": "Drain Replacement",
+    "service_slug": "drain-replacement",
+    "url_path": "/arlington-heights-il-plumbing/drain-replacement",
+    "seo": {
+      "seo_score": "26"
+    }
+  },
+  {
+    "service_name": "Water Heater Repair",
+    "service_slug": "water-heater-repair",
+    "url_path": "/chicago-il-plumbing/water-heater-repair",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Water Heater Repair",
+    "service_slug": "water-heater-repair",
+    "url_path": "/arlington-heights-il-plumbing/water-heater-repair",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Water Heater Installation",
+    "service_slug": "water-heater-installation",
+    "url_path": "/chicago-il-plumbing/water-heater-installation",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Water Heater Installation",
+    "service_slug": "water-heater-installation",
+    "url_path": "/arlington-heights-il-plumbing/water-heater-installation",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Tankless Water Heater Repair",
+    "service_slug": "tankless-water-heater-repair",
+    "url_path": "/chicago-il-plumbing/tankless-water-heater-repair",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Tankless Water Heater Repair",
+    "service_slug": "tankless-water-heater-repair",
+    "url_path": "/arlington-heights-il-plumbing/tankless-water-heater-repair",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Tankless Water Heater Installation",
+    "service_slug": "tankless-water-heater-installation",
+    "url_path": "/chicago-il-plumbing/tankless-water-heater-installation",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Tankless Water Heater Installation",
+    "service_slug": "tankless-water-heater-installation",
+    "url_path": "/arlington-heights-il-plumbing/tankless-water-heater-installation",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Backflow Testing & Installation",
+    "service_slug": "backflow-testing-installation",
+    "url_path": "/chicago-il-plumbing/backflow-testing-installation",
+    "seo": {
+      "seo_score": "28"
+    }
+  },
+  {
+    "service_name": "Backflow Testing & Installation",
+    "service_slug": "backflow-testing-installation",
+    "url_path": "/arlington-heights-il-plumbing/backflow-testing-installation",
+    "seo": {
+      "seo_score": "28"
+    }
+  },
+  {
+    "service_name": "Whole House Repiping",
+    "service_slug": "whole-house-repiping",
+    "url_path": "/chicago-il-plumbing/whole-house-repiping",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Whole House Repiping",
+    "service_slug": "whole-house-repiping",
+    "url_path": "/arlington-heights-il-plumbing/whole-house-repiping",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Water Softener Installation",
+    "service_slug": "water-softener-installation",
+    "url_path": "/chicago-il-plumbing/water-softener-installation",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Water Softener Installation",
+    "service_slug": "water-softener-installation",
+    "url_path": "/arlington-heights-il-plumbing/water-softener-installation",
+    "seo": {
+      "seo_score": "22"
+    }
+  },
+  {
+    "service_name": "Water Filter Services",
+    "service_slug": "water-filter-installation-replacement",
+    "url_path": "/chicago-il-plumbing/water-filter-installation-replacement",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Water Filter Services",
+    "service_slug": "water-filter-installation-replacement",
+    "url_path": "/arlington-heights-il-plumbing/water-filter-installation-replacement",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Frozen & Broken Pipe Repair",
+    "service_slug": "frozen-broken-pipe-repair",
+    "url_path": "/chicago-il-plumbing/frozen-broken-pipe-repair",
+    "seo": {
+      "seo_score": "26"
+    }
+  },
+  {
+    "service_name": "Frozen & Broken Pipe Repair",
+    "service_slug": "frozen-broken-pipe-repair",
+    "url_path": "/arlington-heights-il-plumbing/frozen-broken-pipe-repair",
+    "seo": {
+      "seo_score": "26"
+    }
+  },
+  {
+    "service_name": "Gas Line Services",
+    "service_slug": "gas-line-install-repair",
+    "url_path": "/chicago-il-plumbing/gas-line-install-repair",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "service_name": "Gas Line Services",
+    "service_slug": "gas-line-install-repair",
+    "url_path": "/arlington-heights-il-plumbing/gas-line-install-repair",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Sump Pump Installation & Repair",
+    "service_slug": "sump-pump-install-replacement",
+    "url_path": "/chicago-il-plumbing/sump-pump-install-replacement",
+    "seo": {
+      "seo_score": "28"
+    }
+  },
+  {
+    "service_name": "Sump Pump Installation & Repair",
+    "service_slug": "sump-pump-install-replacement",
+    "url_path": "/arlington-heights-il-plumbing/sump-pump-install-replacement",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Sump Pump Battery Backup",
+    "service_slug": "sump-pump-battery-backup-install",
+    "url_path": "/chicago-il-plumbing/sump-pump-battery-backup-install",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Sump Pump Battery Backup",
+    "service_slug": "sump-pump-battery-backup-install",
+    "url_path": "/arlington-heights-il-plumbing/sump-pump-battery-backup-install",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "service_name": "Water Leak Detection & Repair",
+    "service_slug": "water-leak-detection-repair",
+    "url_path": "/chicago-il-plumbing/water-leak-detection-repair",
+    "seo": {
+      "seo_score": "26"
+    }
+  },
+  {
+    "service_name": "Water Leak Detection & Repair",
+    "service_slug": "water-leak-detection-repair",
+    "url_path": "/arlington-heights-il-plumbing/water-leak-detection-repair",
+    "seo": {
+      "seo_score": "26"
+    }
+  }
+]

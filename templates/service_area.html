@@ -1,0 +1,62 @@
+<!-- Template: SERVICE AREA PAGE -->
+<!-- Extends: _base.html -->
+<!-- Data source: data/pages_service_area.json + data/location_index.json -->
+
+<section class="page-hero page-hero--service-area">
+  <div class="container">
+    <h1>Our Service Area</h1>
+    <p>Currently Serving 244+ Cities in 14 Counties Throughout Illinois</p>
+    <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+  </div>
+</section>
+
+{{#if content}}
+<section class="service-area-intro">
+  <div class="container">
+    <article class="content-body">
+      {{{content}}}
+    </article>
+  </div>
+</section>
+{{/if}}
+
+<section class="location-directory">
+  <div class="container">
+    <h2>Find a Plumber Near You</h2>
+
+    <div class="location-search">
+      <input type="text" id="location-search" placeholder="Search by city name..." aria-label="Search cities">
+    </div>
+
+    <div class="location-grid" id="location-grid">
+      {{#each location_index}}
+      <a href="{{url_path}}" class="location-card" data-city="{{city_name}}">
+        <h3>{{city_name}}, {{state}}</h3>
+      </a>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Don't See Your City?</h2>
+    <p>We may still be able to help. Give us a call to check if we serve your area.</p>
+    <div class="cta-actions">
+      <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
+      <a href="/contact/" class="btn btn-outline btn-lg">Request Call Back</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Simple client-side city search filter
+  document.getElementById('location-search').addEventListener('input', function(e) {
+    var query = e.target.value.toLowerCase();
+    var cards = document.querySelectorAll('.location-card');
+    cards.forEach(function(card) {
+      var city = card.getAttribute('data-city').toLowerCase();
+      card.style.display = city.includes(query) ? '' : 'none';
+    });
+  });
+</script>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "5",
+    "slug": "bathroom-faucet",
+    "name": "Bathroom Faucet",
+    "parent": ""
+  },
+  {
+    "id": "6",
+    "slug": "bathroom-sink",
+    "name": "Bathroom Sink",
+    "parent": ""
+  },
+  {
+    "id": "7",
+    "slug": "bathtub",
+    "name": "Bathtub",
+    "parent": ""
+  },
+  {
+    "id": "1",
+    "slug": "blog",
+    "name": "Blog",
+    "parent": ""
+  },
+  {
+    "id": "11",
+    "slug": "garbage-disposal",
+    "name": "Garbage Disposal",
+    "parent": ""
+  },
+  {
+    "id": "12",
+    "slug": "kitchen-faucet",
+    "name": "Kitchen Faucet",
+    "parent": ""
+  },
+  {
+    "id": "13",
+    "slug": "kitchen-sink",
+    "name": "Kitchen Sink",
+    "parent": ""
+  },
+  {
+    "id": "8",
+    "slug": "shower",
+    "name": "Shower",
+    "parent": ""
+  },
+  {
+    "id": "16",
+    "slug": "sump-pump",
+    "name": "Sump Pump",
+    "parent": ""
+  },
+  {
+    "id": "9",
+    "slug": "toilet",
+    "name": "Toilet",
+    "parent": ""
+  },
+  {
+    "id": "18",
+    "slug": "water-filtration",
+    "name": "Water Filtration",
+    "parent": ""
+  },
+  {
+    "id": "19",
+    "slug": "water-heaters",
+    "name": "Water Heaters",
+    "parent": ""
+  }
+]

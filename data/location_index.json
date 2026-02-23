@@ -1,0 +1,2234 @@
+[
+  {
+    "city_name": "Addison",
+    "city_slug": "addison",
+    "state": "IL",
+    "url_path": "/addison-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Algonquin",
+    "city_slug": "algonquin",
+    "state": "IL",
+    "url_path": "/algonquin-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Alsip",
+    "city_slug": "alsip",
+    "state": "IL",
+    "url_path": "/alsip-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Antioch",
+    "city_slug": "antioch",
+    "state": "IL",
+    "url_path": "/antioch-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Arlington Heights",
+    "city_slug": "arlington-heights",
+    "state": "IL",
+    "url_path": "/arlington-heights-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Aurora",
+    "city_slug": "aurora",
+    "state": "IL",
+    "url_path": "/aurora-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Barrington",
+    "city_slug": "barrington",
+    "state": "IL",
+    "url_path": "/barrington-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Bartlett",
+    "city_slug": "bartlett",
+    "state": "IL",
+    "url_path": "/bartlett-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Batavia",
+    "city_slug": "batavia",
+    "state": "IL",
+    "url_path": "/batavia-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Beecher",
+    "city_slug": "beecher",
+    "state": "IL",
+    "url_path": "/beecher-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Bellwood",
+    "city_slug": "bellwood",
+    "state": "IL",
+    "url_path": "/bellwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Bensenville",
+    "city_slug": "bensenville",
+    "state": "IL",
+    "url_path": "/bensenville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Berkeley",
+    "city_slug": "berkeley",
+    "state": "IL",
+    "url_path": "/berkeley-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Berwyn",
+    "city_slug": "berwyn",
+    "state": "IL",
+    "url_path": "/berwyn-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Big Rock",
+    "city_slug": "big-rock",
+    "state": "IL",
+    "url_path": "/big-rock-il-plumbing",
+    "seo": {
+      "seo_score": "27"
+    }
+  },
+  {
+    "city_name": "Blackstone",
+    "city_slug": "blackstone",
+    "state": "IL",
+    "url_path": "/blackstone-il-plumbing",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "city_name": "Bloomingdale",
+    "city_slug": "bloomingdale",
+    "state": "IL",
+    "url_path": "/bloomingdale-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Blue Island",
+    "city_slug": "blue-island",
+    "state": "IL",
+    "url_path": "/blue-island-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Bolingbrook",
+    "city_slug": "bolingbrook",
+    "state": "IL",
+    "url_path": "/bolingbrook-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Braceville",
+    "city_slug": "braceville",
+    "state": "IL",
+    "url_path": "/braceville-il-plumbing",
+    "seo": {
+      "seo_score": "12"
+    }
+  },
+  {
+    "city_name": "Braidwood",
+    "city_slug": "braidwood",
+    "state": "IL",
+    "url_path": "/braidwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Bridgeview",
+    "city_slug": "bridgeview",
+    "state": "IL",
+    "url_path": "/bridgeview-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Bristol",
+    "city_slug": "bristol",
+    "state": "IL",
+    "url_path": "/bristol-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Broadview",
+    "city_slug": "broadview",
+    "state": "IL",
+    "url_path": "/broadview-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Brookfield",
+    "city_slug": "brookfield",
+    "state": "IL",
+    "url_path": "/brookfield-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Buffalo Grove",
+    "city_slug": "buffalo-grove",
+    "state": "IL",
+    "url_path": "/buffalo-grove-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Burbank",
+    "city_slug": "burbank",
+    "state": "IL",
+    "url_path": "/burbank-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Burlington",
+    "city_slug": "burlington",
+    "state": "IL",
+    "url_path": "/burlington-il-plumbing",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "city_name": "Calumet City",
+    "city_slug": "calumet-city",
+    "state": "IL",
+    "url_path": "/calumet-city-il-plumbing",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "city_name": "Carol Stream",
+    "city_slug": "carol-stream",
+    "state": "IL",
+    "url_path": "/carol-stream-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Carpentersville",
+    "city_slug": "carpentersville",
+    "state": "IL",
+    "url_path": "/carpentersville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Cary",
+    "city_slug": "cary",
+    "state": "IL",
+    "url_path": "/cary-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Channahon",
+    "city_slug": "channahon",
+    "state": "IL",
+    "url_path": "/channahon-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Chicago",
+    "city_slug": "chicago",
+    "state": "IL",
+    "url_path": "/chicago-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Chicago Heights",
+    "city_slug": "chicago-heights",
+    "state": "IL",
+    "url_path": "/chicago-heights-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Chicago Ridge",
+    "city_slug": "chicago-ridge",
+    "state": "IL",
+    "url_path": "/chicago-ridge-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Cicero",
+    "city_slug": "cicero",
+    "state": "IL",
+    "url_path": "/cicero-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Clarendon Hills",
+    "city_slug": "clarendon-hills",
+    "state": "IL",
+    "url_path": "/clarendon-hills-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Coal City",
+    "city_slug": "coal-city",
+    "state": "IL",
+    "url_path": "/coal-city-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Cortland",
+    "city_slug": "cortland",
+    "state": "IL",
+    "url_path": "/cortland-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Country Club Hills",
+    "city_slug": "country-club-hills",
+    "state": "IL",
+    "url_path": "/country-club-hills-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Countryside",
+    "city_slug": "countryside",
+    "state": "IL",
+    "url_path": "/countryside-il-plumbing",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "city_name": "Crest Hill",
+    "city_slug": "crest-hill",
+    "state": "IL",
+    "url_path": "/crest-hill-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Crete",
+    "city_slug": "crete",
+    "state": "IL",
+    "url_path": "/crete-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Crystal Lake",
+    "city_slug": "crystal-lake",
+    "state": "IL",
+    "url_path": "/crystal-lake-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Dana",
+    "city_slug": "dana",
+    "state": "IL",
+    "url_path": "/dana-il-plumbing",
+    "seo": {
+      "seo_score": "25"
+    }
+  },
+  {
+    "city_name": "Darien",
+    "city_slug": "darien",
+    "state": "IL",
+    "url_path": "/darien-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Deerfield",
+    "city_slug": "deerfield",
+    "state": "IL",
+    "url_path": "/deerfield-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Dekalb",
+    "city_slug": "dekalb",
+    "state": "IL",
+    "url_path": "/dekalb-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Des Plaines",
+    "city_slug": "des-plaines",
+    "state": "IL",
+    "url_path": "/des-plaines-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Dolton",
+    "city_slug": "dolton",
+    "state": "IL",
+    "url_path": "/dolton-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Downers Grove",
+    "city_slug": "downers-grove",
+    "state": "IL",
+    "url_path": "/downers-grove-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Dundee",
+    "city_slug": "dundee",
+    "state": "IL",
+    "url_path": "/dundee-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Dwight",
+    "city_slug": "dwight",
+    "state": "IL",
+    "url_path": "/dwight-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Elburn",
+    "city_slug": "elburn",
+    "state": "IL",
+    "url_path": "/elburn-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Elgin",
+    "city_slug": "elgin",
+    "state": "IL",
+    "url_path": "/elgin-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Elk Grove Village",
+    "city_slug": "elk-grove-village",
+    "state": "IL",
+    "url_path": "/elk-grove-village-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Elmhurst",
+    "city_slug": "elmhurst",
+    "state": "IL",
+    "url_path": "/elmhurst-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Elmwood Park",
+    "city_slug": "elmwood-park",
+    "state": "IL",
+    "url_path": "/elmwood-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Elwood",
+    "city_slug": "elwood",
+    "state": "IL",
+    "url_path": "/elwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Evanston",
+    "city_slug": "evanston",
+    "state": "IL",
+    "url_path": "/evanston-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Evergreen Park",
+    "city_slug": "evergreen-park",
+    "state": "IL",
+    "url_path": "/evergreen-park-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Flossmoor",
+    "city_slug": "flossmoor",
+    "state": "IL",
+    "url_path": "/flossmoor-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Forest Park",
+    "city_slug": "forest-park",
+    "state": "IL",
+    "url_path": "/forest-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Fort Sheridan",
+    "city_slug": "fort-sheridan",
+    "state": "IL",
+    "url_path": "/fort-sheridan-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Fox River Grove",
+    "city_slug": "fox-river-grove",
+    "state": "IL",
+    "url_path": "/fox-river-grove-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Fox Valley",
+    "city_slug": "fox-valley",
+    "state": "IL",
+    "url_path": "/fox-valley-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Frankfort",
+    "city_slug": "frankfort",
+    "state": "IL",
+    "url_path": "/frankfort-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Franklin Park",
+    "city_slug": "franklin-park",
+    "state": "IL",
+    "url_path": "/franklin-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Garden Prairie",
+    "city_slug": "garden-prairie",
+    "state": "IL",
+    "url_path": "/garden-prairie-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Geneva",
+    "city_slug": "geneva",
+    "state": "IL",
+    "url_path": "/geneva-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Genoa",
+    "city_slug": "genoa",
+    "state": "IL",
+    "url_path": "/genoa-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Gilberts",
+    "city_slug": "gilberts",
+    "state": "IL",
+    "url_path": "/gilberts-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Glen Ellyn",
+    "city_slug": "glen-ellyn",
+    "state": "IL",
+    "url_path": "/glen-ellyn-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Glencoe",
+    "city_slug": "glencoe",
+    "state": "IL",
+    "url_path": "/glencoe-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Glendale Heights",
+    "city_slug": "glendale-heights",
+    "state": "IL",
+    "url_path": "/glendale-heights-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Glenview",
+    "city_slug": "glenview",
+    "state": "IL",
+    "url_path": "/glenview-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Glenwood",
+    "city_slug": "glenwood",
+    "state": "IL",
+    "url_path": "/glenwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Grand Ridge",
+    "city_slug": "grand-ridge",
+    "state": "IL",
+    "url_path": "/grand-ridge-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Grayslake",
+    "city_slug": "grayslake",
+    "state": "IL",
+    "url_path": "/grayslake-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Gurnee",
+    "city_slug": "gurnee",
+    "state": "IL",
+    "url_path": "/gurnee-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hampshire",
+    "city_slug": "hampshire",
+    "state": "IL",
+    "url_path": "/hampshire-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hanover Park",
+    "city_slug": "hanover-park",
+    "state": "IL",
+    "url_path": "/hanover-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Harvard",
+    "city_slug": "harvard",
+    "state": "IL",
+    "url_path": "/harvard-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Harvey",
+    "city_slug": "harvey",
+    "state": "IL",
+    "url_path": "/harvey-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Harwood Heights",
+    "city_slug": "harwood-heights",
+    "state": "IL",
+    "url_path": "/harwood-heights-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hazel Crest",
+    "city_slug": "hazel-crest",
+    "state": "IL",
+    "url_path": "/hazel-crest-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hebron",
+    "city_slug": "hebron",
+    "state": "IL",
+    "url_path": "/hebron-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hickory Hills",
+    "city_slug": "hickory-hills",
+    "state": "IL",
+    "url_path": "/hickory-hills-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Highland Park",
+    "city_slug": "highland-park",
+    "state": "IL",
+    "url_path": "/highland-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Highwood",
+    "city_slug": "highwood",
+    "state": "IL",
+    "url_path": "/highwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hillside",
+    "city_slug": "hillside",
+    "state": "IL",
+    "url_path": "/hillside-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hinckley",
+    "city_slug": "hinckley",
+    "state": "IL",
+    "url_path": "/hinckley-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hines",
+    "city_slug": "hines",
+    "state": "IL",
+    "url_path": "/hines-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hinsdale",
+    "city_slug": "hinsdale",
+    "state": "IL",
+    "url_path": "/hinsdale-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hoffman Estates",
+    "city_slug": "hoffman-estates",
+    "state": "IL",
+    "url_path": "/hoffman-estates-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Homer Glen",
+    "city_slug": "homer-glen",
+    "state": "IL",
+    "url_path": "/homer-glen-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Hometown",
+    "city_slug": "hometown",
+    "state": "IL",
+    "url_path": "/hometown-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Homewood",
+    "city_slug": "homewood",
+    "state": "IL",
+    "url_path": "/homewood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Ingleside",
+    "city_slug": "ingleside",
+    "state": "IL",
+    "url_path": "/ingleside-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Island Lake",
+    "city_slug": "island-lake",
+    "state": "IL",
+    "url_path": "/island-lake-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Itasca",
+    "city_slug": "itasca",
+    "state": "IL",
+    "url_path": "/itasca-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Joliet",
+    "city_slug": "joliet",
+    "state": "IL",
+    "url_path": "/joliet-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Justice",
+    "city_slug": "justice",
+    "state": "IL",
+    "url_path": "/justice-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Kaneville",
+    "city_slug": "kaneville",
+    "state": "IL",
+    "url_path": "/kaneville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Kenilworth",
+    "city_slug": "kenilworth",
+    "state": "IL",
+    "url_path": "/kenilworth-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Kingston",
+    "city_slug": "kingston",
+    "state": "IL",
+    "url_path": "/kingston-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Kirkland",
+    "city_slug": "kirkland",
+    "state": "IL",
+    "url_path": "/kirkland-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "La Fox",
+    "city_slug": "la-fox",
+    "state": "IL",
+    "url_path": "/la-fox-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "La Grange",
+    "city_slug": "la-grange",
+    "state": "IL",
+    "url_path": "/la-grange-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "La Grange Park",
+    "city_slug": "la-grange-park",
+    "state": "IL",
+    "url_path": "/la-grange-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "La Salle",
+    "city_slug": "la-salle",
+    "state": "IL",
+    "url_path": "/la-salle-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lake Bluff",
+    "city_slug": "lake-bluff",
+    "state": "IL",
+    "url_path": "/lake-bluff-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lake Forest",
+    "city_slug": "lake-forest",
+    "state": "IL",
+    "url_path": "/lake-forest-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lake In The Hills",
+    "city_slug": "lake-in-the-hills",
+    "state": "IL",
+    "url_path": "/lake-in-the-hills-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lake Villa",
+    "city_slug": "lake-villa",
+    "state": "IL",
+    "url_path": "/lake-villa-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lake Zurich",
+    "city_slug": "lake-zurich",
+    "state": "IL",
+    "url_path": "/lake-zurich-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lansing",
+    "city_slug": "lansing",
+    "state": "IL",
+    "url_path": "/lansing-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lemont",
+    "city_slug": "lemont",
+    "state": "IL",
+    "url_path": "/lemont-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Libertyville",
+    "city_slug": "libertyville",
+    "state": "IL",
+    "url_path": "/libertyville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lincolnshire",
+    "city_slug": "lincolnshire",
+    "state": "IL",
+    "url_path": "/lincolnshire-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lincolnwood",
+    "city_slug": "lincolnwood",
+    "state": "IL",
+    "url_path": "/lincolnwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lisle",
+    "city_slug": "lisle",
+    "state": "IL",
+    "url_path": "/lisle-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lockport",
+    "city_slug": "lockport",
+    "state": "IL",
+    "url_path": "/lockport-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lombard",
+    "city_slug": "lombard",
+    "state": "IL",
+    "url_path": "/lombard-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Long Point",
+    "city_slug": "long-point",
+    "state": "IL",
+    "url_path": "/long-point-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lostant",
+    "city_slug": "lostant",
+    "state": "IL",
+    "url_path": "/lostant-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Lyons",
+    "city_slug": "lyons",
+    "state": "IL",
+    "url_path": "/lyons-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Malta",
+    "city_slug": "malta",
+    "state": "IL",
+    "url_path": "/malta-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Manhattan",
+    "city_slug": "manhattan",
+    "state": "IL",
+    "url_path": "/manhattan-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Maple Park",
+    "city_slug": "maple-park",
+    "state": "IL",
+    "url_path": "/maple-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Marengo",
+    "city_slug": "marengo",
+    "state": "IL",
+    "url_path": "/marengo-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Markham",
+    "city_slug": "markham",
+    "state": "IL",
+    "url_path": "/markham-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Marseilles",
+    "city_slug": "marseilles",
+    "state": "IL",
+    "url_path": "/marseilles-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Matteson",
+    "city_slug": "matteson",
+    "state": "IL",
+    "url_path": "/matteson-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Maywood",
+    "city_slug": "maywood",
+    "state": "IL",
+    "url_path": "/maywood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Mazon",
+    "city_slug": "mazon",
+    "state": "IL",
+    "url_path": "/mazon-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Mchenry",
+    "city_slug": "mchenry",
+    "state": "IL",
+    "url_path": "/mchenry-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Medinah",
+    "city_slug": "medinah",
+    "state": "IL",
+    "url_path": "/medinah-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Melrose Park",
+    "city_slug": "melrose-park",
+    "state": "IL",
+    "url_path": "/melrose-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Mendota",
+    "city_slug": "mendota",
+    "state": "IL",
+    "url_path": "/mendota-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Midlothian",
+    "city_slug": "midlothian",
+    "state": "IL",
+    "url_path": "/midlothian-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Minonk",
+    "city_slug": "minonk",
+    "state": "IL",
+    "url_path": "/minonk-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Minooka",
+    "city_slug": "minooka",
+    "state": "IL",
+    "url_path": "/minooka-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Mokena",
+    "city_slug": "mokena",
+    "state": "IL",
+    "url_path": "/mokena-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Monee",
+    "city_slug": "monee",
+    "state": "IL",
+    "url_path": "/monee-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Montgomery",
+    "city_slug": "montgomery",
+    "state": "IL",
+    "url_path": "/montgomery-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Mooseheart",
+    "city_slug": "mooseheart",
+    "state": "IL",
+    "url_path": "/mooseheart-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Morris",
+    "city_slug": "morris",
+    "state": "IL",
+    "url_path": "/morris-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Morton Grove",
+    "city_slug": "morton-grove",
+    "state": "IL",
+    "url_path": "/morton-grove-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Mount Prospect",
+    "city_slug": "mount-prospect",
+    "state": "IL",
+    "url_path": "/mount-prospect-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Mundelein",
+    "city_slug": "mundelein",
+    "state": "IL",
+    "url_path": "/mundelein-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Naperville",
+    "city_slug": "naperville",
+    "state": "IL",
+    "url_path": "/naperville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "New Lenox",
+    "city_slug": "new-lenox",
+    "state": "IL",
+    "url_path": "/new-lenox-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Niles",
+    "city_slug": "niles",
+    "state": "IL",
+    "url_path": "/niles-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "North Aurora",
+    "city_slug": "north-aurora",
+    "state": "IL",
+    "url_path": "/north-aurora-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "North Chicago",
+    "city_slug": "north-chicago",
+    "state": "IL",
+    "url_path": "/north-chicago-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Northbrook",
+    "city_slug": "northbrook",
+    "state": "IL",
+    "url_path": "/northbrook-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Northlake",
+    "city_slug": "northlake",
+    "state": "IL",
+    "url_path": "/northlake-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Oak Brook",
+    "city_slug": "oak-brook",
+    "state": "IL",
+    "url_path": "/oak-brook-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Oak Forest",
+    "city_slug": "oak-forest",
+    "state": "IL",
+    "url_path": "/oak-forest-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Oak Lawn",
+    "city_slug": "oak-lawn",
+    "state": "IL",
+    "url_path": "/oak-lawn-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Oak Park",
+    "city_slug": "oak-park",
+    "state": "IL",
+    "url_path": "/oak-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Oglesby",
+    "city_slug": "oglesby",
+    "state": "IL",
+    "url_path": "/oglesby-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Olympia Fields",
+    "city_slug": "olympia-fields",
+    "state": "IL",
+    "url_path": "/olympia-fields-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Orland Park",
+    "city_slug": "orland-park",
+    "state": "IL",
+    "url_path": "/orland-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Oswego",
+    "city_slug": "oswego",
+    "state": "IL",
+    "url_path": "/oswego-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Ottawa",
+    "city_slug": "ottawa",
+    "state": "IL",
+    "url_path": "/ottawa-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Palatine",
+    "city_slug": "palatine",
+    "state": "IL",
+    "url_path": "/palatine-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Palos Heights",
+    "city_slug": "palos-heights",
+    "state": "IL",
+    "url_path": "/palos-heights-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Palos Hills",
+    "city_slug": "palos-hills",
+    "state": "IL",
+    "url_path": "/palos-hills-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Palos Park",
+    "city_slug": "palos-park",
+    "state": "IL",
+    "url_path": "/palos-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Park Forest",
+    "city_slug": "park-forest",
+    "state": "IL",
+    "url_path": "/park-forest-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Park Ridge",
+    "city_slug": "park-ridge",
+    "state": "IL",
+    "url_path": "/park-ridge-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Peotone",
+    "city_slug": "peotone",
+    "state": "IL",
+    "url_path": "/peotone-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Peru",
+    "city_slug": "peru",
+    "state": "IL",
+    "url_path": "/peru-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Plainfield",
+    "city_slug": "plainfield",
+    "state": "IL",
+    "url_path": "/plainfield-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Plano",
+    "city_slug": "plano",
+    "state": "IL",
+    "url_path": "/plano-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Pontiac",
+    "city_slug": "pontiac",
+    "state": "IL",
+    "url_path": "/pontiac-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Posen",
+    "city_slug": "posen",
+    "state": "IL",
+    "url_path": "/posen-il-plumbing",
+    "seo": {
+      "seo_score": "5"
+    }
+  },
+  {
+    "city_name": "Prospect Heights",
+    "city_slug": "prospect-heights",
+    "state": "IL",
+    "url_path": "/prospect-heights-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Richmond",
+    "city_slug": "richmond",
+    "state": "IL",
+    "url_path": "/richmond-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Richton Park",
+    "city_slug": "richton-park",
+    "state": "IL",
+    "url_path": "/richton-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Ringwood",
+    "city_slug": "ringwood",
+    "state": "IL",
+    "url_path": "/ringwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "River Forest",
+    "city_slug": "river-forest",
+    "state": "IL",
+    "url_path": "/river-forest-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "River Grove",
+    "city_slug": "river-grove",
+    "state": "IL",
+    "url_path": "/river-grove-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Riverdale",
+    "city_slug": "riverdale",
+    "state": "IL",
+    "url_path": "/riverdale-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Riverside",
+    "city_slug": "riverside",
+    "state": "IL",
+    "url_path": "/riverside-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Robbins",
+    "city_slug": "robbins",
+    "state": "IL",
+    "url_path": "/robbins-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Rolling Meadows",
+    "city_slug": "rolling-meadows",
+    "state": "IL",
+    "url_path": "/rolling-meadows-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Romeoville",
+    "city_slug": "romeoville",
+    "state": "IL",
+    "url_path": "/romeoville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Roselle",
+    "city_slug": "roselle",
+    "state": "IL",
+    "url_path": "/roselle-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Round Lake",
+    "city_slug": "round-lake",
+    "state": "IL",
+    "url_path": "/round-lake-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Russell",
+    "city_slug": "russell",
+    "state": "IL",
+    "url_path": "/russell-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Rutland",
+    "city_slug": "rutland",
+    "state": "IL",
+    "url_path": "/rutland-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Salem",
+    "city_slug": "salem",
+    "state": "IL",
+    "url_path": "/salem-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Sandwich",
+    "city_slug": "sandwich",
+    "state": "IL",
+    "url_path": "/sandwich-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Schaumburg",
+    "city_slug": "schaumburg",
+    "state": "IL",
+    "url_path": "/schaumburg-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Schiller Park",
+    "city_slug": "schiller-park",
+    "state": "IL",
+    "url_path": "/schiller-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Seneca",
+    "city_slug": "seneca",
+    "state": "IL",
+    "url_path": "/seneca-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Shabbona",
+    "city_slug": "shabbona",
+    "state": "IL",
+    "url_path": "/shabbona-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Shorewood",
+    "city_slug": "shorewood",
+    "state": "IL",
+    "url_path": "/shorewood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Skokie",
+    "city_slug": "skokie",
+    "state": "IL",
+    "url_path": "/skokie-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "South Elgin",
+    "city_slug": "south-elgin",
+    "state": "IL",
+    "url_path": "/south-elgin-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "South Holland",
+    "city_slug": "south-holland",
+    "state": "IL",
+    "url_path": "/south-holland-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Spring Grove",
+    "city_slug": "spring-grove",
+    "state": "IL",
+    "url_path": "/spring-grove-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Spring Valley",
+    "city_slug": "spring-valley",
+    "state": "IL",
+    "url_path": "/spring-valley-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "St Charles",
+    "city_slug": "st-charles",
+    "state": "IL",
+    "url_path": "/st-charles-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Steger",
+    "city_slug": "steger",
+    "state": "IL",
+    "url_path": "/steger-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Stone Park",
+    "city_slug": "stone-park",
+    "state": "IL",
+    "url_path": "/stone-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Streamwood",
+    "city_slug": "streamwood",
+    "state": "IL",
+    "url_path": "/streamwood-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Streator",
+    "city_slug": "streator",
+    "state": "IL",
+    "url_path": "/streator-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Sugar Grove",
+    "city_slug": "sugar-grove",
+    "state": "IL",
+    "url_path": "/sugar-grove-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Summit Argo",
+    "city_slug": "summit-argo",
+    "state": "IL",
+    "url_path": "/summit-argo-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Sycamore",
+    "city_slug": "sycamore",
+    "state": "IL",
+    "url_path": "/sycamore-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Thorton",
+    "city_slug": "thorton",
+    "state": "IL",
+    "url_path": "/thorton-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Tinley Park",
+    "city_slug": "tinley-park",
+    "state": "IL",
+    "url_path": "/tinley-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Tonica",
+    "city_slug": "tonica",
+    "state": "IL",
+    "url_path": "/tonica-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Union",
+    "city_slug": "union",
+    "state": "IL",
+    "url_path": "/union-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "University Park",
+    "city_slug": "university-park",
+    "state": "IL",
+    "url_path": "/university-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Vernon Hills",
+    "city_slug": "vernon-hills",
+    "state": "IL",
+    "url_path": "/vernon-hills-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Villa Park",
+    "city_slug": "villa-park",
+    "state": "IL",
+    "url_path": "/villa-park-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wadsworth",
+    "city_slug": "wadsworth",
+    "state": "IL",
+    "url_path": "/wadsworth-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Warrenville",
+    "city_slug": "warrenville",
+    "state": "IL",
+    "url_path": "/warrenville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wasco",
+    "city_slug": "wasco",
+    "state": "IL",
+    "url_path": "/wasco-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wauconda",
+    "city_slug": "wauconda",
+    "state": "IL",
+    "url_path": "/wauconda-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Waukegan",
+    "city_slug": "waukegan",
+    "state": "IL",
+    "url_path": "/waukegan-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wayne",
+    "city_slug": "wayne",
+    "state": "IL",
+    "url_path": "/wayne-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "West Chicago",
+    "city_slug": "west-chicago",
+    "state": "IL",
+    "url_path": "/west-chicago-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Westchester",
+    "city_slug": "westchester",
+    "state": "IL",
+    "url_path": "/westchester-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Western Springs",
+    "city_slug": "western-springs",
+    "state": "IL",
+    "url_path": "/western-springs-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Westmont",
+    "city_slug": "westmont",
+    "state": "IL",
+    "url_path": "/westmont-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wheaton",
+    "city_slug": "wheaton",
+    "state": "IL",
+    "url_path": "/wheaton-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wheeling",
+    "city_slug": "wheeling",
+    "state": "IL",
+    "url_path": "/wheeling-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Willow Springs",
+    "city_slug": "willow-springs",
+    "state": "IL",
+    "url_path": "/willow-springs-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Willowbrook",
+    "city_slug": "willowbrook",
+    "state": "IL",
+    "url_path": "/willowbrook-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wilmette",
+    "city_slug": "wilmette",
+    "state": "IL",
+    "url_path": "/wilmette-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wilmington",
+    "city_slug": "wilmington",
+    "state": "IL",
+    "url_path": "/wilmington-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Winfield",
+    "city_slug": "winfield",
+    "state": "IL",
+    "url_path": "/winfield-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Winnetka",
+    "city_slug": "winnetka",
+    "state": "IL",
+    "url_path": "/winnetka-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Winthrop Harbor",
+    "city_slug": "winthrop-harbor",
+    "state": "IL",
+    "url_path": "/winthrop-harbor-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Wonder Lake",
+    "city_slug": "wonder-lake",
+    "state": "IL",
+    "url_path": "/wonder-lake-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Wood Dale",
+    "city_slug": "wood-dale",
+    "state": "IL",
+    "url_path": "/wood-dale-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Woodridge",
+    "city_slug": "woodridge",
+    "state": "IL",
+    "url_path": "/woodridge-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Woodstock",
+    "city_slug": "woodstock",
+    "state": "IL",
+    "url_path": "/woodstock-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Worth",
+    "city_slug": "worth",
+    "state": "IL",
+    "url_path": "/worth-il-plumbing",
+    "seo": {
+      "seo_score": "30"
+    }
+  },
+  {
+    "city_name": "Yorkville",
+    "city_slug": "yorkville",
+    "state": "IL",
+    "url_path": "/yorkville-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  },
+  {
+    "city_name": "Zion",
+    "city_slug": "zion",
+    "state": "IL",
+    "url_path": "/zion-il-plumbing",
+    "seo": {
+      "seo_score": "29"
+    }
+  }
+]
