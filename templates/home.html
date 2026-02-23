@@ -2,13 +2,19 @@
 <!-- Extends: _base.html -->
 <!-- Data source: data/pages_home.json -->
 
-<!-- HERO: Dark blue cityscape overlay, split layout -->
+<!-- Phase 11: Hero with trust badges + emergency strip -->
 <section class="hero">
   <div class="hero-overlay"></div>
   <div class="container hero-inner">
     <div class="hero-left">
       <h2 class="hero-tagline">SATISFACTION<br>GUARANTEED</h2>
       <p class="hero-subtitle">Here for all of your plumbing needs</p>
+      <!-- Phase 11: Trust badges -->
+      <div class="hero-badges">
+        <span class="hero-badge">Licensed &amp; Insured</span>
+        <span class="hero-badge">24/7 Emergency</span>
+        <span class="hero-badge">Free Estimates</span>
+      </div>
     </div>
     <div class="hero-right">
       <h1>PLUMBERS NEAR ME IN CHICAGO IL</h1>
@@ -16,6 +22,15 @@
     </div>
   </div>
 </section>
+
+<!-- Phase 11: Emergency strip -->
+<div class="emergency-strip">
+  <div class="container emergency-inner">
+    <span class="emergency-dot"></span>
+    <strong>Plumbing Emergency?</strong> Our licensed plumbers are available right now.
+    <a href="tel:8337586911">Call 833-758-6911</a>
+  </div>
+</div>
 
 <!-- MAP SECTION: Service area overview -->
 <section class="map-section">
@@ -136,6 +151,30 @@
   </div>
 </section>
 
+<!-- Phase 14: How It Works (3-step process) -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Call or Request Online</h3>
+        <p>Call <a href="tel:8337586911">833-758-6911</a> or fill out our quick form. We're available 24/7 for emergencies.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>We Diagnose &amp; Quote</h3>
+        <p>A licensed plumber arrives promptly, diagnoses the issue, and provides a transparent upfront quote. No hidden fees.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Problem Solved</h3>
+        <p>We complete the repair or installation to the highest standards. Your satisfaction is guaranteed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- WHAT TO EXPECT: 3 feature cards with icons -->
 <section class="why-us">
   <div class="container">
@@ -166,3 +205,82 @@
     </div>
   </div>
 </section>
+
+<!-- Phase 14: FAQ Section with Schema -->
+<section class="faq-section">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What areas does Plumbers 911 Chicago serve?</summary>
+        <p>We serve over 180 cities across 14 counties in Illinois, including Chicago, Joliet, Arlington Heights, Park Ridge, and many more. Visit our <a href="/service-area/">service area page</a> for the full list.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer 24/7 emergency plumbing services?</summary>
+        <p>Yes! Our licensed plumbers are available 24 hours a day, 7 days a week for plumbing emergencies. Call <a href="tel:8337586911">833-758-6911</a> anytime for immediate assistance.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are your plumbers licensed and insured?</summary>
+        <p>Absolutely. All Plumbers 911 Chicago technicians are fully licensed, bonded, and insured. We carry comprehensive liability insurance for your protection and peace of mind.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much do plumbing services cost in Chicago?</summary>
+        <p>Costs vary depending on the service needed. We provide free estimates and transparent upfront pricing before any work begins. There are no hidden fees or surprise charges. Call us for a personalized quote.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What plumbing services do you offer?</summary>
+        <p>We offer a full range of plumbing services including emergency plumbing, water heater repair and installation, sewer and drain services, bathroom and kitchen remodeling, backflow testing, gas line services, and much more. <a href="/chicago-il-plumbing/">View all our services</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Phase 14: FAQ Schema (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas does Plumbers 911 Chicago serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve over 180 cities across 14 counties in Illinois, including Chicago, Joliet, Arlington Heights, Park Ridge, and many more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer 24/7 emergency plumbing services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Our licensed plumbers are available 24 hours a day, 7 days a week for plumbing emergencies. Call 833-758-6911 anytime for immediate assistance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your plumbers licensed and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. All Plumbers 911 Chicago technicians are fully licensed, bonded, and insured. We carry comprehensive liability insurance for your protection and peace of mind."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do plumbing services cost in Chicago?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Costs vary depending on the service needed. We provide free estimates and transparent upfront pricing before any work begins. There are no hidden fees or surprise charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What plumbing services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer emergency plumbing, water heater repair and installation, sewer and drain services, bathroom and kitchen remodeling, backflow testing, gas line services, and much more."
+      }
+    }
+  ]
+}
+</script>
