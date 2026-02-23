@@ -23,9 +23,9 @@
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
-body { font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: var(--gray-700); line-height: 1.6; background: var(--white); }
+body { font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: var(--gray-700); line-height: 1.7; background: var(--white); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 img { max-width: 100%; height: auto; display: block; }
-a { color: var(--blue); text-decoration: none; transition: all .2s; }
+a { color: var(--blue); text-decoration: none; transition: all .25s ease; }
 a:hover { color: var(--red); }
 ul, ol { list-style: none; }
 h1, h2, h3, h4 { font-family: 'Open Sans', sans-serif; line-height: 1.3; color: var(--gray-900); }
@@ -167,8 +167,8 @@ p { margin-bottom: 1rem; }
 .why-us h2 { font-size: 1.65rem; font-weight: 800; margin-bottom: .75rem; }
 .why-us-intro { max-width: 850px; margin: 0 auto 2rem; font-size: .95rem; color: var(--gray-500); }
 .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.feature-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; padding: 2rem 1.5rem; text-align: center; transition: box-shadow .2s; }
-.feature-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.feature-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; padding: 2rem 1.5rem; text-align: center; transition: all .3s ease; }
+.feature-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,.1); transform: translateY(-4px); border-color: var(--blue); }
 .feature-icon { margin-bottom: 1rem; }
 .feature-card h3 { font-size: 1.15rem; font-weight: 800; font-style: italic; color: var(--gray-900); margin-bottom: .75rem; }
 .feature-card p { font-size: .9rem; color: var(--gray-500); margin-bottom: 0; line-height: 1.6; }
@@ -263,8 +263,10 @@ p { margin-bottom: 1rem; }
 .nearby-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: .75rem; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; }
 
 /* ===== CARDS (service/location) ===== */
-.service-card, .location-card { background: var(--white); border-radius: 4px; padding: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); border: 1px solid var(--gray-200); transition: all .2s; text-decoration: none; display: block; }
-.service-card:hover, .location-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.1); transform: translateY(-2px); border-color: var(--red); color: var(--gray-900); }
+.service-card, .location-card { background: var(--white); border-radius: 6px; padding: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); border: 1px solid var(--gray-200); transition: all .3s ease; text-decoration: none; display: block; position: relative; overflow: hidden; }
+.service-card::after, .location-card::after { content: '\2192'; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); opacity: 0; transition: all .3s ease; color: var(--red); font-weight: 700; }
+.service-card:hover, .location-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.1); transform: translateY(-3px); border-color: var(--red); color: var(--gray-900); }
+.service-card:hover::after, .location-card:hover::after { opacity: 1; right: .75rem; }
 .service-card h3, .location-card h3 { font-size: .95rem; color: var(--navy); margin: 0; }
 
 /* ===== BLOG ===== */
