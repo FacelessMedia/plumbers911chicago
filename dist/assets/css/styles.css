@@ -217,16 +217,45 @@ p { margin-bottom: 1rem; }
 .content-body img { border-radius: 4px; margin: 1.5rem 0; }
 .content-body--narrow { max-width: 700px; }
 
-/* ===== SERVICE PAGE ===== */
-.service-content .container { max-width: 800px; }
-.service-sidebar .container { max-width: 800px; }
-.sidebar-cta { background: var(--navy); color: var(--white); padding: 2rem; border-radius: 4px; margin-bottom: 2rem; text-align: center; }
-.sidebar-cta h3 { color: var(--white); margin-bottom: .75rem; }
+/* ===== SERVICE PAGE (Phase 16 redesign) ===== */
+.service-grid-layout { display: grid; grid-template-columns: 1fr 340px; gap: 3rem; align-items: start; }
+.service-content-col { min-width: 0; }
+.service-sidebar-col { position: sticky; top: 60px; }
+.service-page-main { padding: 2.5rem 0; }
+
+.breadcrumb { font-size: .8rem; margin-bottom: 1rem; opacity: .8; }
+.breadcrumb a { color: rgba(255,255,255,.7); }
+.breadcrumb a:hover { color: var(--white); }
+.breadcrumb span { color: var(--white); }
+.hero-actions { display: flex; gap: .75rem; margin-top: 1.25rem; flex-wrap: wrap; }
+
+.trust-strip { display: flex; gap: 1.5rem; flex-wrap: wrap; padding: 1rem 0 1.5rem; border-bottom: 1px solid var(--gray-200); margin-bottom: 1.5rem; }
+.trust-item { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--gray-700); }
+
+.sidebar-cta { background: var(--navy); color: var(--white); padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: center; }
+.sidebar-cta h3 { color: var(--white); margin-bottom: .75rem; font-size: 1.15rem; }
+.sidebar-cta p { color: rgba(255,255,255,.8); font-size: .9rem; }
 .sidebar-cta .btn { margin-top: .5rem; }
-.sidebar-services ul { columns: 2; column-gap: 1.5rem; }
-.sidebar-services li { margin-bottom: .4rem; }
-.sidebar-services a { font-size: .9rem; }
-.sidebar-areas h4 { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--gray-500); }
+.sidebar-cta .btn-outline { color: var(--white); border-color: rgba(255,255,255,.3); }
+.sidebar-cta .btn-outline:hover { background: var(--white); color: var(--navy); }
+
+.sidebar-form-mini { background: var(--light); border: 1px solid var(--gray-200); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.sidebar-form-mini h4 { font-size: 1rem; margin-bottom: 1rem; text-align: center; }
+.sidebar-form-mini input { width: 100%; padding: .65rem .75rem; border: 1px solid var(--gray-300); border-radius: 4px; font-size: .9rem; margin-bottom: .75rem; font-family: inherit; }
+.sidebar-form-mini input:focus { outline: none; border-color: var(--blue); }
+
+.sidebar-services { border: 1px solid var(--gray-200); border-radius: 8px; padding: 1.5rem; }
+.sidebar-services h4 { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--gray-500); margin-bottom: .75rem; padding-bottom: .5rem; border-bottom: 2px solid var(--gray-200); }
+.sidebar-services ul { columns: 1; }
+.sidebar-services li { margin-bottom: .5rem; }
+.sidebar-services a { font-size: .85rem; color: var(--gray-700); }
+.sidebar-services a:hover { color: var(--red); }
+
+.related-services { margin-top: 2.5rem; padding-top: 2rem; border-top: 2px solid var(--gray-200); }
+.related-services h3 { margin-bottom: 1rem; }
+.related-grid { display: flex; flex-wrap: wrap; gap: .5rem; }
+.related-link { display: inline-block; padding: .4rem .85rem; background: var(--light); border: 1px solid var(--gray-200); border-radius: 4px; font-size: .85rem; color: var(--gray-700); }
+.related-link:hover { background: var(--red); color: var(--white); border-color: var(--red); }
 
 /* ===== CARDS (service/location) ===== */
 .service-card, .location-card { background: var(--white); border-radius: 4px; padding: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); border: 1px solid var(--gray-200); transition: all .2s; text-decoration: none; display: block; }
@@ -334,7 +363,10 @@ section { padding: 3rem 0; }
 @media (max-width: 1024px) {
   .home-grid { grid-template-columns: 1fr; }
   .home-sidebar { position: static; max-width: 500px; margin: 0 auto; }
+  .service-grid-layout { grid-template-columns: 1fr; }
+  .service-sidebar-col { position: static; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .steps-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
