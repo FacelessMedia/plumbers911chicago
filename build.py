@@ -570,6 +570,75 @@ def build():
         built_pages.append(pg["url_path"])
         print("  " + pg["url_path"])
 
+    # --- Phase 33: SERVICE CATEGORY HUB PAGES ---
+    hub_pages = [
+        {
+            "title": "Kitchen & Bath Plumbing",
+            "url_path": "/kitchen-bath",
+            "content": """<h2>Kitchen &amp; Bath Plumbing Services in Chicago</h2>
+<p>From complete kitchen remodels to bathroom renovations, Plumbers 911 Chicago provides expert plumbing services for every room in your home. Our licensed plumbers handle fixture installation, pipe rerouting, and everything in between.</p>
+<h3>Kitchen Plumbing Services</h3>
+<ul><li><a href="/chicago-il-plumbing/kitchen-remodeling/">Kitchen Remodeling</a></li><li><a href="/chicago-il-plumbing/faucet-repair/">Faucet Repair &amp; Installation</a></li><li><a href="/chicago-il-plumbing/garbage-disposal-installation/">Garbage Disposal Services</a></li><li><a href="/chicago-il-plumbing/dishwasher-install/">Dishwasher Installation</a></li></ul>
+<h3>Bathroom Plumbing Services</h3>
+<ul><li><a href="/chicago-il-plumbing/bathroom-remodeling/">Bathroom Remodeling</a></li><li><a href="/chicago-il-plumbing/toilet-install/">Toilet Installation</a></li><li><a href="/chicago-il-plumbing/bathtub-install/">Bathtub Installation</a></li><li><a href="/chicago-il-plumbing/shower-install/">Shower Installation</a></li></ul>
+<p>Call <a href="tel:8337586911">833-758-6911</a> for a free estimate on any kitchen or bathroom plumbing project.</p>""",
+            "seo": {"title": "Kitchen & Bath Plumbing Services", "description": "Expert kitchen and bathroom plumbing services in Chicago. Remodeling, fixture installation, faucet repair, and more. Call 833-758-6911."},
+        },
+        {
+            "title": "Sewer & Drain Services",
+            "url_path": "/sewer-drain",
+            "content": """<h2>Sewer &amp; Drain Services in Chicago</h2>
+<p>Don't let sewer and drain problems disrupt your life. Plumbers 911 Chicago offers comprehensive sewer and drain services using the latest technology including HD camera inspections and hydro-jetting.</p>
+<h3>Sewer Services</h3>
+<ul><li><a href="/chicago-il-plumbing/sewer-cleaning/">Sewer Cleaning</a></li><li><a href="/chicago-il-plumbing/sewer-replacement/">Sewer Replacement</a></li><li><a href="/chicago-il-plumbing/sewer-camera-inspection/">Sewer Camera Inspection</a></li><li><a href="/chicago-il-plumbing/sewer-cleanout-installation/">Sewer Cleanout Installation</a></li></ul>
+<h3>Drain Services</h3>
+<ul><li><a href="/chicago-il-plumbing/drain-cleaning/">Drain Cleaning</a></li><li><a href="/chicago-il-plumbing/drain-replacement/">Drain Replacement</a></li></ul>
+<p>Experiencing slow drains or sewer backups? Call <a href="tel:8337586911">833-758-6911</a> for fast, reliable service.</p>""",
+            "seo": {"title": "Sewer & Drain Services Chicago", "description": "Professional sewer and drain services in Chicago. Cleaning, replacement, camera inspection, and more. Available 24/7. Call 833-758-6911."},
+        },
+        {
+            "title": "Hot Water Services",
+            "url_path": "/hot-water",
+            "content": """<h2>Hot Water Heater Services in Chicago</h2>
+<p>No hot water? Plumbers 911 Chicago provides fast, reliable water heater repair and installation for both traditional tank and tankless systems. We service all major brands.</p>
+<h3>Tank Water Heaters</h3>
+<ul><li><a href="/chicago-il-plumbing/water-heater-repair/">Water Heater Repair</a></li><li><a href="/chicago-il-plumbing/water-heater-installation/">Water Heater Installation</a></li></ul>
+<h3>Tankless Water Heaters</h3>
+<ul><li><a href="/chicago-il-plumbing/tankless-water-heater-repair/">Tankless Water Heater Repair</a></li><li><a href="/chicago-il-plumbing/tankless-water-heater-installation/">Tankless Water Heater Installation</a></li></ul>
+<p>We service Rheem, A.O. Smith, Bradford White, Rinnai, Navien, and all other brands. Call <a href="tel:8337586911">833-758-6911</a>.</p>""",
+            "seo": {"title": "Water Heater Repair & Installation Chicago", "description": "Tank and tankless water heater repair and installation in Chicago. All brands serviced. 24/7 emergency service. Call 833-758-6911."},
+        },
+        {
+            "title": "Water Line Services",
+            "url_path": "/water-lines",
+            "content": """<h2>Water Line Services in Chicago</h2>
+<p>From whole-house repiping to water filtration, Plumbers 911 Chicago handles all your water line needs. Our licensed plumbers ensure clean, safe water throughout your home.</p>
+<ul><li><a href="/chicago-il-plumbing/whole-house-repiping/">Whole House Repiping</a></li><li><a href="/chicago-il-plumbing/frozen-broken-pipe-repair/">Frozen &amp; Broken Pipe Repair</a></li><li><a href="/chicago-il-plumbing/backflow-testing-installation/">Backflow Testing &amp; Installation</a></li><li><a href="/chicago-il-plumbing/water-softener-installation/">Water Softener Installation</a></li><li><a href="/chicago-il-plumbing/water-filter-installation-replacement/">Water Filter Services</a></li></ul>
+<p>Protect your home's water supply. Call <a href="tel:8337586911">833-758-6911</a> for a free consultation.</p>""",
+            "seo": {"title": "Water Line Services Chicago", "description": "Water line repair, repiping, backflow testing, water softener and filter installation in Chicago. Call 833-758-6911."},
+        },
+        {
+            "title": "Other Plumbing Services",
+            "url_path": "/other-plumbing-services",
+            "content": """<h2>Additional Plumbing Services in Chicago</h2>
+<p>Beyond our specialty services, Plumbers 911 Chicago offers a full range of residential and commercial plumbing solutions to meet any need.</p>
+<ul><li><a href="/chicago-il-plumbing/residential-plumbing/">Residential Plumbing</a></li><li><a href="/chicago-il-plumbing/commercial-plumbing/">Commercial Plumbing</a></li><li><a href="/chicago-il-plumbing/gas-line-install-repair/">Gas Line Services</a></li><li><a href="/chicago-il-plumbing/sump-pump-install-replacement/">Sump Pump Installation &amp; Repair</a></li><li><a href="/chicago-il-plumbing/sump-pump-battery-backup-install/">Sump Pump Battery Backup</a></li><li><a href="/chicago-il-plumbing/water-leak-detection-repair/">Water Leak Detection &amp; Repair</a></li></ul>
+<p>Whatever your plumbing needs, we're here to help. Call <a href="tel:8337586911">833-758-6911</a>.</p>""",
+            "seo": {"title": "Residential & Commercial Plumbing Chicago", "description": "Full-service residential and commercial plumbing in Chicago. Gas lines, sump pumps, leak detection, and more. Call 833-758-6911."},
+        },
+    ]
+    page_tpl = load_template("page.html")
+    for hub in hub_pages:
+        cp = make_canonical(hub["url_path"])
+        crumbs = [("Home", "/"), (hub["title"], cp)]
+        ctx = {**global_ctx, **hub, "page_type": "page",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs)}
+        html = build_page(base_tpl, page_tpl, ctx)
+        write_page(hub["url_path"], html)
+        built_pages.append(hub["url_path"])
+    print("  " + str(len(hub_pages)) + " service category hub pages (Phase 33)")
+
     # --- GENERIC PAGES (skip request-a-call-back) ---
     gen_pages = load_json("pages_page.json")
     gen_tpl = load_template("page.html")

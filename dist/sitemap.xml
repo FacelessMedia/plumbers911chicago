@@ -606,6 +606,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://plumbers911chicago.com/hot-water/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://plumbers911chicago.com/ingleside-il-plumbing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -632,6 +637,11 @@
   </url>
   <url>
     <loc>https://plumbers911chicago.com/kirkland-il-plumbing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://plumbers911chicago.com/kitchen-bath/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -891,6 +901,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://plumbers911chicago.com/other-plumbing-services/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://plumbers911chicago.com/ottawa-il-plumbing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1011,6 +1026,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://plumbers911chicago.com/sewer-drain/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://plumbers911chicago.com/skokie-il-plumbing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1082,6 +1102,11 @@
   </url>
   <url>
     <loc>https://plumbers911chicago.com/wasco-il-plumbing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://plumbers911chicago.com/water-lines/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
