@@ -29,90 +29,110 @@ def load_template(name):
         return f.read()
 
 
-def find_matching_end(template, open_tag, close_tag, start=0):
-    """Find matching closing tag handling nesting."""
+def find_block_end(text, start_after_open):
+    """Find the matching {{/each}} or {{/if}} for a block, handling nesting.
+    start_after_open is the position right after the opening tag."""
+    # Detect which block type we're in by scanning backwards
     depth = 1
-    pos = start
-    while depth > 0 and pos < len(template):
-        next_open = template.find(open_tag, pos)
-        next_close = template.find(close_tag, pos)
-        if next_close == -1:
+    pos = start_after_open
+    while pos < len(text):
+        next_open_each = text.find("{{#each ", pos)
+        next_open_if = text.find("{{#if ", pos)
+        next_close_each = text.find("{{/each}}", pos)
+        next_close_if = text.find("{{/if}}", pos)
+
+        # Find earliest close
+        closes = []
+        if next_close_each != -1: closes.append(("each", next_close_each))
+        if next_close_if != -1: closes.append(("if", next_close_if))
+        if not closes:
             return -1
-        if next_open != -1 and next_open < next_close:
+        closes.sort(key=lambda x: x[1])
+
+        # Find earliest open
+        opens = []
+        if next_open_each != -1: opens.append(("each", next_open_each))
+        if next_open_if != -1: opens.append(("if", next_open_if))
+        opens.sort(key=lambda x: x[1])
+
+        earliest_close = closes[0]
+        if opens and opens[0][1] < earliest_close[1]:
+            # An open tag comes before the next close tag — increase depth
             depth += 1
-            pos = next_open + len(open_tag)
+            pos = opens[0][1] + 3  # skip past {{#
         else:
             depth -= 1
             if depth == 0:
-                return next_close
-            pos = next_close + len(close_tag)
+                return earliest_close[1]
+            pos = earliest_close[1] + 3  # skip past {{/
     return -1
 
 
 def render(template_str, ctx):
-    """Template renderer supporting {{var}}, {{{html}}}, {{#each}}, {{#if}}/{{else}}, nested blocks."""
+    """Template renderer: {{var}}, {{{html}}}, {{#each}}, {{#if}}/{{else}}.
+    Processes #each OUTSIDE-IN so nested loops get parent context.
+    Processes #if INSIDE-OUT so conditions resolve correctly."""
     output = template_str
 
     # Handle {{{raw_html}}} (triple braces = unescaped)
     def replace_raw(m):
         key = m.group(1).strip()
         return str(resolve_var(key, ctx))
-
     output = re.sub(r"\{\{\{(.+?)\}\}\}", replace_raw, output)
 
-    # Process block helpers iteratively to handle nesting properly
-    changed = True
-    iterations = 0
-    while changed and iterations < 20:
-        changed = False
-        iterations += 1
+    # --- Process {{#each}} blocks OUTSIDE-IN ---
+    # Find the FIRST (outermost) {{#each ...}} and its matching {{/each}}
+    safety = 0
+    while safety < 30:
+        safety += 1
+        m = re.search(r"\{\{#each\s+(\S+?)\}\}", output)
+        if not m:
+            break
+        var_name = m.group(1).strip()
+        body_start = m.end()
+        block_end = find_block_end(output, body_start)
+        if block_end == -1:
+            break  # malformed template
+        body = output[body_start:block_end]
+        close_end = block_end + len("{{/each}}")
 
-        # Find innermost {{#each ...}}...{{/each}} (no nested #each inside)
-        each_match = re.search(
-            r"\{\{#each\s+(\S+?)\}\}((?:(?!\{\{#each\b).)*?)\{\{/each\}\}",
-            output, re.DOTALL
-        )
-        if each_match:
-            changed = True
-            var_name = each_match.group(1).strip()
-            body = each_match.group(2)
-            items = resolve_var(var_name, ctx)
-            if not items or not isinstance(items, list):
-                replacement = ""
-            else:
-                parts = []
-                for item in items:
-                    child_ctx = {**ctx}
-                    if isinstance(item, dict):
-                        child_ctx.update(item)
-                    for k, v in ctx.items():
-                        child_ctx["../" + k] = v
-                    parts.append(render(body, child_ctx))
-                replacement = "".join(parts)
-            output = output[:each_match.start()] + replacement + output[each_match.end():]
-            continue
+        items = resolve_var(var_name, ctx)
+        if not items or not isinstance(items, list):
+            replacement = ""
+        else:
+            parts = []
+            for item in items:
+                child_ctx = {**ctx}
+                if isinstance(item, dict):
+                    child_ctx.update(item)
+                for k, v in ctx.items():
+                    child_ctx["../" + k] = v
+                parts.append(render(body, child_ctx))
+            replacement = "".join(parts)
+        output = output[:m.start()] + replacement + output[close_end:]
 
-        # Find innermost {{#if ...}}...{{/if}} with optional {{else}}
+    # --- Process {{#if}} blocks INSIDE-OUT ---
+    safety = 0
+    while safety < 30:
+        safety += 1
         if_match = re.search(
             r"\{\{#if\s+(.+?)\}\}((?:(?!\{\{#if\b).)*?)\{\{/if\}\}",
             output, re.DOTALL
         )
-        if if_match:
-            changed = True
-            var_name = if_match.group(1).strip()
-            inner = if_match.group(2)
-            val = resolve_var(var_name, ctx)
-            # Split on {{else}}
-            else_parts = re.split(r"\{\{else\}\}", inner, maxsplit=1)
-            true_body = else_parts[0]
-            false_body = else_parts[1] if len(else_parts) > 1 else ""
-            truthy = val and val != "0" and val != "false" and val != [] and val != ""
-            if truthy:
-                replacement = render(true_body, ctx)
-            else:
-                replacement = render(false_body, ctx)
-            output = output[:if_match.start()] + replacement + output[if_match.end():]
-            continue
+        if not if_match:
+            break
+        var_name = if_match.group(1).strip()
+        inner = if_match.group(2)
+        val = resolve_var(var_name, ctx)
+        else_parts = re.split(r"\{\{else\}\}", inner, maxsplit=1)
+        true_body = else_parts[0]
+        false_body = else_parts[1] if len(else_parts) > 1 else ""
+        truthy = val and val != "0" and val != "false" and val != [] and val != ""
+        if truthy:
+            replacement = render(true_body, ctx)
+        else:
+            replacement = render(false_body, ctx)
+        output = output[:if_match.start()] + replacement + output[if_match.end():]
 
     # Handle {{variable}}
     def replace_var(m):
@@ -123,7 +143,6 @@ def render(template_str, ctx):
         if isinstance(val, (list, dict)):
             return ""
         return escape_html(str(val))
-
     output = re.sub(r"\{\{([^#/!>].*?)\}\}", replace_var, output)
 
     # Handle {{> content}} partial includes
@@ -163,9 +182,13 @@ def write_page(url_path, html):
 
 
 def normalize_urls(html):
-    """Convert absolute plumbers911chicago.com URLs to relative paths."""
+    """Convert absolute plumbers911chicago.com URLs to relative paths and clean Rank Math variables."""
     html = html.replace("https://plumbers911chicago.com/", "/")
     html = html.replace("http://plumbers911chicago.com/", "/")
+    # Clean Rank Math SEO variables that weren't resolved
+    html = html.replace(" %sep% %sitename%", "")
+    html = html.replace("%sep%", "-")
+    html = html.replace("%sitename%", "Plumbers 911 Chicago")
     return html
 
 
