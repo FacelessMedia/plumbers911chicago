@@ -1,11 +1,13 @@
-<!-- Template: CONTACT PAGE -->
-<!-- Extends: _base.html -->
+<!-- Template: CONTACT PAGE (Phase 71 improvements) -->
 <!-- Data source: data/pages_contact.json -->
 
 <section class="page-hero page-hero--contact">
   <div class="container">
-    <h1>{{title}}</h1>
-    <p>Get in touch with our plumbing experts</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <span>Contact Us</span>
+    </nav>
+    <h1>Contact Plumbers 911 Chicago</h1>
+    <p>Get in touch with our plumbing experts — we're here to help 24/7</p>
   </div>
 </section>
 
@@ -14,50 +16,74 @@
     <div class="contact-grid">
 
       <div class="contact-form-wrap">
-        <h2>Schedule Your Plumbing Service Appointment</h2>
+        <h2>Schedule Your Plumbing Service</h2>
         <form id="contact-form" method="post" action="/api/contact">
           <div class="form-group">
             <label for="zip">Zip Code <span class="required">*</span></label>
-            <input type="text" id="zip" name="zip" pattern="\d{5}" placeholder="Zip Code" required>
-            <small>Please provide the Zip Code where the plumbing service is being requested.</small>
+            <input type="text" id="zip" name="zip" pattern="\d{5}" placeholder="Zip Code" required autocomplete="postal-code">
+            <small>Zip code where service is needed</small>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="first-name">First Name <span class="required">*</span></label>
-              <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+              <input type="text" id="first-name" name="first_name" placeholder="First Name" required autocomplete="given-name">
             </div>
             <div class="form-group">
               <label for="last-name">Last Name <span class="required">*</span></label>
-              <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+              <input type="text" id="last-name" name="last_name" placeholder="Last Name" required autocomplete="family-name">
             </div>
           </div>
           <div class="form-group">
-            <label for="phone">Your Phone Number <span class="required">*</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="888-888-8888" required>
-            <small>Please provide your phone number for us to contact you.</small>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(312) 555-1234" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="emergency">Emergency Plumbing</option>
+              <option value="water-heater">Water Heater Repair/Install</option>
+              <option value="drain">Drain Cleaning</option>
+              <option value="sewer">Sewer Service</option>
+              <option value="remodel">Bathroom/Kitchen Remodel</option>
+              <option value="leak">Leak Repair</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Describe Your Issue</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your plumbing issue..."></textarea>
           </div>
           <p class="form-urgent">
-            <strong>If you are in need of immediate plumbing service please call
-            <a href="tel:8337586911">833-758-6911</a></strong>
+            <strong>Plumbing emergency?</strong> Call <a href="tel:8337586911">833-758-6911</a> for immediate help
           </p>
-          <button type="submit" class="btn btn-primary">Request Call Back</button>
+          <button type="submit" class="btn btn-submit">Request Call Back</button>
         </form>
       </div>
 
       <div class="contact-info">
         <div class="info-card">
-          <h3>Call Us</h3>
+          <h3>Call Us 24/7</h3>
           <a href="tel:8337586911" class="phone-number">833-758-6911</a>
-          <p>Available 24/7 for emergency service</p>
+          <p>Available 24 hours a day, 7 days a week<br>Emergencies dispatched immediately</p>
         </div>
         <div class="info-card">
-          <h3>Email</h3>
+          <h3>Email Us</h3>
           <a href="mailto:Support@Plumbers911Chicago.com">Support@Plumbers911Chicago.com</a>
+          <p>We respond to emails within 24 hours</p>
+        </div>
+        <div class="info-card">
+          <h3>Our Office</h3>
+          <p>Plumbers 911 Chicago<br>1340 W Washington Blvd #201<br>Chicago, IL 60607</p>
         </div>
         <div class="info-card">
           <h3>Service Area</h3>
-          <p>Serving 244+ cities across 14 counties in Illinois</p>
-          <a href="/service-area/">View Full Service Area</a>
+          <p>Serving 188+ cities across Illinois</p>
+          <a href="/service-area/">View Full Service Area &rarr;</a>
         </div>
       </div>
 
