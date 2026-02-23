@@ -478,26 +478,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 .share-copy { background: var(--gray-500); color: var(--white); }
 .share-btn:hover { opacity: .85; color: var(--white); }
 
-/* ===== Phase 141: Dark Mode ===== */
-@media (prefers-color-scheme: dark) {
-  :root { --white: #1a1a2e; --light: #222; --gray-100: #2a2a3e; --gray-200: #333; --gray-300: #444; --gray-500: #999; --gray-700: #ccc; --gray-900: #eee; }
-  body { background: #1a1a2e; color: #ccc; }
-  .site-header { background: #1a1a2e; border-color: #333; }
-  .logo img { filter: brightness(0) invert(1); }
-  .phone-label, .phone-number { color: #ccc; }
-  .service-card, .location-card, .feature-card, .value-card, .post-card, .stat-card, .sidebar-form, .info-card, .faq-item { background: #222; border-color: #333; }
-  .sidebar-form-mini { background: #2a2a3e; border-color: #333; }
-  .content-body h2, .content-body h3 { color: #eee; }
-  .content-body th { background: #2a2a3e; }
-  .content-body tr:nth-child(even) { background: #252535; }
-  .form-group input, .form-group textarea, .form-group select { background: #2a2a3e; border-color: #444; color: #ccc; }
-  .emergency-strip { background: #1a3a2a; }
-  .trust-banner { background: #222; border-color: #333; }
-  .about-values { background: #222; }
-  .faq-section, .how-it-works, .service-area-stats { background: #222; }
-  .map-section { background: #1a1a2e; }
-  img { opacity: .9; }
-}
+/* Dark mode removed — site uses fixed brand colors (red/navy/white) */
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {

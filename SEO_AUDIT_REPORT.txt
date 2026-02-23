@@ -1,0 +1,91 @@
+============================================================
+PLUMBERS 911 CHICAGO — SITE AUDIT REPORT
+============================================================
+
+Total HTML pages: 335
+Total blog posts in data: 107
+Sitemap URLs: 214
+
+--- TITLE & DESCRIPTION AUDIT ---
+  MISSING DESC: about-us\index.html
+  DUPE TITLE: arlington-heights-il-plumbing\bathtub-install\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: arlington-heights-il-plumbing\bathtub-install\index.html
+  DUPE TITLE: arlington-heights-il-plumbing\shower-install\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: arlington-heights-il-plumbing\shower-install\index.html
+  MISSING DESC: blog\do-hot-water-heater-blankets-work\index.html
+  MISSING DESC: blog\what-is-the-average-life-expectancy-of-a-water-heater\index.html
+  DUPE TITLE: chicago-il-plumbing\backflow-testing-installation\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: chicago-il-plumbing\backflow-testing-installation\index.html
+  DUPE TITLE: chicago-il-plumbing\bathroom-remodeling\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: chicago-il-plumbing\bathroom-remodeling\index.html
+  DUPE TITLE: chicago-il-plumbing\bathtub-install\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: chicago-il-plumbing\bathtub-install\index.html
+  DUPE TITLE: chicago-il-plumbing\commercial-plumbing\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: chicago-il-plumbing\commercial-plumbing\index.html
+  DUPE TITLE: chicago-il-plumbing\dishwasher-install\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: chicago-il-plumbing\dishwasher-install\index.html
+  DUPE TITLE: chicago-il-plumbing\drain-cleaning\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  MISSING DESC: chicago-il-plumbing\drain-cleaning\index.html
+  DUPE TITLE: chicago-il-plumbing\drain-replacement\index.html = about-us\index.html: ' | Plumbers 911 Chicago...'
+  ... and 57 more issues
+
+--- H1 AUDIT ---
+  MULTIPLE H1s: about-us\index.html (2 found)
+  DUPE H1: about-us\index.html = about-us\index.html: 'About Plumbers 911 Chicago'
+  MULTIPLE H1s: arlington-heights-il-plumbing\bathtub-install\index.html (2 found)
+  MULTIPLE H1s: arlington-heights-il-plumbing\shower-install\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\backflow-testing-installation\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\bathroom-remodeling\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\bathtub-install\index.html (2 found)
+  DUPE H1: chicago-il-plumbing\bathtub-install\index.html = arlington-heights-il-plumbing\bathtub-install\index.html: 'Bathtub Services'
+  MULTIPLE H1s: chicago-il-plumbing\commercial-plumbing\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\dishwasher-install\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\drain-cleaning\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\drain-replacement\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\emergency-plumber\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\faucet-repair\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\frozen-broken-pipe-repair\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\garbage-disposal-installation\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\gas-line-install-repair\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\kitchen-remodeling\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\residential-plumbing\index.html (2 found)
+  MULTIPLE H1s: chicago-il-plumbing\residential-plumbing-coupon\index.html (2 found)
+  ... and 23 more issues
+
+--- IMAGE ALT TEXT AUDIT ---
+  MISSING ALT: about-us\index.html — https://plumbers911chicago.com/wp-content/uploads/2024/01/Grohe-logo-300x128.png
+  MISSING ALT: about-us\index.html — https://plumbers911chicago.com/wp-content/uploads/2024/01/american-standard-small-1.png
+  MISSING ALT: about-us\index.html — https://plumbers911chicago.com/wp-content/uploads/2024/01/moen-small.png
+  MISSING ALT: about-us\index.html — https://plumbers911chicago.com/wp-content/uploads/2024/01/Kohler_Logo_CORP_2012-11-21_BLK.png
+  MISSING ALT: about-us\index.html — https://plumbers911chicago.com/wp-content/uploads/2024/01/delta-small.png
+  MISSING ALT: about-us\index.html — https://plumbers911chicago.com/wp-content/uploads/2024/01/a-o-smith-smal.png
+  MISSING ALT: chicago-il-plumbing\residential-plumbing-coupon\index.html — https://plumbers911chicago.com/wp-content/uploads/2024/03/Plumbers911-coupon-residential-plumbing-service-min.webp
+
+--- INTERNAL LINK AUDIT ---
+  BROKEN LINK: blog\trenchless-sewer-repair-how-it-works\index.html → /guide/complete-guide-plumbing-chicago
+  BROKEN LINK: chicago-il-plumbing\bathroom-remodeling\index.html → /arlington-heights-il-plumbing/dishwasher-install
+  BROKEN LINK: blog\cook-county-plumbing-services\index.html → /category/service-areas/
+  BROKEN LINK: blog\home-plumbing-diagram-explained\index.html → /guide/complete-guide-plumbing-chicago
+  BROKEN LINK: chicago-il-plumbing\sewer-cleaning\index.html → /arlington-heights-il-plumbing/commercial-plumbing
+  BROKEN LINK: chicago-il-plumbing\sump-pump-install-replacement\index.html → /arlington-heights-il-plumbing/toilet-install
+  BROKEN LINK: chicago-il-plumbing\whole-house-repiping\index.html → /arlington-heights-il-plumbing/whole-house-repiping
+  BROKEN LINK: arlington-heights-il-plumbing\shower-install\index.html → /contact/
+  BROKEN LINK: chicago-il-plumbing\faucet-repair\index.html → /arlington-heights-il-plumbing/tankless-water-heater-installation
+  BROKEN LINK: chicago-il-plumbing\water-heater-repair\index.html → /arlington-heights-il-plumbing/water-softener-installation
+  BROKEN LINK: chicago-il-plumbing\whole-house-repiping\index.html → /arlington-heights-il-plumbing/kitchen-remodeling
+  BROKEN LINK: chicago-il-plumbing\gas-line-install-repair\index.html → /arlington-heights-il-plumbing/toilet-install
+  BROKEN LINK: chicago-il-plumbing\bathroom-remodeling\index.html → /arlington-heights-il-plumbing/emergency-plumber
+  BROKEN LINK: chicago-il-plumbing\tankless-water-heater-repair\index.html → /arlington-heights-il-plumbing/toilet-install
+  BROKEN LINK: blog\bathroom-remodel-plumbing-cost-timeline\index.html → /category/remodeling/
+  BROKEN LINK: chicago-il-plumbing\water-heater-installation\index.html → /arlington-heights-il-plumbing/whole-house-repiping
+  BROKEN LINK: chicago-il-plumbing\residential-plumbing\index.html → /arlington-heights-il-plumbing/water-leak-detection-repair
+  BROKEN LINK: chicago-il-plumbing\water-heater-repair\index.html → /arlington-heights-il-plumbing/water-leak-detection-repair
+  BROKEN LINK: service-area\index.html → /gurnee-il-plumbing/
+  BROKEN LINK: service-area\index.html → /westchester-il-plumbing/
+  ... and 1180 more broken links
+
+--- SUMMARY ---
+Total issues found: 1327
+SEO Health Score: 0/100
+
+============================================================
