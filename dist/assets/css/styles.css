@@ -399,6 +399,10 @@ section { padding: 3rem 0; }
 @media (max-width: 768px) {
   .mobile-call-bar { display: block; }
   body { padding-bottom: 52px; }
+  .trust-banner-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+  .stat-number { font-size: 1.5rem; }
+  .contact-grid { grid-template-columns: 1fr; }
   .header-inner { flex-wrap: wrap; gap: .75rem; }
   .header-phone { display: none; }
   .menu-toggle { display: flex; margin-left: auto; }
