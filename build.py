@@ -607,16 +607,20 @@ def build():
         f.write(robots)
     print("  /robots.txt")
 
-    # --- VERCEL CONFIG WITH REDIRECTS ---
+    # --- VERCEL CONFIG WITH REDIRECTS (written to project root) ---
     redirects = generate_redirects_json()
-    vercel_config = {
-        "trailingSlash": True,
-        "cleanUrls": True,
-        "redirects": redirects,
-    }
-    with open(os.path.join(DIST_DIR, "vercel.json"), "w", encoding="utf-8") as f:
+    root_vercel = os.path.join(SITE_DIR, "vercel.json")
+    if os.path.exists(root_vercel):
+        with open(root_vercel, "r", encoding="utf-8") as f:
+            vercel_config = json.load(f)
+    else:
+        vercel_config = {}
+    vercel_config["redirects"] = redirects
+    vercel_config["trailingSlash"] = True
+    vercel_config["cleanUrls"] = True
+    with open(root_vercel, "w", encoding="utf-8") as f:
         json.dump(vercel_config, f, indent=2)
-    print("  vercel.json (" + str(len(redirects)) + " redirects)")
+    print("  vercel.json updated at project root (" + str(len(redirects)) + " redirects)")
 
     # Count total
     total = sum(1 for _, _, files in os.walk(DIST_DIR) for f in files if f.endswith(".html"))
