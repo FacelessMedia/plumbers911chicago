@@ -430,6 +430,8 @@ def minify_html(html):
     html = re.sub(r'<!--(?!\[if).*?-->', '', html, flags=re.DOTALL)
     html = re.sub(r'\n\s*\n+', '\n', html)
     html = re.sub(r'>\s{2,}<', '> <', html)
+    # Add loading="lazy" to images missing it (Item 90)
+    html = re.sub(r'<img(?!.*?loading=)', '<img loading="lazy"', html)
     return html.strip()
 
 

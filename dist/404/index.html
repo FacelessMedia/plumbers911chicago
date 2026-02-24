@@ -100,7 +100,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700;1,800&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <!-- Critical above-fold CSS (Item 83) -->
+  <style>
+  :root{--red:#e52521;--navy:#0c1b30;--white:#fff;--light:#f5f5f5;--gray-700:#333}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:16px}body{font-family:'Open Sans',Arial,sans-serif;color:var(--gray-700);line-height:1.7;background:var(--white)}
+  .container{max-width:1200px;margin:0 auto;padding:0 20px}
+  .site-header{background:var(--white);padding:.75rem 0;border-bottom:3px solid var(--red)}
+  .header-inner{display:flex;align-items:center;justify-content:space-between}
+  .logo img{max-height:60px;width:auto}
+  .page-hero{background:linear-gradient(135deg,var(--navy),#162d50);color:var(--white);padding:2.5rem 0}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 2rem;font-weight:700;border-radius:4px;text-decoration:none;font-family:inherit}
+  .btn-primary{background:var(--red);color:var(--white)}
+  </style>
+  <!-- Defer main stylesheet (Item 84) -->
+  <link rel="stylesheet" href="/assets/css/styles.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/assets/css/styles.css"></noscript>
 
   <!-- Phase 6: Google Analytics 4 + GTM placeholders -->
   <!-- Replace GA_MEASUREMENT_ID and GTM_CONTAINER_ID with real values -->
