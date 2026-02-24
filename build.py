@@ -6,6 +6,7 @@ import json
 import os
 import re
 import shutil
+import time
 
 SITE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SITE_DIR, "data")
@@ -201,8 +202,39 @@ def normalize_urls(html):
     return html
 
 
+def ensure_seo(ctx):
+    """Ensure ctx has seo.title and seo.description, falling back to page title."""
+    seo = ctx.get("seo", {})
+    if isinstance(seo, dict):
+        if not seo.get("title"):
+            # Try service_name, city_name, or title
+            name = ctx.get("service_name") or ctx.get("city_name") or ctx.get("title") or ""
+            if name:
+                page_type = ctx.get("page_type", "")
+                if page_type == "service":
+                    seo["title"] = name + " Services Chicago"
+                elif page_type == "location":
+                    seo["title"] = "Plumber " + name + ", IL"
+                else:
+                    seo["title"] = name
+            else:
+                seo["title"] = "Plumbers 911 Chicago"
+        if not seo.get("description"):
+            name = ctx.get("service_name") or ctx.get("city_name") or ctx.get("title") or ""
+            page_type = ctx.get("page_type", "")
+            if page_type == "service":
+                seo["description"] = "Professional " + name.lower() + " services in Chicago. Licensed, insured plumbers available 24/7. Call 833-758-6911."
+            elif page_type == "location":
+                seo["description"] = "Licensed plumber in " + name + ", IL. 24/7 emergency service, free estimates. Call 833-758-6911."
+            else:
+                seo["description"] = "Licensed plumbing services in Chicago and surrounding areas. Call 833-758-6911."
+    ctx["seo"] = seo
+    return ctx
+
+
 def build_page(base_tpl, content_tpl_str, ctx):
     """Render content template, inject into base layout."""
+    ctx = ensure_seo(ctx)
     content_html = render(content_tpl_str, ctx)
     full_ctx = {**ctx, "content_block": content_html}
     # Replace the {{> content}} partial in base with the rendered content
@@ -210,6 +242,7 @@ def build_page(base_tpl, content_tpl_str, ctx):
     page_html = render(page_html, full_ctx)
     page_html = normalize_urls(page_html)
     page_html = fix_broken_links(page_html)
+    page_html = minify_html(page_html)
     return page_html
 
 
@@ -265,6 +298,12 @@ DEAD_BLOG_SLUGS = {
     "why-wont-my-sump-pump-stop-running",
     "what-causes-bathroom-sink-to-clog",
     "do-water-heater-blankets-work",
+    "plumbing-fixture-lifespan-guide",
+}
+
+
+DEAD_SERVICE_SLUGS = {
+    "residential-plumbing-coupon",
 }
 
 
@@ -386,6 +425,14 @@ def generate_xml_sitemap(built_pages):
     return "\n".join(lines)
 
 
+def minify_html(html):
+    """Lightweight HTML minification: strip comments, collapse whitespace."""
+    html = re.sub(r'<!--(?!\[if).*?-->', '', html, flags=re.DOTALL)
+    html = re.sub(r'\n\s*\n+', '\n', html)
+    html = re.sub(r'>\s{2,}<', '> <', html)
+    return html.strip()
+
+
 def fix_broken_links(html):
     """Post-process HTML to fix known broken internal links."""
     # 1. /contact/ → /contact-us/
@@ -430,6 +477,7 @@ def fix_broken_links(html):
 
 
 def build():
+    build_start = time.time()
     print("Building static site...")
 
     # Clean dist
@@ -505,6 +553,10 @@ def build():
     svc_skipped = 0
     for svc in services:
         if is_arlington_service_page(svc.get("url_path", "")):
+            svc_skipped += 1
+            continue
+        svc_slug = svc.get("url_path", "").strip("/").split("/")[-1]
+        if svc_slug in DEAD_SERVICE_SLUGS:
             svc_skipped += 1
             continue
         cp = make_canonical(svc["url_path"])
@@ -754,6 +806,8 @@ def build():
     for pg in gen_pages:
         if pg.get("slug") == "request-a-call-back":
             continue
+        if is_arlington_service_page(pg.get("url_path", "")):
+            continue
         cp = make_canonical(pg["url_path"])
         crumbs = [("Home", "/"), (pg.get("title", ""), cp)]
         ctx = {**global_ctx, **pg, "page_type": "page",
@@ -800,13 +854,51 @@ def build():
         json.dump(vercel_config, f, indent=2)
     print("  vercel.json updated at project root (" + str(len(redirects)) + " redirects)")
 
+    # --- SEO QUALITY CHECK ---
+    print("\n  SEO Quality Check:")
+    titles_seen = {}
+    descs_seen = {}
+    issues = 0
+    for r, d, fs in os.walk(DIST_DIR):
+        for f in fs:
+            if not f.endswith(".html"):
+                continue
+            fp = os.path.join(r, f)
+            content = open(fp, "r", encoding="utf-8").read()
+            rel = os.path.relpath(fp, DIST_DIR)
+            # Check title
+            tm = re.search(r"<title>(.*?)</title>", content)
+            if tm:
+                t = tm.group(1)
+                if t in titles_seen:
+                    issues += 1
+                titles_seen.setdefault(t, []).append(rel)
+            # Check meta description
+            dm = re.search(r'<meta name="description" content="(.*?)"', content)
+            if dm:
+                d_val = dm.group(1)
+                if d_val in descs_seen:
+                    issues += 1
+                descs_seen.setdefault(d_val, []).append(rel)
+    dup_titles = sum(1 for t, ps in titles_seen.items() if len(ps) > 1)
+    dup_descs = sum(1 for d, ps in descs_seen.items() if len(ps) > 1)
+    print("    Duplicate titles: " + str(dup_titles))
+    print("    Duplicate descriptions: " + str(dup_descs))
+
+    # --- TOTAL SIZE ---
+    total_size = sum(os.path.getsize(os.path.join(r, f)) for r, d, fs in os.walk(DIST_DIR) for f in fs)
+
     # Count total
     total = sum(1 for _, _, files in os.walk(DIST_DIR) for f in files if f.endswith(".html"))
+    build_time = time.time() - build_start
     print("\n" + "=" * 50)
     print("BUILD COMPLETE!")
     print("  HTML pages: " + str(total))
     print("  Pages removed: " + str(loc_skipped + svc_skipped + len(removed_posts) + 1))
     print("  Redirects configured: " + str(len(redirects)))
+    print("  Sitemap URLs: " + str(len(built_pages)))
+    print("  Total dist size: " + str(round(total_size / 1024 / 1024, 1)) + " MB")
+    print("  Build time: " + str(round(build_time, 2)) + "s")
     print("  Output: " + DIST_DIR)
     print("=" * 50)
 

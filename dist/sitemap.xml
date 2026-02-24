@@ -26,16 +26,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://plumbers911chicago.com/arlington-heights-il-plumbing/bathtub-install/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://plumbers911chicago.com/arlington-heights-il-plumbing/shower-install/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://plumbers911chicago.com/barrington-il-plumbing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -431,11 +421,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://plumbers911chicago.com/blog/plumbing-fixture-lifespan-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://plumbers911chicago.com/blog/plumbing-glossary/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -727,11 +712,6 @@
   </url>
   <url>
     <loc>https://plumbers911chicago.com/chicago-il-plumbing/residential-plumbing/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://plumbers911chicago.com/chicago-il-plumbing/residential-plumbing-coupon/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
