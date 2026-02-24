@@ -480,6 +480,30 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 
 /* Dark mode removed — site uses fixed brand colors (red/navy/white) */
 
+/* Item 94: Urgency banner */
+.urgency-banner { background: var(--red); color: var(--white); text-align: center; padding: .5rem 1rem; font-weight: 700; font-size: .9rem; }
+.urgency-banner .pulse { display: inline-block; width: 8px; height: 8px; background: #22c55e; border-radius: 50%; margin-right: .4rem; animation: pulse-dot 1.5s ease-in-out infinite; }
+
+/* Item 93: Floating quote button */
+.floating-cta { position: fixed; bottom: 70px; right: 20px; z-index: 990; background: var(--red); color: var(--white); padding: .75rem 1.25rem; border-radius: 50px; font-weight: 700; font-size: .9rem; text-decoration: none; box-shadow: 0 4px 15px rgba(229,37,33,.4); transition: all .3s ease; }
+.floating-cta:hover { background: var(--red-dark); color: var(--white); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(229,37,33,.5); }
+@media (min-width: 769px) { .floating-cta { bottom: 30px; } }
+
+/* Item 98: Service guarantee badge */
+.guarantee-badge { display: inline-flex; align-items: center; gap: .5rem; background: #f0fdf4; border: 2px solid #22c55e; border-radius: 8px; padding: .5rem 1rem; font-weight: 600; font-size: .85rem; color: #166534; }
+.guarantee-badge svg { flex-shrink: 0; }
+
+/* Item 99: Why Choose Us comparison table */
+.comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+.comparison-table th, .comparison-table td { padding: .6rem .75rem; border: 1px solid var(--gray-200); text-align: center; font-size: .9rem; }
+.comparison-table th { background: var(--navy); color: var(--white); font-weight: 700; }
+.comparison-table tr:nth-child(even) { background: var(--gray-100); }
+.comparison-table .check { color: #22c55e; font-weight: 700; }
+.comparison-table .cross { color: var(--red); }
+
+/* Item 100: Estimated response time */
+.response-time { display: flex; align-items: center; gap: .5rem; background: #eff6ff; border-radius: 6px; padding: .5rem 1rem; font-size: .85rem; color: #1e40af; font-weight: 600; margin-bottom: 1rem; }
+
 /* ===== A-Z City Directory ===== */
 .az-directory { columns: 4; column-gap: 2rem; }
 .az-group { break-inside: avoid; margin-bottom: 1.25rem; }
