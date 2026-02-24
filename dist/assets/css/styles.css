@@ -480,6 +480,18 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 
 /* Dark mode removed — site uses fixed brand colors (red/navy/white) */
 
+/* ===== A-Z City Directory ===== */
+.az-directory { columns: 4; column-gap: 2rem; }
+.az-group { break-inside: avoid; margin-bottom: 1.25rem; }
+.az-letter { font-size: 1.3rem; font-weight: 800; color: var(--red); margin: 0 0 .35rem; padding-bottom: .25rem; border-bottom: 2px solid var(--red); }
+.az-list { list-style: none; padding: 0; margin: 0; }
+.az-city { padding: .15rem 0; font-size: .9rem; line-height: 1.4; }
+.az-city a { color: var(--navy); text-decoration: none; }
+.az-city a:hover { color: var(--red); text-decoration: underline; }
+.az-nopage { color: var(--gray-500); }
+.location-search input { width: 100%; max-width: 400px; margin: 0 auto; display: block; padding: .6rem 1rem; border: 1px solid var(--gray-300); border-radius: 6px; font-size: .95rem; }
+.location-search input:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(204,0,0,.1); }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .home-grid { grid-template-columns: 1fr; }
@@ -488,6 +500,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
   .service-sidebar-col { position: static; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .steps-grid { grid-template-columns: 1fr; }
+  .az-directory { columns: 3; }
 }
 
 @media (max-width: 768px) {
@@ -518,6 +531,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
   .about-values .values-grid { grid-template-columns: 1fr; }
   .service-links-list { grid-template-columns: 1fr; }
   .posts-grid { grid-template-columns: 1fr; }
+  .az-directory { columns: 2; }
   .cta-actions { flex-direction: column; align-items: center; }
   .footer-bottom-inner { text-align: center; }
 }

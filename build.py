@@ -209,6 +209,7 @@ def build_page(base_tpl, content_tpl_str, ctx):
     page_html = base_tpl.replace("{{> content}}", content_html)
     page_html = render(page_html, full_ctx)
     page_html = normalize_urls(page_html)
+    page_html = fix_broken_links(page_html)
     return page_html
 
 
@@ -339,6 +340,7 @@ def generate_404_page(base_tpl, global_ctx):
     page_html = base_tpl.replace("{{> content}}", content)
     page_html = render(page_html, ctx)
     page_html = normalize_urls(page_html)
+    page_html = fix_broken_links(page_html)
     return page_html
 
 
@@ -384,6 +386,49 @@ def generate_xml_sitemap(built_pages):
     return "\n".join(lines)
 
 
+def fix_broken_links(html):
+    """Post-process HTML to fix known broken internal links."""
+    # 1. /contact/ → /contact-us/
+    html = html.replace('href="/contact/"', 'href="/contact-us/"')
+    html = html.replace('href="/contact"', 'href="/contact-us/"')
+
+    # 2. /category/* → /blog/
+    html = re.sub(r'href="/category/[^"]*"', 'href="/blog/"', html)
+
+    # 3. Dead location links → strip <a> tag, keep text
+    for slug in DEAD_LOCATION_SLUGS:
+        pattern = re.compile(
+            r'<a\s[^>]*href="/' + re.escape(slug) + r'-il-plumbing/?"[^>]*>(.*?)</a>',
+            re.DOTALL
+        )
+        html = pattern.sub(r'\1', html)
+
+    # 4. Blog posts referenced at root level → /blog/slug
+    BLOG_SLUGS_AT_ROOT = [
+        "chicago-plumbing-code-homeowners-guide",
+        "prevent-frozen-pipes-chicago-winter",
+        "sewer-replacement-cost-chicago",
+        "tank-vs-tankless-water-heater-chicago-guide",
+        "water-heater-maintenance-annual-checklist",
+        "what-is-the-average-life-expectancy-of-a-water-heater",
+        "do-hot-water-heater-blankets-work",
+        "when-to-call-emergency-plumber-vs-diy",
+        "bathroom-remodel-plumbing-cost-timeline",
+        "commercial-plumbing-maintenance-checklist",
+        "emergency-plumber-checklist-what-to-do",
+        "how-does-a-garbage-disposal-work",
+        "signs-you-need-sewer-line-replacement",
+    ]
+    for slug in BLOG_SLUGS_AT_ROOT:
+        html = html.replace('href="/' + slug + '"', 'href="/blog/' + slug + '/"')
+        html = html.replace('href="/' + slug + '/"', 'href="/blog/' + slug + '/"')
+
+    # 5. /guide/* → /blog/
+    html = re.sub(r'href="/guide/[^"]*"', 'href="/blog/"', html)
+
+    return html
+
+
 def build():
     print("Building static site...")
 
@@ -413,14 +458,21 @@ def build():
     categories = load_json("categories.json")
     tags = load_json("tags.json")
 
-    # Filter location_index to only include kept locations
+    # Filter location_index to only include kept locations (those with pages)
     location_index_filtered = [l for l in location_index if l.get("city_slug") not in DEAD_LOCATION_SLUGS]
+
+    # Full location list for service area page (ALL cities, with has_page flag)
+    location_index_full = []
+    for l in sorted(location_index, key=lambda x: x.get("city_name", "")):
+        entry = {**l, "has_page": l.get("city_slug") not in DEAD_LOCATION_SLUGS}
+        location_index_full.append(entry)
 
     global_ctx = {
         "site": site_meta,
         "navigation": navigation,
         "service_index": service_index,
         "location_index": location_index_filtered,
+        "location_index_full": location_index_full,
         "categories": categories,
         "tags": tags,
         "current_year": "2026",
@@ -600,10 +652,24 @@ def build():
         pg = sa_pages[0]
         cp = make_canonical(pg["url_path"])
         crumbs = [("Home", "/"), ("Service Area", cp)]
+        # Group all cities by first letter for A-Z directory
+        from collections import OrderedDict
+        letter_groups = OrderedDict()
+        for city in location_index_full:
+            letter = city["city_name"][0].upper()
+            if letter not in letter_groups:
+                letter_groups[letter] = []
+            letter_groups[letter].append(city)
+        city_letters = [{"letter": k, "cities": v} for k, v in letter_groups.items()]
+        total_cities = len(location_index_full)
+        cities_with_pages = len(location_index_filtered)
         ctx = {**global_ctx, **pg, "page_type": "service-area",
                "canonical_path": cp,
                "breadcrumb_schema": make_breadcrumb_schema(crumbs),
-               "robots_meta": ROBOTS_INDEX}
+               "robots_meta": ROBOTS_INDEX,
+               "city_letters": city_letters,
+               "total_cities": str(total_cities),
+               "cities_with_pages": str(cities_with_pages)}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, sa_tpl, ctx)

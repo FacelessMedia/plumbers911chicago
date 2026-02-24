@@ -77,187 +77,7 @@
   ],
   "redirects": [
     {
-      "source": "/garden-prairie-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/riverdale-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/itasca-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/frankfort-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/yorkville-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/westchester-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/gurnee-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/hebron-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/sugar-grove-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/lemont-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/big-rock-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/hines-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/niles-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/lake-zurich-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/worth-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/rolling-meadows-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/antioch-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/minonk-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/spring-valley-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/west-chicago-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/riverside-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/kaneville-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/willow-springs-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/kingston-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/downers-grove-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/lake-in-the-hills-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/zion-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/glendale-heights-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/shorewood-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/deerfield-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/dana-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/wonder-lake-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/batavia-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
       "source": "/hoffman-estates-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/villa-park-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/hampshire-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/round-lake-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
@@ -267,22 +87,12 @@
       "permanent": true
     },
     {
-      "source": "/sandwich-il-plumbing/:path*",
+      "source": "/kingston-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/shabbona-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/st-charles-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/russell-il-plumbing/:path*",
+      "source": "/minonk-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
@@ -292,47 +102,42 @@
       "permanent": true
     },
     {
-      "source": "/streator-il-plumbing/:path*",
+      "source": "/hebron-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/river-forest-il-plumbing/:path*",
+      "source": "/russell-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/highwood-il-plumbing/:path*",
+      "source": "/willow-springs-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/salem-il-plumbing/:path*",
+      "source": "/batavia-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/malta-il-plumbing/:path*",
+      "source": "/lemont-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/ringwood-il-plumbing/:path*",
+      "source": "/downers-grove-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/south-holland-il-plumbing/:path*",
+      "source": "/garden-prairie-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/mokena-il-plumbing/:path*",
-      "destination": "/service-area/",
-      "permanent": true
-    },
-    {
-      "source": "/darien-il-plumbing/:path*",
+      "source": "/gurnee-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
@@ -342,17 +147,52 @@
       "permanent": true
     },
     {
+      "source": "/sandwich-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/dana-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
       "source": "/river-grove-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/lincolnshire-il-plumbing/:path*",
+      "source": "/antioch-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/willowbrook-il-plumbing/:path*",
+      "source": "/shabbona-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/frankfort-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/hampshire-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/westchester-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/sugar-grove-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/wonder-lake-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
@@ -362,12 +202,62 @@
       "permanent": true
     },
     {
+      "source": "/big-rock-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/yorkville-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-in-the-hills-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/spring-valley-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/streator-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/ringwood-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/river-forest-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/riverside-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/salem-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
       "source": "/union-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
     {
-      "source": "/grayslake-il-plumbing/:path*",
+      "source": "/glendale-heights-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/st-charles-il-plumbing/:path*",
       "destination": "/service-area/",
       "permanent": true
     },
@@ -377,8 +267,138 @@
       "permanent": true
     },
     {
+      "source": "/malta-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/willowbrook-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/rolling-meadows-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/itasca-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/lincolnshire-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/shorewood-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/grayslake-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/worth-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/zion-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/mokena-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/highwood-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-zurich-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/deerfield-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/round-lake-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/west-chicago-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/hines-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/villa-park-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/darien-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/kaneville-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/riverdale-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/south-holland-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/niles-il-plumbing/:path*",
+      "destination": "/service-area/",
+      "permanent": true
+    },
+    {
       "source": "/arlington-heights-il-plumbing/:service((?!index\\.html$).+)",
       "destination": "/arlington-heights-il-plumbing/",
+      "permanent": true
+    },
+    {
+      "source": "/what-can-you-put-in-your-garbage-disposal/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-can-you-put-in-your-garbage-disposal/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/what-can-i-use-at-home-to-unclog-a-drain/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-can-i-use-at-home-to-unclog-a-drain/",
+      "destination": "/blog/",
       "permanent": true
     },
     {
@@ -402,26 +422,6 @@
       "permanent": true
     },
     {
-      "source": "/what-can-i-use-at-home-to-unclog-a-drain/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/what-can-i-use-at-home-to-unclog-a-drain/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/what-can-you-put-in-your-garbage-disposal/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/what-can-you-put-in-your-garbage-disposal/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/do-water-heater-blankets-work/",
       "destination": "/blog/",
       "permanent": true
@@ -432,22 +432,22 @@
       "permanent": true
     },
     {
-      "source": "/how-does-a-gas-tankless-water-heater-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/how-does-a-gas-tankless-water-heater-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/what-causes-bathroom-sink-to-clog/",
       "destination": "/blog/",
       "permanent": true
     },
     {
       "source": "/blog/what-causes-bathroom-sink-to-clog/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/how-does-a-gas-tankless-water-heater-work/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-does-a-gas-tankless-water-heater-work/",
       "destination": "/blog/",
       "permanent": true
     },

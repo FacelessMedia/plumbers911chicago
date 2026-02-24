@@ -1,5 +1,5 @@
-<!-- Template: SERVICE AREA PAGE (Phase 50 redesign) -->
-<!-- Data source: data/pages_service_area.json + data/location_index.json -->
+<!-- Template: SERVICE AREA PAGE (redesigned for compact A-Z directory) -->
+<!-- Data source: data/pages_service_area.json + data/location_index.json (all 248 cities) -->
 
 <section class="page-hero page-hero--service-area">
   <div class="container">
@@ -7,7 +7,7 @@
       <a href="/">Home</a> &rsaquo; <span>Service Area</span>
     </nav>
     <h1>Plumbers 911 Chicago Service Area</h1>
-    <p>Licensed Plumbing Professionals Serving 188+ Cities Across Illinois</p>
+    <p>Licensed Plumbing Professionals Serving {{total_cities}} Cities Across Illinois</p>
     <div class="hero-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
       <a href="/contact-us/" class="btn btn-cta-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">Get Free Estimate</a>
@@ -19,7 +19,7 @@
   <div class="container">
     <div class="stats-grid">
       <div class="stat-card">
-        <span class="stat-number">188+</span>
+        <span class="stat-number">{{total_cities}}</span>
         <span class="stat-label">Cities Served</span>
       </div>
       <div class="stat-card">
@@ -46,29 +46,37 @@
 
 <section class="location-directory">
   <div class="container">
-    <h2>Find a Plumber Near You</h2>
-    <p style="text-align:center; color:#6c757d; margin-bottom:1.5rem;">Search for your city below or browse our complete service area. All cities have access to our full range of plumbing services.</p>
+    <h2>Cities We Serve A&ndash;Z</h2>
+    <p style="text-align:center;color:#6c757d;margin-bottom:.5rem;">We provide plumbing services to all cities listed below. Cities shown in <strong style="color:var(--navy);">bold blue</strong> have dedicated service pages.</p>
 
-    <div class="location-search">
-      <input type="text" id="location-search" placeholder="Type your city name..." aria-label="Search cities">
+    <div class="location-search" style="margin-bottom:1.5rem;">
+      <input type="text" id="location-search" placeholder="Search for your city..." aria-label="Search cities">
     </div>
 
-    <p id="location-count" style="text-align:center; font-size:.85rem; color:#6c757d; margin-bottom:1rem;"></p>
-
-    <div class="location-grid" id="location-grid">
-      {{#each location_index}}
-      <a href="{{url_path}}" class="location-card" data-city="{{city_name}}">
-        <h3>{{city_name}}, {{state}}</h3>
-      </a>
+    <div class="az-directory" id="az-directory">
+      {{#each city_letters}}
+      <div class="az-group" data-letter="{{letter}}">
+        <h3 class="az-letter">{{letter}}</h3>
+        <ul class="az-list">
+          {{#each cities}}
+          <li class="az-city" data-city="{{city_name}}">
+            {{#if has_page}}<a href="{{url_path}}"><strong>{{city_name}}</strong></a>{{/if}}
+            {{#if has_page}}{{else}}<span class="az-nopage">{{city_name}}</span>{{/if}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
       {{/each}}
     </div>
+
+    <p id="location-count" style="text-align:center;font-size:.85rem;color:#6c757d;margin-top:1rem;"></p>
   </div>
 </section>
 
 <section class="cta-banner">
   <div class="container">
     <h2>Don't See Your City?</h2>
-    <p>We may still be able to help. Our service area is growing. Give us a call to check availability in your area.</p>
+    <p>We may still serve your area. Our coverage extends throughout the greater Chicagoland region. Give us a call to check.</p>
     <div class="cta-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
       <a href="/contact-us/" class="btn btn-outline btn-lg">Request Call Back</a>
@@ -78,21 +86,26 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var cards = document.querySelectorAll('.location-card');
+    var items = document.querySelectorAll('.az-city');
+    var groups = document.querySelectorAll('.az-group');
     var countEl = document.getElementById('location-count');
-    var total = cards.length;
+    var total = items.length;
     countEl.textContent = 'Showing all ' + total + ' cities';
 
     document.getElementById('location-search').addEventListener('input', function(e) {
-      var query = e.target.value.toLowerCase();
+      var q = e.target.value.toLowerCase();
       var visible = 0;
-      cards.forEach(function(card) {
-        var city = card.getAttribute('data-city').toLowerCase();
-        var show = city.includes(query);
-        card.style.display = show ? '' : 'none';
+      items.forEach(function(item) {
+        var city = item.getAttribute('data-city').toLowerCase();
+        var show = !q || city.includes(q);
+        item.style.display = show ? '' : 'none';
         if (show) visible++;
       });
-      countEl.textContent = query ? 'Showing ' + visible + ' of ' + total + ' cities' : 'Showing all ' + total + ' cities';
+      groups.forEach(function(g) {
+        var anyVisible = g.querySelectorAll('.az-city:not([style*="display: none"])').length > 0;
+        g.style.display = anyVisible ? '' : 'none';
+      });
+      countEl.textContent = q ? 'Showing ' + visible + ' of ' + total + ' cities' : 'Showing all ' + total + ' cities';
     });
   });
 </script>
