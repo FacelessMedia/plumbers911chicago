@@ -50,7 +50,7 @@ p { margin-bottom: 1rem; }
 .btn-sm { padding: .4rem 1.25rem; font-size: .85rem; }
 
 /* ===== HEADER (white bg, logo left, phone right) ===== */
-.site-header { background: var(--white); padding: 1rem 0; margin-bottom: 0; }
+.site-header { background: var(--white); padding: .75rem 0; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; }
 
 /* Logo */
@@ -404,18 +404,9 @@ section { padding: 3rem 0; }
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
 @media (max-width: 640px) { .content-body table { min-width: 500px; } .content-body { overflow-x: auto; } }
 
-/* Item 60: FAQ accordion smooth animation */
-.faq-item summary { cursor: pointer; font-weight: 600; padding: .75rem 0; border-bottom: 1px solid var(--gray-200); list-style: none; }
-.faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::before { content: '+'; display: inline-block; width: 1.5rem; font-weight: 700; color: var(--red); }
-.faq-item[open] summary::before { content: '−'; }
-.faq-item p { padding: .75rem 0 .75rem 1.5rem; color: var(--gray-500); }
+/* Item 60: FAQ accordion — uses styles from .faq-section block above */
 
-/* Item 61: Breadcrumb styling */
-.breadcrumb { font-size: .85rem; margin-bottom: 1rem; }
-.breadcrumb a { color: rgba(255,255,255,.7); }
-.breadcrumb a:hover { color: #fff; }
-.breadcrumb span { color: rgba(255,255,255,.9); }
+/* Item 61: Breadcrumb — uses styles from service page block above */
 
 /* Item 64: Blockquote styling */
 .content-body blockquote { border-left: 4px solid var(--red); padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--light); font-style: italic; color: var(--gray-700); border-radius: 0 6px 6px 0; }
@@ -480,14 +471,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 
 /* Dark mode removed — site uses fixed brand colors (red/navy/white) */
 
-/* Item 94: Urgency banner */
-.urgency-banner { background: var(--red); color: var(--white); text-align: center; padding: .5rem 1rem; font-weight: 700; font-size: .9rem; }
-.urgency-banner .pulse { display: inline-block; width: 8px; height: 8px; background: #22c55e; border-radius: 50%; margin-right: .4rem; animation: pulse-dot 1.5s ease-in-out infinite; }
-
-/* Item 93: Floating quote button */
-.floating-cta { position: fixed; bottom: 70px; right: 20px; z-index: 990; background: var(--red); color: var(--white); padding: .75rem 1.25rem; border-radius: 50px; font-weight: 700; font-size: .9rem; text-decoration: none; box-shadow: 0 4px 15px rgba(229,37,33,.4); transition: all .3s ease; }
-.floating-cta:hover { background: var(--red-dark); color: var(--white); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(229,37,33,.5); }
-@media (min-width: 769px) { .floating-cta { bottom: 30px; } }
+/* Urgency banner and floating CTA removed — cleaner layout */
 
 /* Item 98: Service guarantee badge */
 .guarantee-badge { display: inline-flex; align-items: center; gap: .5rem; background: #f0fdf4; border: 2px solid #22c55e; border-radius: 8px; padding: .5rem 1rem; font-weight: 600; font-size: .85rem; color: #166534; }
@@ -504,35 +488,32 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 /* Item 100: Estimated response time */
 .response-time { display: flex; align-items: center; gap: .5rem; background: #eff6ff; border-radius: 6px; padding: .5rem 1rem; font-size: .85rem; color: #1e40af; font-weight: 600; margin-bottom: 1rem; }
 
-/* ===== Interactive County Map ===== */
-.county-map-section { padding: 3rem 0 2rem; }
-.county-map-section h2 { text-align: center; margin-bottom: .25rem; }
-.county-map-wrapper { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: start; margin-top: 1rem; }
-.county-map-svg-wrap { background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 1px solid var(--gray-200); }
-#county-map { width: 100%; height: auto; }
-.county-path { stroke: #fff; stroke-width: 2; cursor: pointer; transition: all .25s ease; filter: url(#map-shadow); }
-.county-path:hover { stroke-width: 3; stroke: var(--navy); filter: brightness(1.1); }
-.county-primary { fill: #b91c1c; }
-.county-core { fill: #e52521; }
-.county-outer { fill: #f87171; }
-.county-far { fill: #fca5a5; }
-.county-group.active .county-path { stroke: var(--navy); stroke-width: 3; filter: brightness(1.15); }
-.county-label { fill: #fff; font-size: 13px; font-weight: 700; text-anchor: middle; pointer-events: none; text-shadow: 0 1px 2px rgba(0,0,0,.3); }
-.county-label-lg { font-size: 16px; }
-.county-map-panel { background: var(--white); border-radius: 12px; border: 1px solid var(--gray-200); padding: 1.5rem; min-height: 350px; }
-.county-map-panel h3 { color: var(--navy); margin-bottom: .5rem; }
-.county-legend { margin-top: 1.5rem; }
-.legend-item { display: flex; align-items: center; gap: .5rem; margin-bottom: .5rem; font-size: .85rem; color: var(--gray-700); }
-.legend-swatch { width: 20px; height: 14px; border-radius: 3px; flex-shrink: 0; }
-.county-city-list { list-style: none; padding: 0; margin: .75rem 0 0; columns: 2; column-gap: 1rem; max-height: 300px; overflow-y: auto; }
-.county-city-list li { padding: .2rem 0; font-size: .85rem; break-inside: avoid; }
-.county-city-list li a { color: var(--navy); font-weight: 600; text-decoration: none; }
-.county-city-list li a:hover { color: var(--red); text-decoration: underline; }
-.county-city-list li .no-page { color: var(--gray-500); }
+/* ===== Interactive County Directory ===== */
+.county-directory-section { padding: 2.5rem 0; }
+.county-directory-section h2 { text-align: center; margin-bottom: .25rem; }
+.county-dir-sub { text-align: center; color: var(--gray-500); margin-bottom: 1.5rem; }
+.county-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: .75rem; }
+.county-card { background: var(--white); border: 2px solid var(--gray-200); border-radius: 8px; padding: 1.25rem 1rem; cursor: pointer; text-align: center; transition: all .2s; font-family: inherit; }
+.county-card:hover { border-color: var(--red); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+.county-card.active { border-color: var(--red); background: #fef2f2; }
+.county-card-name { display: block; font-size: .95rem; font-weight: 700; color: var(--navy); }
+.county-card-count { display: block; font-size: .8rem; color: var(--gray-500); margin-top: .25rem; }
+.county-detail { background: var(--light); border: 1px solid var(--gray-200); border-radius: 8px; padding: 1.5rem; margin-top: 1.25rem; }
+.county-detail-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+.county-detail-header h3 { color: var(--navy); margin-bottom: 0; }
+.county-detail-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--gray-500); padding: 0 .25rem; line-height: 1; }
+.county-detail-close:hover { color: var(--red); }
+.county-detail-list { list-style: none; padding: 0; margin: 0; columns: 3; column-gap: 1.5rem; }
+.county-detail-list li { padding: .2rem 0; font-size: .9rem; break-inside: avoid; }
+.county-detail-list li a { color: var(--navy); font-weight: 600; text-decoration: none; }
+.county-detail-list li a:hover { color: var(--red); text-decoration: underline; }
+.county-detail-list li .no-page { color: var(--gray-500); }
 @media (max-width: 768px) {
-  .county-map-wrapper { grid-template-columns: 1fr; }
-  .county-map-panel { min-height: auto; }
-  .county-city-list { columns: 1; }
+  .county-cards { grid-template-columns: repeat(2, 1fr); }
+  .county-detail-list { columns: 2; }
+}
+@media (max-width: 480px) {
+  .county-detail-list { columns: 1; }
 }
 
 /* ===== A-Z City Directory ===== */

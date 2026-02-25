@@ -22,20 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     animEls.forEach(function(el) { obs.observe(el); });
   }
 
-  // === Phase 143: Reading progress bar for blog posts ===
-  var progressBar = document.getElementById('reading-progress');
-  if (progressBar) {
-    var article = document.querySelector('.blog-post') || document.querySelector('.content-body');
-    if (article) {
-      window.addEventListener('scroll', function() {
-        var rect = article.getBoundingClientRect();
-        var total = article.offsetHeight - window.innerHeight;
-        var progress = Math.min(100, Math.max(0, (-rect.top / total) * 100));
-        progressBar.style.width = progress + '%';
-      });
-    }
-  }
-
   // === Phase 149: Back-to-top button ===
   var btt = document.getElementById('back-to-top');
   if (btt) {
@@ -69,21 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!valid) { e.preventDefault(); }
     });
   });
-
-  // === Phase 159: Cookie consent banner ===
-  if (!localStorage.getItem('p911_consent')) {
-    var banner = document.getElementById('cookie-consent');
-    if (banner) {
-      banner.style.display = 'block';
-      var acceptBtn = document.getElementById('cookie-accept');
-      if (acceptBtn) {
-        acceptBtn.addEventListener('click', function() {
-          localStorage.setItem('p911_consent', '1');
-          banner.style.display = 'none';
-        });
-      }
-    }
-  }
 
   // === Phase 144: Auto-generate TOC from H2 headings ===
   var tocContainer = document.querySelector('.toc');
