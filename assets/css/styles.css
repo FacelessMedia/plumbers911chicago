@@ -579,6 +579,12 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
   .hero-right h1 { font-size: 1.5rem; }
 }
 
+/* ===== BREADCRUMB BAR (below hero) ===== */
+.breadcrumb-bar { background: var(--gray-100); border-bottom: 1px solid var(--gray-200); padding: .6rem 0; font-size: .85rem; color: var(--gray-500); }
+.breadcrumb-bar a { color: var(--gray-500); text-decoration: none; }
+.breadcrumb-bar a:hover { color: var(--red); }
+.breadcrumb-bar span { color: var(--gray-700); }
+
 /* ===== COUNTY HUB PAGES ===== */
 .county-hub-main { padding: 3rem 0; }
 .county-city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2.5rem; }

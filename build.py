@@ -259,6 +259,11 @@ def normalize_urls(html):
             body,
             flags=re.DOTALL
         )
+        # Strip "free estimate" references — we do not offer free estimates
+        body = re.sub(r'[Ff]ree [Ee]stimates?\.?\s*', '', body)
+        body = re.sub(r'We provide free estimates and ', 'We provide ', body)
+        body = re.sub(r'free estimates and transparent', 'transparent', body)
+        body = re.sub(r'Call [^\.<]*for a free estimate\.?', '', body)
         html = parts[0] + "</head>" + body
     return html
 

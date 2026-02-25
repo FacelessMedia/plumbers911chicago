@@ -3,18 +3,20 @@
 
 <section class="page-hero page-hero--service">
   <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a> &rsaquo; <a href="/chicago-il-plumbing/">Services</a> &rsaquo; <span>{{service_name}}</span>
-    </nav>
     <h1>{{service_name}} in Chicago, IL</h1>
     <!-- Note: Original WXR content may contain H1 tags. CSS hides duplicate H1s in content-body -->
     <p class="hero-location">Licensed Plumbing Professionals &bull; Available 24/7</p>
     <div class="hero-actions">
       <a href="tel:8337586911" class="btn btn-primary">Call 833-758-6911</a>
-      <a href="/contact-us/" class="btn btn-cta-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">Get Free Estimate</a>
     </div>
   </div>
 </section>
+
+<nav class="breadcrumb-bar" aria-label="Breadcrumb">
+  <div class="container">
+    <a href="/">Home</a> &rsaquo; <a href="/chicago-il-plumbing/">Services</a> &rsaquo; <span>{{service_name}}</span>
+  </div>
+</nav>
 
 <section class="service-page-main">
   <div class="container service-grid-layout">
@@ -31,8 +33,8 @@
           24/7 Service
         </span>
         <span class="trust-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-          Free Estimates
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Serving Chicagoland
         </span>
       </div>
 
@@ -60,7 +62,7 @@
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="tel" name="phone" placeholder="Phone Number" required>
           <input type="hidden" name="service" value="{{service_name}}">
-          <button type="submit" class="btn btn-submit">Get Free Quote</button>
+          <button type="submit" class="btn btn-submit">Request Quote</button>
         </form>
       </div>
 
