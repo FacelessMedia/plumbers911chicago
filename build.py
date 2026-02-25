@@ -252,6 +252,13 @@ def normalize_urls(html):
             '',
             body
         )
+        # Remove orphaned WordPress breadcrumb nav tags (shows "Home" as plain text)
+        body = re.sub(
+            r'<nav\s+aria-label="breadcrumbs"[^>]*>.*?</nav>',
+            '',
+            body,
+            flags=re.DOTALL
+        )
         html = parts[0] + "</head>" + body
     return html
 
