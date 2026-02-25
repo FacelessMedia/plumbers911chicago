@@ -736,13 +736,20 @@ def build():
         city_letters = [{"letter": k, "cities": v} for k, v in letter_groups.items()]
         total_cities = len(location_index_full)
         cities_with_pages = len(location_index_filtered)
+        # Load county map data for interactive SVG map
+        county_map_path = os.path.join(DATA_DIR, "county_map.json")
+        if os.path.exists(county_map_path):
+            county_map_data = json.dumps(json.load(open(county_map_path, "r", encoding="utf-8")))
+        else:
+            county_map_data = "{}"
         ctx = {**global_ctx, **pg, "page_type": "service-area",
                "canonical_path": cp,
                "breadcrumb_schema": make_breadcrumb_schema(crumbs),
                "robots_meta": ROBOTS_INDEX,
                "city_letters": city_letters,
                "total_cities": str(total_cities),
-               "cities_with_pages": str(cities_with_pages)}
+               "cities_with_pages": str(cities_with_pages),
+               "county_map_json": county_map_data}
         if pg.get("seo"):
             ctx["seo"] = pg["seo"]
         html = build_page(base_tpl, sa_tpl, ctx)

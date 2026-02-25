@@ -504,6 +504,37 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 /* Item 100: Estimated response time */
 .response-time { display: flex; align-items: center; gap: .5rem; background: #eff6ff; border-radius: 6px; padding: .5rem 1rem; font-size: .85rem; color: #1e40af; font-weight: 600; margin-bottom: 1rem; }
 
+/* ===== Interactive County Map ===== */
+.county-map-section { padding: 3rem 0 2rem; }
+.county-map-section h2 { text-align: center; margin-bottom: .25rem; }
+.county-map-wrapper { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: start; margin-top: 1rem; }
+.county-map-svg-wrap { background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 1px solid var(--gray-200); }
+#county-map { width: 100%; height: auto; }
+.county-path { stroke: #fff; stroke-width: 2; cursor: pointer; transition: all .25s ease; filter: url(#map-shadow); }
+.county-path:hover { stroke-width: 3; stroke: var(--navy); filter: brightness(1.1); }
+.county-primary { fill: #b91c1c; }
+.county-core { fill: #e52521; }
+.county-outer { fill: #f87171; }
+.county-far { fill: #fca5a5; }
+.county-group.active .county-path { stroke: var(--navy); stroke-width: 3; filter: brightness(1.15); }
+.county-label { fill: #fff; font-size: 13px; font-weight: 700; text-anchor: middle; pointer-events: none; text-shadow: 0 1px 2px rgba(0,0,0,.3); }
+.county-label-lg { font-size: 16px; }
+.county-map-panel { background: var(--white); border-radius: 12px; border: 1px solid var(--gray-200); padding: 1.5rem; min-height: 350px; }
+.county-map-panel h3 { color: var(--navy); margin-bottom: .5rem; }
+.county-legend { margin-top: 1.5rem; }
+.legend-item { display: flex; align-items: center; gap: .5rem; margin-bottom: .5rem; font-size: .85rem; color: var(--gray-700); }
+.legend-swatch { width: 20px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+.county-city-list { list-style: none; padding: 0; margin: .75rem 0 0; columns: 2; column-gap: 1rem; max-height: 300px; overflow-y: auto; }
+.county-city-list li { padding: .2rem 0; font-size: .85rem; break-inside: avoid; }
+.county-city-list li a { color: var(--navy); font-weight: 600; text-decoration: none; }
+.county-city-list li a:hover { color: var(--red); text-decoration: underline; }
+.county-city-list li .no-page { color: var(--gray-500); }
+@media (max-width: 768px) {
+  .county-map-wrapper { grid-template-columns: 1fr; }
+  .county-map-panel { min-height: auto; }
+  .county-city-list { columns: 1; }
+}
+
 /* ===== A-Z City Directory ===== */
 .az-directory { columns: 4; column-gap: 2rem; }
 .az-group { break-inside: avoid; margin-bottom: 1.25rem; }
