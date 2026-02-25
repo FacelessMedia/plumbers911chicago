@@ -266,48 +266,27 @@ def build_page(base_tpl, content_tpl_str, ctx):
 
 
 # ================================================================
-# EXCLUDED PAGES (Phase 1 — Site Architecture)
-# Dead locations, Arlington Heights service sub-pages, dead blogs
-# Full redirect map: see REDIRECTS.md
+# ARCHITECTURE REBUILD — Tier 1 cities get individual pages
+# All other city URLs redirect to their county hub page
 # ================================================================
 
-DEAD_LOCATION_SLUGS = {
-    "wonder-lake", "riverside", "grayslake", "niles", "hebron", "spring-valley",
-    "deerfield", "lincolnshire", "calumet-city", "dana", "hampshire", "streator",
-    "salem", "westchester", "rutland", "russell", "union", "zion",
-    "lake-in-the-hills", "wheeling", "thorton", "riverdale", "gurnee", "highwood",
-    "willowbrook", "mokena", "ringwood", "darien", "hines", "lake-zurich",
-    "sandwich", "glendale-heights", "garden-prairie", "lemont", "round-lake",
-    "willow-springs", "river-grove", "batavia", "sugar-grove", "river-forest",
-    "vernon-hills", "kaneville", "itasca", "antioch", "malta", "shorewood",
-    "villa-park", "west-chicago", "minonk", "big-rock", "rolling-meadows",
-    "shabbona", "frankfort", "south-holland", "hoffman-estates", "yorkville",
-    "worth", "kingston", "st-charles", "downers-grove",
+TIER1_SLUGS = {
+    "chicago", "park-ridge", "joliet", "arlington-heights", "park-forest",
+    "cicero", "bartlett", "hickory-hills", "chicago-heights", "oak-brook",
+    "elmhurst", "monee", "orland-park", "palos-heights", "flossmoor",
+    "naperville", "matteson", "franklin-park", "ottawa", "marengo",
 }
 
-# ================================================================
-# INDEXABLE LOCATION PAGES — only these get "index, follow"
-# Based on GSC data: pages with clicks OR 5,000+ impressions in 18 months
-# All other location pages get "noindex, follow" to avoid doorway page penalty
-# ================================================================
-INDEXABLE_LOCATION_SLUGS = {
-    # Locations with clicks (from GSC data)
-    "park-ridge", "joliet", "park-forest", "cicero", "marengo",
-    "bartlett", "hickory-hills", "chicago-heights", "oak-brook", "elmhurst",
-    "monee", "north-aurora", "ottawa", "mundelein", "channahon",
-    "clarendon-hills", "hometown", "glenwood", "berwyn", "justice",
-    "maple-park", "elgin", "lake-villa", "olympia-fields", "highland-park",
-    "blue-island", "mount-prospect", "homewood", "mendota", "chicago-ridge",
-    "addison", "lyons", "south-elgin", "dekalb", "gilberts", "lockport",
-    "algonquin", "waukegan", "lansing", "lake-bluff", "lake-forest",
-    "braidwood", "maywood", "plano", "hanover-park", "posen",
-    "blackstone", "marseilles", "manhattan", "harvey",
-    # Locations with 0 clicks but 5,000+ impressions (showing search demand)
-    "orland-park", "palos-heights", "flossmoor", "morton-grove",
-    "franklin-park", "wilmette", "steger", "hazel-crest", "palos-hills",
-    "bellwood", "glencoe", "matteson", "naperville", "oak-lawn",
-    "des-plaines", "crete", "barrington", "arlington-heights",
-}
+# Map every city slug to its county hub slug for redirects
+CITY_TO_COUNTY_HUB = {}
+
+def _build_city_county_map():
+    """Build city-slug → county-hub-slug mapping from county_hubs.json."""
+    hubs = load_json("county_hubs.json")
+    for hub in hubs:
+        hub_slug = hub["slug"]
+        for city in hub.get("cities", []):
+            CITY_TO_COUNTY_HUB[city["slug"]] = hub_slug
 
 DEAD_BLOG_SLUGS = {
     "can-drain-cleaner-damage-pipes",
@@ -331,17 +310,34 @@ def is_arlington_service_page(url_path):
     return "/arlington-heights-il-plumbing/" in url_path and url_path.strip("/") != "arlington-heights-il-plumbing"
 
 
-def generate_redirects_json():
-    """Generate Vercel-compatible redirects config."""
+def get_county_hub_slug(city_slug):
+    """Get the county hub slug for a city, or 'cook-county' as fallback."""
+    return CITY_TO_COUNTY_HUB.get(city_slug, "cook-county")
+
+
+def generate_redirects_json(all_location_slugs):
+    """Generate Vercel-compatible redirects config.
+    all_location_slugs: set of ALL city slugs from location_index (248 cities)."""
     redirects = []
 
-    # Dead locations → /service-area/
-    for slug in DEAD_LOCATION_SLUGS:
+    # Non-Tier1 location pages → their county hub
+    removed_count = 0
+    for slug in sorted(all_location_slugs):
+        if slug in TIER1_SLUGS:
+            continue  # Tier 1 cities keep their pages
+        county_hub = get_county_hub_slug(slug)
         redirects.append({
-            "source": "/" + slug + "-il-plumbing/:path*",
-            "destination": "/service-area/",
+            "source": "/" + slug + "-il-plumbing/",
+            "destination": "/service-area/" + county_hub + "/",
             "permanent": True,
         })
+        # Also catch without trailing slash
+        redirects.append({
+            "source": "/" + slug + "-il-plumbing",
+            "destination": "/service-area/" + county_hub + "/",
+            "permanent": True,
+        })
+        removed_count += 1
 
     # Arlington Heights service sub-pages → main city page
     redirects.append({
@@ -349,6 +345,9 @@ def generate_redirects_json():
         "destination": "/arlington-heights-il-plumbing/",
         "permanent": True,
     })
+
+    # Chicago service sub-pages that were at /chicago-il-plumbing/SERVICE → keep (these are service pages)
+    # No redirect needed — they are still built
 
     # Dead blog posts → /blog/
     for slug in DEAD_BLOG_SLUGS:
@@ -370,6 +369,7 @@ def generate_redirects_json():
         "permanent": True,
     })
 
+    print("  Redirect map: " + str(removed_count) + " city pages → county hubs")
     return redirects
 
 
@@ -463,8 +463,11 @@ def fix_broken_links(html):
     # 2. /category/* → /blog/
     html = re.sub(r'href="/category/[^"]*"', 'href="/blog/"', html)
 
-    # 3. Dead location links → strip <a> tag, keep text
-    for slug in DEAD_LOCATION_SLUGS:
+    # 3. Non-Tier1 location links → redirect to county hub (strip <a>, keep text)
+    # This catches any hardcoded links to removed city pages in content
+    for slug, county_hub in CITY_TO_COUNTY_HUB.items():
+        if slug in TIER1_SLUGS:
+            continue
         pattern = re.compile(
             r'<a\s[^>]*href="/' + re.escape(slug) + r'-il-plumbing/?"[^>]*>(.*?)</a>',
             re.DOTALL
@@ -500,6 +503,10 @@ def fix_broken_links(html):
 def build():
     build_start = time.time()
     print("Building static site...")
+    print("Architecture: Tier 1 cities + County Hubs")
+
+    # Build city→county mapping from county_hubs.json
+    _build_city_county_map()
 
     # Clean dist
     if os.path.exists(DIST_DIR):
@@ -515,7 +522,6 @@ def build():
 
     # Track all built pages for sitemap (only indexable ones go in sitemap)
     built_pages = []
-    noindex_count = 0
     ROBOTS_INDEX = "index, follow, max-snippet:-1, max-image-preview:large"
     ROBOTS_NOINDEX = "noindex, follow"
 
@@ -524,24 +530,35 @@ def build():
     navigation = load_json("navigation.json")
     service_index = load_json("service_index.json")
     location_index = load_json("location_index.json")
+    tier1_locations = load_json("tier1_locations.json")
+    county_hubs = load_json("county_hubs.json")
     categories = load_json("categories.json")
     tags = load_json("tags.json")
 
-    # Filter location_index to only include kept locations (those with pages)
-    location_index_filtered = [l for l in location_index if l.get("city_slug") not in DEAD_LOCATION_SLUGS]
+    # Tier 1 location index (for navigation, linking)
+    tier1_index = [{"city_name": t["city_name"], "city_slug": t["city_slug"], "state": "IL",
+                    "url_path": t["url_path"], "county": t["county"]} for t in tier1_locations]
 
-    # Full location list for service area page (ALL cities, with has_page flag)
+    # Full location list for service area page (ALL 248 cities)
     location_index_full = []
     for l in sorted(location_index, key=lambda x: x.get("city_name", "")):
-        entry = {**l, "has_page": l.get("city_slug") not in DEAD_LOCATION_SLUGS}
+        is_tier1 = l.get("city_slug") in TIER1_SLUGS
+        county_slug = get_county_hub_slug(l.get("city_slug", ""))
+        entry = {**l, "has_page": is_tier1, "county_hub_slug": county_slug,
+                 "link_url": l["url_path"] + "/" if is_tier1 else "/service-area/" + county_slug + "/"}
         location_index_full.append(entry)
+
+    # All location slugs for redirect generation
+    all_location_slugs = set(l.get("city_slug", "") for l in location_index)
 
     global_ctx = {
         "site": site_meta,
         "navigation": navigation,
         "service_index": service_index,
-        "location_index": location_index_filtered,
+        "location_index": tier1_index,
         "location_index_full": location_index_full,
+        "tier1_locations": tier1_index,
+        "county_hubs": county_hubs,
         "categories": categories,
         "tags": tags,
         "current_year": "2026",
@@ -594,38 +611,78 @@ def build():
         svc_built += 1
     print("  " + str(svc_built) + " service pages (" + str(svc_skipped) + " Arlington Heights sub-pages removed)")
 
-    # --- LOCATIONS (skip dead locations) ---
-    locations = load_json("locations.json")
+    # --- TIER 1 LOCATION PAGES (20 cities with genuinely unique content) ---
     loc_tpl = load_template("location.html")
     loc_built = 0
-    loc_skipped = 0
-    for loc in locations:
-        city_slug = loc.get("city_slug", "")
-        if city_slug in DEAD_LOCATION_SLUGS:
-            loc_skipped += 1
-            continue
-        cp = make_canonical(loc["url_path"])
-        city_name = loc.get("city_name", loc.get("title", ""))
-        crumbs = [("Home", "/"), ("Service Area", "/service-area/"), (city_name + ", IL", cp)]
-        is_indexable = city_slug in INDEXABLE_LOCATION_SLUGS
-        ctx = {**global_ctx, **loc, "page_type": "location",
+    for t1 in tier1_locations:
+        city_slug = t1["city_slug"]
+        county = t1.get("county", "Cook")
+        county_hub_slug = get_county_hub_slug(city_slug)
+        # Find how many cities are in this county hub
+        county_city_count = 0
+        for hub in county_hubs:
+            if hub["slug"] == county_hub_slug:
+                county_city_count = len(hub.get("cities", []))
+                break
+        cp = make_canonical(t1["url_path"])
+        crumbs = [("Home", "/"), ("Service Area", "/service-area/"),
+                  (county + " County", "/service-area/" + county_hub_slug + "/"),
+                  (t1["city_name"] + ", IL", cp)]
+        # Build nearby Tier 1 links
+        nearby_slugs = t1.get("nearby_tier1", [])
+        nearby_tier1_links = []
+        for ns in nearby_slugs:
+            for ti in tier1_index:
+                if ti["city_slug"] == ns:
+                    nearby_tier1_links.append(ti)
+                    break
+        # Join neighborhoods into text
+        neighborhoods = t1.get("neighborhoods", [])
+        neighborhoods_text = ", ".join(neighborhoods) if neighborhoods else ""
+        ctx = {**global_ctx, **t1, "page_type": "location",
                "canonical_path": cp,
                "breadcrumb_schema": make_breadcrumb_schema(crumbs),
-               "robots_meta": ROBOTS_INDEX if is_indexable else ROBOTS_NOINDEX}
-        if loc.get("seo"):
-            ctx["seo"] = loc["seo"]
-        idx = next((i for i, l in enumerate(location_index_filtered) if l["city_slug"] == city_slug), 0)
-        start = max(0, idx - 3)
-        nearby = [l for l in location_index_filtered[start:start+7] if l["city_slug"] != city_slug]
-        ctx["nearby_locations"] = nearby[:6]
+               "robots_meta": ROBOTS_INDEX,
+               "county_hub_slug": county_hub_slug,
+               "county_city_count": str(county_city_count),
+               "neighborhoods_text": neighborhoods_text,
+               "nearby_tier1_links": nearby_tier1_links}
+        if t1.get("seo"):
+            ctx["seo"] = t1["seo"]
         html = build_page(base_tpl, loc_tpl, ctx)
-        write_page(loc["url_path"], html)
-        if is_indexable:
-            built_pages.append(loc["url_path"])
-        else:
-            noindex_count += 1
+        write_page(t1["url_path"], html)
+        built_pages.append(t1["url_path"])
         loc_built += 1
-    print("  " + str(loc_built) + " location pages (" + str(loc_skipped) + " removed, " + str(noindex_count) + " noindexed)")
+    print("  " + str(loc_built) + " Tier 1 location pages (unique content)")
+
+    # --- COUNTY HUB PAGES (10 pages consolidating 228+ city pages) ---
+    county_tpl = load_template("county_hub.html")
+    county_built = 0
+    for hub in county_hubs:
+        cp = make_canonical(hub["url_path"])
+        crumbs = [("Home", "/"), ("Service Area", "/service-area/"), (hub["county_name"], cp)]
+        city_count = str(len(hub.get("cities", [])))
+        # Build nearby county links
+        nearby_county_links = []
+        for nc_slug in hub.get("nearby_counties", []):
+            for other_hub in county_hubs:
+                if other_hub["slug"] == nc_slug:
+                    nearby_county_links.append({"county_name": other_hub["county_name"],
+                                                "url_path": other_hub["url_path"]})
+                    break
+        ctx = {**global_ctx, **hub, "page_type": "county-hub",
+               "canonical_path": cp,
+               "breadcrumb_schema": make_breadcrumb_schema(crumbs),
+               "robots_meta": ROBOTS_INDEX,
+               "city_count": city_count,
+               "nearby_county_links": nearby_county_links}
+        if hub.get("seo"):
+            ctx["seo"] = hub["seo"]
+        html = build_page(base_tpl, county_tpl, ctx)
+        write_page(hub["url_path"], html)
+        built_pages.append(hub["url_path"])
+        county_built += 1
+    print("  " + str(county_built) + " county hub pages")
 
     # --- BLOG POSTS (skip dead posts) ---
     blog_posts = load_json("blog_posts.json")
@@ -735,7 +792,7 @@ def build():
             letter_groups[letter].append(city)
         city_letters = [{"letter": k, "cities": v} for k, v in letter_groups.items()]
         total_cities = len(location_index_full)
-        cities_with_pages = len(location_index_filtered)
+        cities_with_pages = len(TIER1_SLUGS)
         # Load county map data for interactive SVG map
         county_map_path = os.path.join(DATA_DIR, "county_map.json")
         if os.path.exists(county_map_path):
@@ -868,7 +925,7 @@ def build():
     print("  /robots.txt")
 
     # --- VERCEL CONFIG WITH REDIRECTS (written to project root) ---
-    redirects = generate_redirects_json()
+    redirects = generate_redirects_json(all_location_slugs)
     root_vercel = os.path.join(SITE_DIR, "vercel.json")
     if os.path.exists(root_vercel):
         with open(root_vercel, "r", encoding="utf-8") as f:
@@ -920,9 +977,11 @@ def build():
     total = sum(1 for _, _, files in os.walk(DIST_DIR) for f in files if f.endswith(".html"))
     build_time = time.time() - build_start
     print("\n" + "=" * 50)
-    print("BUILD COMPLETE!")
+    print("BUILD COMPLETE! (Architecture Rebuild)")
     print("  HTML pages: " + str(total))
-    print("  Pages removed: " + str(loc_skipped + svc_skipped + len(removed_posts) + 1))
+    print("  Tier 1 location pages: " + str(loc_built))
+    print("  County hub pages: " + str(county_built))
+    print("  Service pages: " + str(svc_built))
     print("  Redirects configured: " + str(len(redirects)))
     print("  Sitemap URLs: " + str(len(built_pages)))
     print("  Total dist size: " + str(round(total_size / 1024 / 1024, 1)) + " MB")

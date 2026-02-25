@@ -1,13 +1,13 @@
-<!-- Template: TIER 1 LOCATION PAGE (Architecture Rebuild) -->
-<!-- Data source: data/tier1_locations.json — genuinely unique content per city -->
+<!-- Template: COUNTY HUB PAGE -->
+<!-- Data source: data/county_hubs.json -->
 
 <section class="page-hero page-hero--location">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a> &rsaquo; <a href="/service-area/">Service Area</a> &rsaquo; <a href="/service-area/{{county_hub_slug}}/">{{county}} County</a> &rsaquo; <span>{{city_name}}, {{state}}</span>
+      <a href="/">Home</a> &rsaquo; <a href="/service-area/">Service Area</a> &rsaquo; <span>{{county_name}}</span>
     </nav>
-    <h1>Plumber in {{city_name}}, {{state}}</h1>
-    <p class="hero-location">Licensed, Bonded &amp; Insured &bull; Population {{population}} &bull; {{county}} County &bull; 24/7 Service</p>
+    <h1>Plumbing Services in {{county_name}}, Illinois</h1>
+    <p class="hero-location">Licensed &amp; Insured &bull; Serving {{city_count}} Communities &bull; 24/7 Emergency Service</p>
     <div class="hero-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
       <a href="/contact-us/" class="btn btn-cta-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">Get Free Estimate</a>
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-<section class="location-main">
+<section class="county-hub-main">
   <div class="container service-grid-layout">
 
     <article class="service-content-col">
@@ -30,40 +30,42 @@
         </span>
         <span class="trust-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Serving {{city_name}}, {{county}} County
+          {{city_count}} Cities Served
         </span>
       </div>
 
-      <p class="location-intro">{{intro_paragraph}}</p>
+      <h2>About Our {{county_name}} Plumbing Services</h2>
+      <p>{{intro}}</p>
 
-      <div class="content-body location-unique-content">
-        {{{local_content}}}
-      </div>
+      <h2>Common Plumbing Challenges in {{county_name}}</h2>
+      <p>{{plumbing_challenges}}</p>
 
-      <div class="location-info-card">
-        <h3>Local Plumbing Information for {{city_name}}</h3>
-        <dl class="location-info-list">
-          <dt>Water Utility</dt>
-          <dd>{{water_utility}}</dd>
-          <dt>Permits</dt>
-          <dd>{{permit_info}}</dd>
-          {{#if neighborhoods}}
-          <dt>Neighborhoods Served</dt>
-          <dd>{{neighborhoods_text}}</dd>
+      <h3>Water Supply Information</h3>
+      <p>{{water_info}}</p>
+
+      <h2>Cities We Serve in {{county_name}}</h2>
+      <div class="county-city-grid">
+        {{#each cities}}
+        <div class="county-city-card{{#if has_tier1}} county-city-card--featured{{/if}}">
+          {{#if has_tier1}}
+          <a href="/{{slug}}-il-plumbing/" class="county-city-link">
+            <h3>{{name}}, IL</h3>
+            <p>{{brief}}</p>
+            <span class="county-city-cta">View plumbing services &rarr;</span>
+          </a>
+          {{else}}
+          <div class="county-city-info">
+            <h3>{{name}}, IL</h3>
+            <p>{{brief}}</p>
+            <p class="county-city-phone"><a href="tel:8337586911">Call 833-758-6911</a> for service in {{name}}</p>
+          </div>
           {{/if}}
-        </dl>
+        </div>
+        {{/each}}
       </div>
 
-      {{#if common_issues}}
-      <h2>Common Plumbing Issues in {{city_name}}</h2>
-      <ul class="location-issues-list">
-        {{#each common_issues}}
-        <li>{{this}}</li>
-        {{/each}}
-      </ul>
-      {{/if}}
-
-      <h2>Plumbing Services Available in {{city_name}}, {{state}}</h2>
+      <h2>Plumbing Services Available in {{county_name}}</h2>
+      <p>Our licensed plumbers provide the full range of residential and commercial plumbing services throughout {{county_name}}:</p>
       <div class="location-services-grid">
         {{#each service_index}}
         <a href="/chicago-il-plumbing/{{service_slug}}/" class="service-card">
@@ -75,8 +77,8 @@
 
     <aside class="service-sidebar-col">
       <div class="sidebar-cta">
-        <h3>Need a Plumber in {{city_name}}?</h3>
-        <p>{{cta_text}}</p>
+        <h3>Need a Plumber in {{county_name}}?</h3>
+        <p>Our licensed plumbers serve all {{city_count}} communities across {{county_name}}. Available 24/7 for emergencies.</p>
         <a href="tel:8337586911" class="btn btn-primary btn-block">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.49a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.01l-2.2 2.23z"/></svg>
           Call 833-758-6911
@@ -89,7 +91,7 @@
         <form method="post" action="/api/contact">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="hidden" name="city" value="{{city_name}}">
+          <input type="hidden" name="county" value="{{county_name}}">
           <select name="service" required>
             <option value="">Select Service...</option>
             <option value="emergency">Emergency Plumbing</option>
@@ -103,11 +105,17 @@
         </form>
       </div>
 
-      <div class="sidebar-county-link">
-        <h4>{{county}} County Service Area</h4>
-        <p>We serve {{county_city_count}} cities across {{county}} County.</p>
-        <a href="/service-area/{{county_hub_slug}}/" class="btn btn-outline btn-block">View All {{county}} County Cities</a>
+      {{#if nearby_counties}}
+      <div class="sidebar-nearby">
+        <h4>Nearby Service Areas</h4>
+        <ul>
+          {{#each nearby_county_links}}
+          <li><a href="{{url_path}}/">{{county_name}}</a></li>
+          {{/each}}
+        </ul>
+        <a href="/service-area/" class="btn btn-outline btn-block" style="margin-top:0.75rem;">View All Service Areas</a>
       </div>
+      {{/if}}
     </aside>
 
   </div>
@@ -115,8 +123,8 @@
 
 <section class="cta-banner">
   <div class="container">
-    <h2>Ready for Professional Plumbing Service in {{city_name}}?</h2>
-    <p>Contact Plumbers 911 Chicago. Licensed, bonded, and insured. Serving {{city_name}}, IL and all of {{county}} County.</p>
+    <h2>Ready for Professional Plumbing Service in {{county_name}}?</h2>
+    <p>Plumbers 911 Chicago serves {{city_count}} communities across {{county_name}}, Illinois. Licensed, bonded, and insured. Available 24/7.</p>
     <div class="cta-actions">
       <a href="tel:8337586911" class="btn btn-primary btn-lg">Call 833-758-6911</a>
       <a href="/contact-us/" class="btn btn-outline btn-lg">Request Call Back</a>
@@ -128,8 +136,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Plumbing Services in {{city_name}}, {{state}}",
-  "description": "Licensed plumbing services in {{city_name}}, IL. Emergency plumbing, water heater repair, sewer service, and more. Serving {{county}} County.",
+  "name": "Plumbing Services in {{county_name}}, Illinois",
+  "description": "Licensed plumbing services across {{county_name}}, Illinois. Emergency plumbing, water heater repair, sewer service, and more.",
   "provider": {
     "@type": "Plumber",
     "name": "Plumbers 911 Chicago",
@@ -145,28 +153,9 @@
     }
   },
   "areaServed": {
-    "@type": "City",
-    "name": "{{city_name}}",
-    "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "{{county}} County, Illinois"
-    }
+    "@type": "AdministrativeArea",
+    "name": "{{county_name}}, Illinois"
   },
   "serviceType": "Plumbing"
 }
 </script>
-
-<section class="nearby-locations">
-  <div class="container" style="text-align:center;">
-    <h2>Nearby Service Areas</h2>
-    <div class="nearby-grid">
-      {{#each nearby_tier1_links}}
-      <a href="/{{slug}}-il-plumbing/" class="location-card">
-        <h3>{{city_name}}, IL</h3>
-      </a>
-      {{/each}}
-    </div>
-    <a href="/service-area/{{county_hub_slug}}/" class="btn btn-outline" style="margin-top:1rem;">View All {{county}} County Cities</a>
-    <a href="/service-area/" class="btn btn-outline" style="margin-top:0.5rem;">View All Service Areas</a>
-  </div>
-</section>

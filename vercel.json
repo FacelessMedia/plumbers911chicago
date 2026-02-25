@@ -77,303 +77,2283 @@
   ],
   "redirects": [
     {
-      "source": "/downers-grove-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/addison-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/rutland-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/addison-il-plumbing",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/villa-park-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/algonquin-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
       "permanent": true
     },
     {
-      "source": "/hines-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/algonquin-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
       "permanent": true
     },
     {
-      "source": "/ringwood-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/alsip-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/dana-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/alsip-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/kingston-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/antioch-il-plumbing/",
+      "destination": "/service-area/lake-county/",
       "permanent": true
     },
     {
-      "source": "/darien-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/antioch-il-plumbing",
+      "destination": "/service-area/lake-county/",
       "permanent": true
     },
     {
-      "source": "/salem-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/aurora-il-plumbing/",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/union-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/aurora-il-plumbing",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/lemont-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/barrington-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/streator-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/barrington-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/round-lake-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/batavia-il-plumbing/",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/lake-zurich-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/batavia-il-plumbing",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/thorton-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/beecher-il-plumbing/",
+      "destination": "/service-area/will-county/",
       "permanent": true
     },
     {
-      "source": "/malta-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/beecher-il-plumbing",
+      "destination": "/service-area/will-county/",
       "permanent": true
     },
     {
-      "source": "/wonder-lake-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bellwood-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/west-chicago-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bellwood-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/deerfield-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bensenville-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/calumet-city-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bensenville-il-plumbing",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/st-charles-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/berkeley-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/vernon-hills-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/berkeley-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/hampshire-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/berwyn-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/sandwich-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/berwyn-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/river-grove-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/big-rock-il-plumbing/",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/hoffman-estates-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/big-rock-il-plumbing",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/willow-springs-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/blackstone-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
       "permanent": true
     },
     {
-      "source": "/big-rock-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/blackstone-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
       "permanent": true
     },
     {
-      "source": "/itasca-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bloomingdale-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/lake-in-the-hills-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bloomingdale-il-plumbing",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/westchester-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/blue-island-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/hebron-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/blue-island-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/glendale-heights-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bolingbrook-il-plumbing/",
+      "destination": "/service-area/will-county/",
       "permanent": true
     },
     {
-      "source": "/sugar-grove-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bolingbrook-il-plumbing",
+      "destination": "/service-area/will-county/",
       "permanent": true
     },
     {
-      "source": "/willowbrook-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/braceville-il-plumbing/",
+      "destination": "/service-area/grundy-county/",
       "permanent": true
     },
     {
-      "source": "/shabbona-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/braceville-il-plumbing",
+      "destination": "/service-area/grundy-county/",
       "permanent": true
     },
     {
-      "source": "/gurnee-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/braidwood-il-plumbing/",
+      "destination": "/service-area/will-county/",
       "permanent": true
     },
     {
-      "source": "/garden-prairie-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/braidwood-il-plumbing",
+      "destination": "/service-area/will-county/",
       "permanent": true
     },
     {
-      "source": "/lincolnshire-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bridgeview-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/batavia-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bridgeview-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/spring-valley-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bristol-il-plumbing/",
+      "destination": "/service-area/kendall-county/",
       "permanent": true
     },
     {
-      "source": "/river-forest-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/bristol-il-plumbing",
+      "destination": "/service-area/kendall-county/",
       "permanent": true
     },
     {
-      "source": "/kaneville-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/broadview-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/highwood-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/broadview-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/yorkville-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/brookfield-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/wheeling-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/brookfield-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/antioch-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/buffalo-grove-il-plumbing/",
+      "destination": "/service-area/lake-county/",
       "permanent": true
     },
     {
-      "source": "/worth-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/buffalo-grove-il-plumbing",
+      "destination": "/service-area/lake-county/",
       "permanent": true
     },
     {
-      "source": "/zion-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/burbank-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/south-holland-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/burbank-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/frankfort-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/burlington-il-plumbing/",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/minonk-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/burlington-il-plumbing",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/niles-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/calumet-city-il-plumbing/",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/mokena-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/calumet-city-il-plumbing",
+      "destination": "/service-area/cook-county/",
       "permanent": true
     },
     {
-      "source": "/grayslake-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/carol-stream-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/riverside-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/carol-stream-il-plumbing",
+      "destination": "/service-area/dupage-county/",
       "permanent": true
     },
     {
-      "source": "/shorewood-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/carpentersville-il-plumbing/",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/rolling-meadows-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/carpentersville-il-plumbing",
+      "destination": "/service-area/kane-county/",
       "permanent": true
     },
     {
-      "source": "/russell-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/cary-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
       "permanent": true
     },
     {
-      "source": "/riverdale-il-plumbing/:path*",
-      "destination": "/service-area/",
+      "source": "/cary-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/channahon-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/channahon-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/chicago-ridge-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/chicago-ridge-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/clarendon-hills-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/clarendon-hills-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/coal-city-il-plumbing/",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/coal-city-il-plumbing",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/cortland-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/cortland-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/country-club-hills-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/country-club-hills-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/countryside-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/countryside-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/crest-hill-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/crest-hill-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/crete-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/crete-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/crystal-lake-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/crystal-lake-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dana-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/dana-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/darien-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/darien-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/deerfield-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/deerfield-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dekalb-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dekalb-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/des-plaines-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/des-plaines-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dolton-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dolton-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/downers-grove-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/downers-grove-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dundee-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dundee-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dwight-il-plumbing/",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/dwight-il-plumbing",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elburn-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elburn-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elgin-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elgin-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elk-grove-village-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elk-grove-village-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elmwood-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elmwood-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elwood-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/elwood-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/evanston-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/evanston-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/evergreen-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/evergreen-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/forest-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/forest-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/fort-sheridan-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/fort-sheridan-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/fox-river-grove-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/fox-river-grove-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/fox-valley-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/fox-valley-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/frankfort-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/frankfort-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/garden-prairie-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/garden-prairie-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/geneva-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/geneva-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/genoa-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/genoa-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/gilberts-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/gilberts-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glen-ellyn-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glen-ellyn-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glencoe-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glencoe-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glendale-heights-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glendale-heights-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glenview-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glenview-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glenwood-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glenwood-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/grand-ridge-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/grand-ridge-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/grayslake-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/grayslake-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/gurnee-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/gurnee-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hampshire-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hampshire-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hanover-park-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hanover-park-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/harvard-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/harvard-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/harvey-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/harvey-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/harwood-heights-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/harwood-heights-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hazel-crest-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hazel-crest-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hebron-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hebron-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/highland-park-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/highland-park-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/highwood-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/highwood-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hillside-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hillside-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hinckley-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hinckley-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hines-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hines-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hinsdale-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hinsdale-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hoffman-estates-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hoffman-estates-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/homer-glen-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/homer-glen-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hometown-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/hometown-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/homewood-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/homewood-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/ingleside-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/ingleside-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/island-lake-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/island-lake-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/itasca-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/itasca-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/justice-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/justice-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kaneville-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kaneville-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kenilworth-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kenilworth-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kingston-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kingston-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kirkland-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kirkland-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/la-fox-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/la-fox-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/la-grange-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/la-grange-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/la-grange-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/la-grange-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/la-salle-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/la-salle-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-bluff-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-bluff-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-forest-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-forest-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-in-the-hills-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-in-the-hills-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-villa-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-villa-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-zurich-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lake-zurich-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lansing-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lansing-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lemont-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lemont-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/libertyville-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/libertyville-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lincolnshire-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lincolnshire-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lincolnwood-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lincolnwood-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lisle-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lisle-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lockport-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lockport-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lombard-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lombard-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/long-point-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/long-point-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/lostant-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/lostant-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/lyons-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lyons-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/malta-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/malta-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/manhattan-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/manhattan-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/maple-park-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/maple-park-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/markham-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/markham-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/marseilles-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/marseilles-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/maywood-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/maywood-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mazon-il-plumbing/",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mazon-il-plumbing",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mchenry-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mchenry-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/medinah-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/medinah-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/melrose-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/melrose-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mendota-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/mendota-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/midlothian-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/midlothian-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/minonk-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/minonk-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/minooka-il-plumbing/",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/minooka-il-plumbing",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mokena-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mokena-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/montgomery-il-plumbing/",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/montgomery-il-plumbing",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mooseheart-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mooseheart-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/morris-il-plumbing/",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/morris-il-plumbing",
+      "destination": "/service-area/grundy-county/",
+      "permanent": true
+    },
+    {
+      "source": "/morton-grove-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/morton-grove-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mount-prospect-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mount-prospect-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mundelein-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/mundelein-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/new-lenox-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/new-lenox-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/niles-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/niles-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/north-aurora-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/north-aurora-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/north-chicago-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/north-chicago-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/northbrook-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/northbrook-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/northlake-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/northlake-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oak-forest-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oak-forest-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oak-lawn-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oak-lawn-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oak-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oak-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oglesby-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/oglesby-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/olympia-fields-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/olympia-fields-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oswego-il-plumbing/",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/oswego-il-plumbing",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/palatine-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/palatine-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/palos-hills-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/palos-hills-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/palos-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/palos-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/peotone-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/peotone-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/peru-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/peru-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/plainfield-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/plainfield-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/plano-il-plumbing/",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/plano-il-plumbing",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pontiac-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/pontiac-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/posen-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/posen-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/prospect-heights-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/prospect-heights-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/richmond-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/richmond-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/richton-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/richton-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/ringwood-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/ringwood-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/river-forest-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/river-forest-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/river-grove-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/river-grove-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/riverdale-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/riverdale-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/riverside-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/riverside-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/robbins-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/robbins-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/rolling-meadows-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/rolling-meadows-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/romeoville-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/romeoville-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/roselle-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/roselle-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/round-lake-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/round-lake-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/russell-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/russell-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/rutland-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/rutland-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/salem-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/salem-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/sandwich-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/sandwich-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/schaumburg-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/schaumburg-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/schiller-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/schiller-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/seneca-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/seneca-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/shabbona-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/shabbona-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/shorewood-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/shorewood-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/skokie-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/skokie-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/south-elgin-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/south-elgin-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/south-holland-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/south-holland-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/spring-grove-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/spring-grove-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/spring-valley-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/spring-valley-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/st-charles-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/st-charles-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/steger-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/steger-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/stone-park-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/stone-park-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/streamwood-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/streamwood-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/streator-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/streator-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/sugar-grove-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/sugar-grove-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/summit-argo-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/summit-argo-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/sycamore-il-plumbing/",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/sycamore-il-plumbing",
+      "destination": "/service-area/dekalb-county/",
+      "permanent": true
+    },
+    {
+      "source": "/thorton-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/thorton-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/tinley-park-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/tinley-park-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/tonica-il-plumbing/",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/tonica-il-plumbing",
+      "destination": "/service-area/extended-service-area/",
+      "permanent": true
+    },
+    {
+      "source": "/union-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/union-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/university-park-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/university-park-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/vernon-hills-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/vernon-hills-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/villa-park-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/villa-park-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wadsworth-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wadsworth-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/warrenville-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/warrenville-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wasco-il-plumbing/",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wasco-il-plumbing",
+      "destination": "/service-area/kane-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wauconda-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wauconda-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/waukegan-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/waukegan-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wayne-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wayne-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/west-chicago-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/west-chicago-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/westchester-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/westchester-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/western-springs-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/western-springs-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/westmont-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/westmont-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wheaton-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wheaton-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wheeling-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wheeling-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/willow-springs-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/willow-springs-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/willowbrook-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/willowbrook-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wilmette-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wilmette-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wilmington-il-plumbing/",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wilmington-il-plumbing",
+      "destination": "/service-area/will-county/",
+      "permanent": true
+    },
+    {
+      "source": "/winfield-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/winfield-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/winnetka-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/winnetka-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/winthrop-harbor-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/winthrop-harbor-il-plumbing",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wonder-lake-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wonder-lake-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-dale-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-dale-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/woodridge-il-plumbing/",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/woodridge-il-plumbing",
+      "destination": "/service-area/dupage-county/",
+      "permanent": true
+    },
+    {
+      "source": "/woodstock-il-plumbing/",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/woodstock-il-plumbing",
+      "destination": "/service-area/mchenry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/worth-il-plumbing/",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/worth-il-plumbing",
+      "destination": "/service-area/cook-county/",
+      "permanent": true
+    },
+    {
+      "source": "/yorkville-il-plumbing/",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/yorkville-il-plumbing",
+      "destination": "/service-area/kendall-county/",
+      "permanent": true
+    },
+    {
+      "source": "/zion-il-plumbing/",
+      "destination": "/service-area/lake-county/",
+      "permanent": true
+    },
+    {
+      "source": "/zion-il-plumbing",
+      "destination": "/service-area/lake-county/",
       "permanent": true
     },
     {
@@ -382,12 +2362,32 @@
       "permanent": true
     },
     {
-      "source": "/why-wont-my-sump-pump-stop-running/",
+      "source": "/plumbing-fixture-lifespan-guide/",
       "destination": "/blog/",
       "permanent": true
     },
     {
-      "source": "/blog/why-wont-my-sump-pump-stop-running/",
+      "source": "/blog/plumbing-fixture-lifespan-guide/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/how-does-a-gas-tankless-water-heater-work/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-does-a-gas-tankless-water-heater-work/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/what-can-you-put-in-your-garbage-disposal/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-can-you-put-in-your-garbage-disposal/",
       "destination": "/blog/",
       "permanent": true
     },
@@ -402,22 +2402,22 @@
       "permanent": true
     },
     {
+      "source": "/why-wont-my-sump-pump-stop-running/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-wont-my-sump-pump-stop-running/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
       "source": "/do-water-heater-blankets-work/",
       "destination": "/blog/",
       "permanent": true
     },
     {
       "source": "/blog/do-water-heater-blankets-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/what-can-you-put-in-your-garbage-disposal/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/what-can-you-put-in-your-garbage-disposal/",
       "destination": "/blog/",
       "permanent": true
     },
@@ -438,26 +2438,6 @@
     },
     {
       "source": "/blog/what-can-i-use-at-home-to-unclog-a-drain/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/how-does-a-gas-tankless-water-heater-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/how-does-a-gas-tankless-water-heater-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/plumbing-fixture-lifespan-guide/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/plumbing-fixture-lifespan-guide/",
       "destination": "/blog/",
       "permanent": true
     },
