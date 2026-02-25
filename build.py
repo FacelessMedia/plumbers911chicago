@@ -149,6 +149,9 @@ def render(template_str, ctx):
     # Handle {{> content}} partial includes
     output = re.sub(r"\{\{>\s*\w+\s*\}\}", "", output)
 
+    # Clean up any remaining unrendered block tags
+    output = re.sub(r"\{\{/(?:if|each|unless)\}\}", "", output)
+
     return output
 
 
@@ -197,6 +200,22 @@ def normalize_urls(html):
             r'href="https://plumbers911chicago\.com/',
             r'href="/',
             parts[1]
+        )
+        # Also convert src= attributes pointing to old WP domain
+        body = re.sub(
+            r'src="https://plumbers911chicago\.com/',
+            r'src="/',
+            body
+        )
+        # Strip old WP form actions and hidden input values
+        body = body.replace('action="/wp-admin/admin-ajax.php"', 'action="/api/contact"')
+        body = re.sub(r'value="https?://plumbers911chicago\.com/wp-admin/[^"]*"', 'value=""', body)
+        # Remove entire old WP contact forms (they won't work on static site)
+        body = re.sub(
+            r'<div[^>]*class="[^"]*wpcf7[^"]*"[^>]*>.*?</div>\s*</div>',
+            '<div class="sidebar-cta-form"><p>Call <a href="tel:8337586911" class="phone-number">833-758-6911</a> for immediate assistance or <a href="/contact-us/">use our contact form</a>.</p></div>',
+            body,
+            flags=re.DOTALL
         )
         html = parts[0] + "</head>" + body
     return html
