@@ -50,7 +50,7 @@ p { margin-bottom: 1rem; }
 .btn-sm { padding: .4rem 1.25rem; font-size: .85rem; }
 
 /* ===== HEADER (white bg, logo left, phone right) ===== */
-.site-header { background: var(--white); padding: 1rem 0; border-bottom: 3px solid var(--navy); }
+.site-header { background: var(--white); padding: 1rem 0; margin-bottom: 0; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; }
 
 /* Logo */
@@ -64,12 +64,12 @@ p { margin-bottom: 1rem; }
 .logo-brand--white .logo-911 { color: var(--red); }
 
 /* Header phone */
-.header-phone { display: flex; align-items: center; gap: .75rem; }
+.header-phone { display: flex; align-items: center; gap: .75rem; text-decoration: none; cursor: pointer; }
 .phone-icon { flex-shrink: 0; }
 .phone-text { text-align: right; }
-.phone-label { display: block; font-size: 1.75rem; font-weight: 800; color: var(--gray-900); letter-spacing: -0.5px; }
-.phone-number { display: block; font-size: .85rem; color: var(--gray-500); }
-.phone-number:hover { color: var(--red); }
+.phone-label { display: block; font-size: 1.75rem; font-weight: 800; color: var(--gray-900); letter-spacing: -0.5px; line-height: 1.2; }
+.header-phone .phone-number { display: block; font-size: 1.1rem; font-weight: 800; color: var(--red); }
+.header-phone:hover .phone-label { color: var(--red); }
 
 /* Hamburger */
 .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: .5rem; flex-direction: column; gap: 5px; }

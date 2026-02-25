@@ -122,9 +122,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // === Item 72: Count-up animation for stat numbers ===
   if ('IntersectionObserver' in window) {
     document.querySelectorAll('.count-up, .stat-number').forEach(function(el) {
-      var target = parseInt(el.textContent.replace(/[^0-9]/g, ''));
+      var raw = el.textContent.trim();
+      if (raw.indexOf('/') !== -1) return;
+      var target = parseInt(raw.replace(/[^0-9]/g, ''));
       if (!target) return;
-      var suffix = el.textContent.replace(/[0-9,]/g, '');
+      var suffix = raw.replace(/[0-9,]/g, '');
       var counted = false;
       var cobs = new IntersectionObserver(function(entries) {
         entries.forEach(function(e) {
