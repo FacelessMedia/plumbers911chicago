@@ -217,6 +217,41 @@ def normalize_urls(html):
             body,
             flags=re.DOTALL
         )
+        # Remove WPForms embedded forms — entire <form> block containing wpforms
+        body = re.sub(
+            r'<form[^>]*id="wpforms-form-\d+"[^>]*>.*?</form>',
+            '',
+            body,
+            flags=re.DOTALL
+        )
+        # Also catch "Please enable JavaScript" text that precedes the form
+        body = re.sub(
+            r'Please enable JavaScript in your browser to complete this form\.',
+            '',
+            body
+        )
+        # Remove WPForms inline styles block
+        body = re.sub(
+            r'<style[^>]*id="wpforms-lead-forms-inline-styles"[^>]*>.*?</style>',
+            '',
+            body,
+            flags=re.DOTALL
+        )
+        # Remove any remaining wpforms noscript/container divs
+        body = re.sub(
+            r'<div[^>]*class="[^"]*wpforms[^"]*"[^>]*>.*?</div>',
+            '',
+            body,
+            flags=re.DOTALL
+        )
+        # Remove wpforms spinner images
+        body = re.sub(r'<img[^>]*wpforms[^>]*/?>', '', body)
+        # Remove orphaned "Schedule Your Plumbing Service Appointment" headings left from form removal
+        body = re.sub(
+            r'\s*Schedule Your Plumbing Service Appointment\s*',
+            '',
+            body
+        )
         html = parts[0] + "</head>" + body
     return html
 

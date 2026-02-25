@@ -2362,12 +2362,22 @@
       "permanent": true
     },
     {
-      "source": "/plumbing-fixture-lifespan-guide/",
+      "source": "/what-can-i-use-at-home-to-unclog-a-drain/",
       "destination": "/blog/",
       "permanent": true
     },
     {
-      "source": "/blog/plumbing-fixture-lifespan-guide/",
+      "source": "/blog/what-can-i-use-at-home-to-unclog-a-drain/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/why-wont-my-sump-pump-stop-running/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-wont-my-sump-pump-stop-running/",
       "destination": "/blog/",
       "permanent": true
     },
@@ -2378,6 +2388,26 @@
     },
     {
       "source": "/blog/how-does-a-gas-tankless-water-heater-work/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/plumbing-fixture-lifespan-guide/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/plumbing-fixture-lifespan-guide/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/can-drain-cleaner-damage-pipes/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/can-drain-cleaner-damage-pipes/",
       "destination": "/blog/",
       "permanent": true
     },
@@ -2402,42 +2432,12 @@
       "permanent": true
     },
     {
-      "source": "/why-wont-my-sump-pump-stop-running/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/why-wont-my-sump-pump-stop-running/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/do-water-heater-blankets-work/",
       "destination": "/blog/",
       "permanent": true
     },
     {
       "source": "/blog/do-water-heater-blankets-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/can-drain-cleaner-damage-pipes/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/can-drain-cleaner-damage-pipes/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/what-can-i-use-at-home-to-unclog-a-drain/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/what-can-i-use-at-home-to-unclog-a-drain/",
       "destination": "/blog/",
       "permanent": true
     },
