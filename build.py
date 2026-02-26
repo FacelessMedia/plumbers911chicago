@@ -304,7 +304,10 @@ def normalize_urls(html):
             body,
             flags=re.DOTALL
         )
-        html = parts[0] + "</head>" + body
+        # Also clean "free estimate" from head (meta descriptions)
+        head = parts[0]
+        head = re.sub(r'[Ff]ree [Ee]stimates?\.?\s*', '', head)
+        html = head + "</head>" + body
     return html
 
 
@@ -331,7 +334,7 @@ def ensure_seo(ctx):
             if page_type == "service":
                 seo["description"] = "Professional " + name.lower() + " services in Chicago. Licensed, insured plumbers available 24/7. Call 833-758-6911."
             elif page_type == "location":
-                seo["description"] = "Licensed plumber in " + name + ", IL. 24/7 emergency service, free estimates. Call 833-758-6911."
+                seo["description"] = "Licensed plumber in " + name + ", IL. 24/7 emergency service. Call 833-758-6911."
             else:
                 seo["description"] = "Licensed plumbing services in Chicago and surrounding areas. Call 833-758-6911."
     ctx["seo"] = seo
@@ -940,7 +943,7 @@ def build():
 <ul><li><a href="/chicago-il-plumbing/kitchen-remodeling/">Kitchen Remodeling</a></li><li><a href="/chicago-il-plumbing/faucet-repair/">Faucet Repair &amp; Installation</a></li><li><a href="/chicago-il-plumbing/garbage-disposal-installation/">Garbage Disposal Services</a></li><li><a href="/chicago-il-plumbing/dishwasher-install/">Dishwasher Installation</a></li></ul>
 <h3>Bathroom Plumbing Services</h3>
 <ul><li><a href="/chicago-il-plumbing/bathroom-remodeling/">Bathroom Remodeling</a></li><li><a href="/chicago-il-plumbing/toilet-install/">Toilet Installation</a></li><li><a href="/chicago-il-plumbing/bathtub-install/">Bathtub Installation</a></li><li><a href="/chicago-il-plumbing/shower-install/">Shower Installation</a></li></ul>
-<p>Call <a href="tel:8337586911">833-758-6911</a> for a free estimate on any kitchen or bathroom plumbing project.</p>""",
+<p>Call <a href="tel:8337586911">833-758-6911</a> to schedule kitchen or bathroom plumbing service.</p>""",
             "seo": {"title": "Kitchen & Bath Plumbing Services", "description": "Expert kitchen and bathroom plumbing services in Chicago. Remodeling, fixture installation, faucet repair, and more. Call 833-758-6911."},
         },
         {
