@@ -2362,62 +2362,12 @@
       "permanent": true
     },
     {
-      "source": "/what-can-i-use-at-home-to-unclog-a-drain/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/what-can-i-use-at-home-to-unclog-a-drain/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/how-does-a-gas-tankless-water-heater-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/how-does-a-gas-tankless-water-heater-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/what-causes-bathroom-sink-to-clog/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/what-causes-bathroom-sink-to-clog/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/plumbing-fixture-lifespan-guide/",
       "destination": "/blog/",
       "permanent": true
     },
     {
       "source": "/blog/plumbing-fixture-lifespan-guide/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/do-water-heater-blankets-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/do-water-heater-blankets-work/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/what-can-you-put-in-your-garbage-disposal/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/what-can-you-put-in-your-garbage-disposal/",
       "destination": "/blog/",
       "permanent": true
     },
@@ -2432,12 +2382,62 @@
       "permanent": true
     },
     {
+      "source": "/what-can-i-use-at-home-to-unclog-a-drain/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-can-i-use-at-home-to-unclog-a-drain/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/what-causes-bathroom-sink-to-clog/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-causes-bathroom-sink-to-clog/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/do-water-heater-blankets-work/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/do-water-heater-blankets-work/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
       "source": "/can-drain-cleaner-damage-pipes/",
       "destination": "/blog/",
       "permanent": true
     },
     {
       "source": "/blog/can-drain-cleaner-damage-pipes/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/what-can-you-put-in-your-garbage-disposal/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-can-you-put-in-your-garbage-disposal/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/how-does-a-gas-tankless-water-heater-work/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-does-a-gas-tankless-water-heater-work/",
       "destination": "/blog/",
       "permanent": true
     },

@@ -8,7 +8,21 @@
     "population": "2,742,119",
     "water_utility": "City of Chicago Department of Water Management",
     "permit_info": "Chicago requires plumbing permits for most work beyond basic repairs. Permits are obtained through the Chicago Department of Buildings. Licensed plumbers must hold a Chicago Plumbing License in addition to state credentials.",
-    "neighborhoods": ["Loop", "Lincoln Park", "Lakeview", "Hyde Park", "Logan Square", "Wicker Park", "Pilsen", "Bridgeport", "Rogers Park", "Edison Park", "Garfield Ridge", "Beverly", "South Shore"],
+    "neighborhoods": [
+      "Loop",
+      "Lincoln Park",
+      "Lakeview",
+      "Hyde Park",
+      "Logan Square",
+      "Wicker Park",
+      "Pilsen",
+      "Bridgeport",
+      "Rogers Park",
+      "Edison Park",
+      "Garfield Ridge",
+      "Beverly",
+      "South Shore"
+    ],
     "common_issues": [
       "Lead service line replacement — Chicago has the most lead water pipes of any US city, with an estimated 400,000+ lead service lines connecting homes to water mains",
       "Combined sewer overflow (CSO) events during heavy rain cause basement flooding, especially in older South and West Side neighborhoods",
@@ -16,14 +30,42 @@
       "High-rise buildings require specialized commercial plumbing with booster pump systems",
       "Chicago's clay soil causes foundation shifting that stresses underground sewer lines"
     ],
-    "nearby_tier1": ["cicero", "oak-brook", "park-ridge", "elmhurst", "franklin-park"],
+    "nearby_tier1": [
+      "cicero",
+      "oak-brook",
+      "park-ridge",
+      "elmhurst",
+      "franklin-park"
+    ],
     "seo": {
       "title": "Plumber in Chicago, IL | 24/7 Licensed Plumbing Services",
       "description": "Licensed Chicago plumber available 24/7. Emergency plumbing, water heater repair, sewer service, lead pipe replacement & more. Call 833-758-6911."
     },
     "intro_paragraph": "Chicago's plumbing infrastructure presents unique challenges that require experienced, locally licensed professionals. From lead service line replacements mandated by the city's ongoing Lead Service Line Replacement Program to emergency basement flood response during intense Lake Michigan storms, Plumbers 911 connects you with fully licensed Chicago plumbers who understand this city's specific needs.",
     "local_content": "<p>As the third-largest city in the United States, Chicago's plumbing systems range from century-old cast iron pipes in vintage Greystone buildings to modern high-rise installations in the Loop. The City of Chicago Department of Water Management serves over 5 million people and requires all plumbing work to comply with the Chicago Plumbing Code — which has stricter requirements than the state code in several areas, including backflow prevention and water meter installation.</p>\n<p>Chicago's unique geography — built on reclaimed marshland along Lake Michigan — means many neighborhoods sit on expansive clay soils that shift seasonally. This movement puts constant stress on underground sewer and water lines, making sewer camera inspections and proactive pipe maintenance especially important for Chicago homeowners. The city's combined sewer system, which handles both stormwater and wastewater in the same pipes, means heavy rainfall events can overwhelm the system and cause basement backups — making sump pump installation and battery backup systems essential investments.</p>\n<p>Whether you're in a Lincoln Park brownstone, a Beverly bungalow, or a West Loop condo, our network of licensed Chicago plumbers provides fast response times across all 77 community areas. Every plumber in our network holds the required City of Chicago Plumbing License and carries comprehensive insurance.</p>",
-    "cta_text": "Need a licensed plumber in Chicago? Our network covers all 77 community areas with fast response times."
+    "cta_text": "Need a licensed plumber in Chicago? Our network covers all 77 community areas with fast response times.",
+    "faqs": [
+      {
+        "question": "Does Chicago require a plumbing permit for water heater replacement?",
+        "answer": "Yes. The City of Chicago requires a plumbing permit for water heater replacement. Your plumber must hold a Chicago Plumbing License in addition to the Illinois state license. We handle the permit and schedule the inspection."
+      },
+      {
+        "question": "How do I get my lead service line replaced in Chicago?",
+        "answer": "Chicago has an ongoing Lead Service Line Replacement Program. Homeowners can apply through the city's Department of Water Management. We work with homeowners to replace the private-side lead line from the property line to the home. Costs typically run $3,000–$8,000 for the homeowner's portion."
+      },
+      {
+        "question": "Why does my basement flood during heavy rain in Chicago?",
+        "answer": "Chicago uses a combined sewer system that handles both stormwater and sanitary sewage. During heavy rain, the system can back up into homes through floor drains. A backwater valve (overhead sewer conversion) prevents this. The city offers a cost-sharing program to help with installation."
+      },
+      {
+        "question": "What areas of Chicago do you serve?",
+        "answer": "We serve all 77 community areas across Chicago — from Rogers Park and Edgewater on the North Side to Beverly and Mount Greenwood on the South Side, and everywhere in between including the Loop, Lincoln Park, Lakeview, Logan Square, Pilsen, Bridgeport, and Hyde Park."
+      },
+      {
+        "question": "How quickly can a plumber get to my Chicago home in an emergency?",
+        "answer": "Most emergency calls within Chicago city limits are responded to within 30–60 minutes. Response times depend on your location, traffic, and current demand. We dispatch the nearest available licensed plumber to your address."
+      }
+    ]
   },
   {
     "city_name": "Park Ridge",
@@ -34,21 +76,54 @@
     "population": "37,480",
     "water_utility": "City of Park Ridge Public Works — Water Division",
     "permit_info": "Park Ridge requires plumbing permits for new installations, water heater replacements, and sewer work. Permits are obtained through the Park Ridge Community Development Department.",
-    "neighborhoods": ["Uptown", "South Park", "North Park", "Washington Heights", "Dee Park"],
+    "neighborhoods": [
+      "Uptown",
+      "South Park",
+      "North Park",
+      "Washington Heights",
+      "Dee Park"
+    ],
     "common_issues": [
       "Many homes built in the 1950s-1970s have galvanized steel pipes that corrode and restrict water flow over time",
       "Park Ridge's proximity to O'Hare Airport means ground vibration can stress older pipe joints",
       "Basement flooding is common due to the area's high water table and clay soil composition",
       "Older homes frequently need whole-house repiping when galvanized pipes begin failing"
     ],
-    "nearby_tier1": ["chicago", "franklin-park", "elmhurst", "arlington-heights"],
+    "nearby_tier1": [
+      "chicago",
+      "franklin-park",
+      "elmhurst",
+      "arlington-heights"
+    ],
     "seo": {
       "title": "Plumber in Park Ridge, IL | 24/7 Emergency Plumbing Services",
       "description": "Licensed plumber serving Park Ridge, IL. 24/7 emergency service, water heater repair, sewer line service, repiping & more. Call 833-758-6911."
     },
     "intro_paragraph": "Park Ridge homeowners rely on Plumbers 911 for fast, professional plumbing service throughout this established Cook County community. With many homes dating to the mid-20th century, Park Ridge properties frequently require specialized expertise in galvanized pipe replacement, sewer line repair, and water heater upgrades.",
     "local_content": "<p>Park Ridge is a mature residential community northwest of Chicago where the majority of housing stock was built between 1940 and 1975. This means many homes still have original galvanized steel water supply lines that have reached or exceeded their expected 40-50 year lifespan. Corroded galvanized pipes restrict water pressure, produce discolored water, and eventually develop pinhole leaks inside walls — making whole-house repiping one of the most common services we provide in Park Ridge.</p>\n<p>The city's water comes from Lake Michigan via the Chicago water system, but Park Ridge maintains its own distribution infrastructure. The local clay soil and relatively high water table contribute to basement moisture issues, and the city has invested significantly in stormwater management. For homeowners, this means sump pump systems with battery backup are not just recommended — they're essential, especially during spring thaw and summer storm season.</p>\n<p>Park Ridge requires plumbing permits for most work beyond simple fixture swaps. Our licensed plumbers handle all permit paperwork and ensure every job meets local code requirements.</p>",
-    "cta_text": "Park Ridge residents: call now for fast plumbing service from licensed professionals who know your neighborhood."
+    "cta_text": "Park Ridge residents: call now for fast plumbing service from licensed professionals who know your neighborhood.",
+    "faqs": [
+      {
+        "question": "Does Park Ridge have different plumbing codes than Chicago?",
+        "answer": "Yes. Park Ridge follows the Illinois State Plumbing Code rather than Chicago's municipal code. Permit requirements and inspection processes differ. We're familiar with Park Ridge's building department and handle permits for all plumbing work that requires them."
+      },
+      {
+        "question": "Why is my water pressure low in Park Ridge?",
+        "answer": "Park Ridge gets its water from the City of Chicago's system via an intergovernmental agreement. Low pressure can be caused by corroded galvanized supply lines inside your home, a partially closed main shutoff, or a failing pressure regulator. We diagnose and fix all of these."
+      },
+      {
+        "question": "How old are the sewer lines in most Park Ridge homes?",
+        "answer": "Many Park Ridge homes were built in the 1950s–1960s, meaning their original clay sewer lines are 60–70+ years old. These clay pipes are prone to root intrusion and joint failure. A camera inspection can assess their condition before problems arise."
+      },
+      {
+        "question": "Do you offer emergency plumbing service in Park Ridge?",
+        "answer": "Yes, 24/7. Park Ridge is a priority service area for us. Most emergency calls in Park Ridge are responded to within 30–45 minutes."
+      },
+      {
+        "question": "Can you help with sump pump issues in Park Ridge?",
+        "answer": "Absolutely. Park Ridge's high water table means sump pumps work hard, especially during spring thaws and heavy rains. We install, repair, and replace sump pumps and battery backup systems to keep your basement dry year-round."
+      }
+    ]
   },
   {
     "city_name": "Joliet",
@@ -59,21 +134,53 @@
     "population": "150,362",
     "water_utility": "City of Joliet — Public Utilities Department (transitioning from deep well water to Lake Michigan water via the alternative water source project, expected completion 2030)",
     "permit_info": "Joliet requires plumbing permits through the Joliet Building Department. The city follows the Illinois Plumbing Code with local amendments.",
-    "neighborhoods": ["Cathedral Area", "Western Avenue Corridor", "East Side", "Ridgewood", "Lakewood Falls", "Crest Hill border"],
+    "neighborhoods": [
+      "Cathedral Area",
+      "Western Avenue Corridor",
+      "East Side",
+      "Ridgewood",
+      "Lakewood Falls",
+      "Crest Hill border"
+    ],
     "common_issues": [
       "Joliet is transitioning from deep well water to Lake Michigan water — homeowners may need water softener adjustments as water chemistry changes",
       "Hard water from current deep wells causes heavy mineral buildup in pipes, water heaters, and fixtures",
       "Older East Side and Cathedral Area homes have clay sewer lines prone to root intrusion and collapse",
       "Rapid residential development in western Joliet sometimes outpaces infrastructure, causing water pressure issues in newer subdivisions"
     ],
-    "nearby_tier1": ["orland-park", "monee"],
+    "nearby_tier1": [
+      "orland-park",
+      "monee"
+    ],
     "seo": {
       "title": "Plumber in Joliet, IL | 24/7 Licensed Plumbing Services",
       "description": "Licensed plumber in Joliet, IL. Emergency plumbing, water heater repair, sewer service, hard water solutions & more. Call 833-758-6911."
     },
     "intro_paragraph": "Joliet is the largest city in Will County and one of the fastest-growing communities in the Chicago metro area. Plumbers 911 connects Joliet homeowners and businesses with licensed plumbers who understand the city's unique challenges — from hard water issues caused by deep well sources to aging sewer infrastructure in established neighborhoods.",
     "local_content": "<p>Joliet's water system is undergoing one of the most significant infrastructure transitions in the region. The city currently draws water from deep wells that produce extremely hard water with high mineral content, which accelerates wear on water heaters, clogs faucet aerators, and leaves scale deposits in pipes. The Alternative Water Source project will transition Joliet to Lake Michigan water by approximately 2030, but in the meantime, water softener installation and maintenance remain critical for protecting your plumbing system.</p>\n<p>The city's older neighborhoods — particularly the Cathedral Area, East Side, and blocks along Western Avenue — feature homes built in the early-to-mid 1900s with original clay sewer laterals. These clay pipes are highly susceptible to tree root intrusion, joint separation, and eventual collapse. Sewer camera inspection is the most cost-effective way to assess the condition of these lines before problems become emergencies.</p>\n<p>Joliet's Building Department requires permits for all plumbing work beyond basic repairs. Our licensed plumbers navigate the local permit process and schedule required inspections to ensure your project passes code.</p>",
-    "cta_text": "Need a plumber in Joliet? We serve all neighborhoods from Cathedral Area to Lakewood Falls."
+    "cta_text": "Need a plumber in Joliet? We serve all neighborhoods from Cathedral Area to Lakewood Falls.",
+    "faqs": [
+      {
+        "question": "Does Joliet have hard water?",
+        "answer": "Yes. Joliet's water comes from underground wells and is notably hard — typically 20–25 grains per gallon. This causes significant mineral buildup in water heaters, pipes, and fixtures. A water softener is strongly recommended for Joliet homes."
+      },
+      {
+        "question": "What's different about plumbing in Joliet versus Chicago?",
+        "answer": "Joliet follows Will County and Illinois state plumbing codes, which differ from Chicago's municipal code. Joliet also has harder well water, different soil conditions (more limestone), and its own permit and inspection process. We know Joliet's requirements and work with the local building department regularly."
+      },
+      {
+        "question": "How much does a water softener cost in Joliet?",
+        "answer": "A standard water softener installation in Joliet runs $1,200–$3,000 including the unit and labor. Given Joliet's extremely hard water, a softener pays for itself in extended appliance life, reduced soap usage, and fewer plumbing repairs from scale buildup."
+      },
+      {
+        "question": "Do you serve all of Joliet and surrounding Will County areas?",
+        "answer": "Yes. We cover all of Joliet plus surrounding Will County communities including Plainfield, Romeoville, Lockport, Shorewood, Crest Hill, and New Lenox."
+      },
+      {
+        "question": "Can you replace a sewer line in Joliet?",
+        "answer": "Yes. We replace sewer lines in Joliet using both traditional excavation and trenchless methods. Joliet's limestone bedrock can make excavation more challenging in some areas, which is why trenchless options like pipe bursting or lining are popular here. We assess your specific situation and recommend the best approach."
+      }
+    ]
   },
   {
     "city_name": "Arlington Heights",
@@ -84,21 +191,54 @@
     "population": "77,676",
     "water_utility": "Village of Arlington Heights — Public Works Department (Lake Michigan water via Northwest Water Commission)",
     "permit_info": "Arlington Heights requires plumbing permits for all new installations, replacements, and remodeling. Permits are obtained through the Village of Arlington Heights Community Development Department.",
-    "neighborhoods": ["Downtown Arlington Heights", "Rand Road Corridor", "Arlington Club", "Dunton", "Scarsdale", "Heritage"],
+    "neighborhoods": [
+      "Downtown Arlington Heights",
+      "Rand Road Corridor",
+      "Arlington Club",
+      "Dunton",
+      "Scarsdale",
+      "Heritage"
+    ],
     "common_issues": [
       "Many homes built in the 1960s-1980s are reaching the age where original copper supply lines develop pinhole leaks",
       "The village's strict stormwater management ordinances require proper sump pump discharge — illegal connections to sanitary sewer can result in fines",
       "Commercial properties along Rand Road and Arlington Heights Road have specialized grease trap and backflow preventer requirements",
       "Winter freeze-thaw cycles cause water main breaks that temporarily affect residential water pressure and quality"
     ],
-    "nearby_tier1": ["park-ridge", "chicago", "elmhurst"],
+    "nearby_tier1": [
+      "park-ridge",
+      "chicago",
+      "elmhurst"
+    ],
     "seo": {
       "title": "Plumber in Arlington Heights, IL | 24/7 Emergency Plumbing",
       "description": "Licensed plumber in Arlington Heights, IL. 24/7 emergency plumbing, water heater repair, sewer service, backflow testing & more. Call 833-758-6911."
     },
     "intro_paragraph": "Arlington Heights is one of the largest villages in Cook County with a thriving downtown district and diverse housing stock. Plumbers 911 connects residents and businesses with licensed plumbers who are experienced with the village's specific permit requirements and the unique plumbing challenges of northwest suburban properties.",
     "local_content": "<p>Arlington Heights receives its water from Lake Michigan through the Northwest Water Commission, providing generally high-quality water to residents. However, the village's housing stock — much of it built during the suburban boom of the 1960s through 1980s — means many homes are now at the point where original copper supply lines are developing pinhole leaks caused by decades of mineral deposits and water chemistry changes. Whole-house repiping with modern PEX or copper is an increasingly common upgrade for Arlington Heights homeowners.</p>\n<p>The Village of Arlington Heights has some of the stricter stormwater management regulations in the northwest suburbs. Sump pumps must discharge to approved locations — not to the sanitary sewer system — and the village actively enforces disconnection of illegal sump pump connections. Our plumbers ensure all sump pump installations comply with village code, including proper discharge routing and battery backup systems.</p>\n<p>For commercial properties, particularly restaurants and food service businesses along the Rand Road corridor, the village requires regular grease trap maintenance and backflow preventer testing. Our licensed commercial plumbers handle these compliance requirements on schedule.</p>",
-    "cta_text": "Arlington Heights homeowners: call for expert plumbing service that meets village code requirements."
+    "cta_text": "Arlington Heights homeowners: call for expert plumbing service that meets village code requirements.",
+    "faqs": [
+      {
+        "question": "What plumbing permits does Arlington Heights require?",
+        "answer": "Arlington Heights requires permits for most plumbing work beyond basic repairs — water heater replacements, fixture additions, sewer work, and remodeling. Permits are obtained through the Village's Community Development Department. We pull permits and schedule inspections as part of the job."
+      },
+      {
+        "question": "Is Arlington Heights water hard?",
+        "answer": "Moderately. Arlington Heights purchases Lake Michigan water through the Northwest Suburban Municipal Joint Action Water Agency. It's softer than well water but harder than Chicago city water. Some homeowners still benefit from a water softener or conditioning system."
+      },
+      {
+        "question": "Do you handle sump pump installation in Arlington Heights?",
+        "answer": "Yes. Many Arlington Heights homes, particularly those in flood-prone areas near Salt Creek, rely heavily on sump pumps. We install primary pumps, battery backup systems, and can upgrade undersized pumps to handle heavy water flow during spring storms."
+      },
+      {
+        "question": "How fast can you respond to a plumbing emergency in Arlington Heights?",
+        "answer": "We typically respond to Arlington Heights emergency calls within 30–60 minutes. We have plumbers in the northwest suburban area available 24/7 for burst pipes, sewer backups, and other emergencies."
+      },
+      {
+        "question": "Can you repipe an older Arlington Heights home?",
+        "answer": "Yes. Many homes in Arlington Heights built in the 1950s–1970s still have original galvanized steel supply lines that are corroding and restricting water flow. We repipe with copper or PEX, restoring full pressure to every fixture. Most repipes take 2–3 days."
+      }
+    ]
   },
   {
     "city_name": "Park Forest",
@@ -109,21 +249,53 @@
     "population": "21,259",
     "water_utility": "Village of Park Forest — Public Works (purchases water from Chicago Heights)",
     "permit_info": "Park Forest requires plumbing permits through the Village Building Department. Inspections are required before concealing any plumbing work.",
-    "neighborhoods": ["Eastgate", "Westwood", "Indianwood", "Shabbona", "Blackhawk"],
+    "neighborhoods": [
+      "Eastgate",
+      "Westwood",
+      "Indianwood",
+      "Shabbona",
+      "Blackhawk"
+    ],
     "common_issues": [
       "Park Forest's original 1940s-1950s housing stock includes some of the oldest residential plumbing in the south suburbs",
       "Cast iron drain lines in original Ranch and Cape Cod homes are frequently deteriorated and need replacement",
       "The village's sewer system experiences infiltration during heavy rains, contributing to basement backup issues",
       "Water pressure concerns in some areas due to the age of the distribution infrastructure"
     ],
-    "nearby_tier1": ["chicago-heights", "matteson", "flossmoor"],
+    "nearby_tier1": [
+      "chicago-heights",
+      "matteson",
+      "flossmoor"
+    ],
     "seo": {
       "title": "Plumber in Park Forest, IL | 24/7 Emergency Plumbing Services",
       "description": "Licensed plumber in Park Forest, IL. 24/7 emergency plumbing, drain cleaning, sewer repair, water heater service & more. Call 833-758-6911."
     },
     "intro_paragraph": "Park Forest, one of America's earliest planned suburban communities, features a distinctive housing stock primarily built in the late 1940s and 1950s. These homes present specific plumbing challenges that require experienced professionals familiar with mid-century construction techniques.",
     "local_content": "<p>Park Forest was developed as one of the nation's first large-scale planned communities after World War II. The village's original Ranch-style and Cape Cod homes, built between 1948 and 1958, represent some of the oldest residential plumbing systems in Chicago's south suburbs. These homes typically have original cast iron drain, waste, and vent (DWV) systems that have now exceeded their expected lifespan of 50-75 years. Many are experiencing interior corrosion, joint failures, and root penetration.</p>\n<p>The village purchases its water from the City of Chicago Heights, which draws from Lake Michigan. While the water quality is generally good, Park Forest's internal distribution system includes aging mains that can occasionally affect pressure and clarity during maintenance events. Our plumbers help residents address water quality concerns with filtration solutions and pressure-boosting systems.</p>\n<p>Park Forest has been proactive about infrastructure renewal, but individual homeowner sewer laterals remain the property owner's responsibility. We recommend sewer camera inspections for any Park Forest home that hasn't had its lateral assessed in the past 10 years.</p>",
-    "cta_text": "Park Forest homeowners: protect your mid-century home with modern plumbing solutions from licensed pros."
+    "cta_text": "Park Forest homeowners: protect your mid-century home with modern plumbing solutions from licensed pros.",
+    "faqs": [
+      {
+        "question": "What plumbing issues are common in Park Forest homes?",
+        "answer": "Park Forest was built primarily in the late 1940s–1950s as one of America's first planned communities. The original plumbing — galvanized supply lines and cast iron drains — is now 70+ years old. Common issues include low water pressure from corroded galvanized pipes, sewer line root intrusion, and aging water heaters."
+      },
+      {
+        "question": "Does Park Forest have a lead pipe problem?",
+        "answer": "Some Park Forest homes may have lead service lines connecting to the water main. The Village has been working on identification and replacement. If you're unsure about your service line material, we can inspect and advise on replacement options."
+      },
+      {
+        "question": "How much does a whole-house repipe cost in Park Forest?",
+        "answer": "For a typical Park Forest ranch or split-level home, whole-house repiping runs $4,000–$8,000 depending on the number of fixtures, pipe material chosen (copper vs. PEX), and accessibility. Given the age of Park Forest's housing stock, this is one of the most common jobs we do there."
+      },
+      {
+        "question": "Do you service Park Forest and surrounding south suburbs?",
+        "answer": "Yes. We serve Park Forest and all surrounding south Cook County communities including Matteson, Olympia Fields, Richton Park, University Park, Chicago Heights, and Flossmoor."
+      },
+      {
+        "question": "Can you help with basement flooding in Park Forest?",
+        "answer": "Yes. Basement flooding is common in Park Forest due to aging storm and sanitary sewers. We install and repair sump pumps, battery backups, and backwater valves. For recurring sewer backups, we camera-inspect the line and recommend cleaning or replacement as needed."
+      }
+    ]
   },
   {
     "city_name": "Cicero",
@@ -134,21 +306,52 @@
     "population": "85,268",
     "water_utility": "Town of Cicero — Water Department (Chicago water)",
     "permit_info": "Town of Cicero requires plumbing permits for all installations and replacements through the Building Department.",
-    "neighborhoods": ["Grant Works", "Hawthorne Works area", "Warren Park", "Cicero Avenue corridor"],
+    "neighborhoods": [
+      "Grant Works",
+      "Hawthorne Works area",
+      "Warren Park",
+      "Cicero Avenue corridor"
+    ],
     "common_issues": [
       "Dense urban housing with multi-family buildings creates complex shared plumbing systems",
       "Many properties pre-date 1940, with original lead or galvanized supply lines still in service",
       "Basement flooding is a persistent problem in the low-lying areas near the Sanitary and Ship Canal",
       "Commercial properties along Cicero Avenue and Cermak Road have heavy-use plumbing systems requiring frequent maintenance"
     ],
-    "nearby_tier1": ["chicago", "oak-brook", "elmhurst"],
+    "nearby_tier1": [
+      "chicago",
+      "oak-brook",
+      "elmhurst"
+    ],
     "seo": {
       "title": "Plumber in Cicero, IL | 24/7 Licensed Plumbing Services",
       "description": "Licensed plumber in Cicero, IL. Emergency plumbing, water heater repair, drain cleaning, sewer service & more. Call 833-758-6911."
     },
     "intro_paragraph": "Cicero is one of the most densely populated communities in Cook County, with a mix of historic residential and bustling commercial properties. Our licensed plumbers are experienced with the town's older building stock and complex multi-family plumbing systems.",
     "local_content": "<p>Cicero's building stock is among the oldest in the western suburbs, with many residential and commercial structures dating to the early 1900s. The town's dense mix of two-flats, three-flats, and small apartment buildings means plumbing work often involves shared drain stacks, multiple water heaters, and complex venting systems that require experienced professionals to service correctly.</p>\n<p>The Town of Cicero receives its water from the City of Chicago's Lake Michigan supply. However, many properties still have original galvanized or lead water supply lines connecting to the municipal main. These aging service lines restrict water flow, affect water quality, and should be assessed and potentially replaced to protect your family's health and your property value.</p>\n<p>Cicero's proximity to the Sanitary and Ship Canal and its generally flat topography make basement water intrusion a common problem, particularly for properties in lower-lying areas. Professional sump pump installation with battery backup is strongly recommended for homes and businesses in flood-prone zones.</p>",
-    "cta_text": "Cicero residents and businesses: call for experienced plumbing service throughout the town."
+    "cta_text": "Cicero residents and businesses: call for experienced plumbing service throughout the town.",
+    "faqs": [
+      {
+        "question": "Does Cicero follow Chicago plumbing codes?",
+        "answer": "No. Cicero is an independent municipality with its own building department and follows the Illinois State Plumbing Code. Permit requirements and inspection processes differ from Chicago. We're familiar with Cicero's codes and handle all permit work."
+      },
+      {
+        "question": "What are common plumbing problems in Cicero homes?",
+        "answer": "Cicero has a mix of older brick two-flats and single-family homes built from the 1920s–1960s. Common issues include corroded galvanized water lines, deteriorating cast iron sewer stacks, lead service lines, and aging water heaters. The dense housing stock also means sewer line access can be challenging."
+      },
+      {
+        "question": "How much does a plumber charge for a service call in Cicero?",
+        "answer": "A standard service call in Cicero runs $150–$300 including diagnosis and the first hour of labor. Emergency and after-hours calls are higher. We provide upfront pricing before starting any work beyond the initial assessment."
+      },
+      {
+        "question": "Do you handle commercial plumbing in Cicero?",
+        "answer": "Yes. Cicero has a large commercial and industrial corridor along Cicero Avenue and Cermak Road. We serve restaurants, retail spaces, warehouses, and multi-unit residential buildings with full commercial plumbing services including drain maintenance, backflow testing, and emergency response."
+      },
+      {
+        "question": "Can you replace a sewer line in Cicero's tight lots?",
+        "answer": "Yes. Cicero's narrow lots and gangways make traditional sewer excavation challenging. Trenchless methods like pipe bursting and lining are often the best option here — less digging, less disruption to your property and your neighbors. We assess access and recommend the most practical method."
+      }
+    ]
   },
   {
     "city_name": "Bartlett",
@@ -159,21 +362,53 @@
     "population": "41,679",
     "water_utility": "Village of Bartlett — Public Works (Lake Michigan water via DuPage Water Commission)",
     "permit_info": "Village of Bartlett requires plumbing permits through the Community Development Department for all new work and replacements.",
-    "neighborhoods": ["Bartlett Lakes", "Brewster Creek", "Stearns Road corridor", "Ontarioville", "Timber Trails"],
+    "neighborhoods": [
+      "Bartlett Lakes",
+      "Brewster Creek",
+      "Stearns Road corridor",
+      "Ontarioville",
+      "Timber Trails"
+    ],
     "common_issues": [
       "Rapid 1990s-2000s subdivision growth means many homes are reaching the 25-30 year mark where water heaters and original fixtures begin failing",
       "Bartlett's DuPage Water Commission supply is relatively hard, requiring water softener systems",
       "Newer subdivisions built on former agricultural land can experience soil settlement that shifts underground pipes",
       "The village's stormwater detention requirements mean sump pumps are critical in many neighborhoods"
     ],
-    "nearby_tier1": ["elmhurst", "naperville", "arlington-heights"],
+    "nearby_tier1": [
+      "elmhurst",
+      "naperville",
+      "arlington-heights"
+    ],
     "seo": {
       "title": "Plumber in Bartlett, IL | 24/7 Plumbing Services DuPage County",
       "description": "Licensed plumber in Bartlett, IL. Water heater repair, drain cleaning, sewer service, water softener installation & more. Call 833-758-6911."
     },
     "intro_paragraph": "Bartlett is a growing DuPage County community with a mix of established neighborhoods and newer subdivisions. Our licensed plumbers serve Bartlett homeowners with everything from water heater replacements in 1990s-era homes to sump pump installations in newer developments.",
     "local_content": "<p>Bartlett experienced significant residential growth during the 1990s and 2000s, which means a large portion of the village's housing stock is now 25-35 years old — the age when original water heaters, supply line fittings, and fixture valves begin to fail. Water heater replacement is one of our most-requested services in Bartlett, and we help homeowners choose between traditional tank and energy-efficient tankless systems suited to their home's demands.</p>\n<p>The village receives Lake Michigan water through the DuPage Water Commission. While this is high-quality source water, it does have moderate mineral content that benefits from water softener treatment. Many Bartlett homeowners choose to install whole-house water softener systems to protect appliances, extend water heater life, and improve fixture longevity.</p>\n<p>Newer subdivisions in western Bartlett, built on former farmland, sometimes experience soil compaction and settlement that can stress underground sewer laterals and water lines. If you notice unexplained wet spots in your yard or gradual loss of water pressure, a sewer camera inspection can reveal developing problems before they become costly emergencies.</p>",
-    "cta_text": "Bartlett homeowners: whether you're in Brewster Creek or Ontarioville, we provide fast, licensed plumbing service."
+    "cta_text": "Bartlett homeowners: whether you're in Brewster Creek or Ontarioville, we provide fast, licensed plumbing service.",
+    "faqs": [
+      {
+        "question": "Where does Bartlett get its water?",
+        "answer": "Bartlett purchases Lake Michigan water through the DuPage Water Commission. The water quality is good but moderately hard. Some Bartlett homeowners choose to install water softeners to reduce mineral buildup on fixtures and in appliances."
+      },
+      {
+        "question": "Do you need a permit for plumbing work in Bartlett?",
+        "answer": "Yes. The Village of Bartlett requires permits for water heater replacements, fixture additions, sewer repairs, and remodeling plumbing. We handle the permit application and inspection scheduling through Bartlett's Building Division."
+      },
+      {
+        "question": "What plumbing issues are common in Bartlett?",
+        "answer": "Bartlett has a mix of 1970s–1990s subdivisions and newer developments. Common issues include water heater failures (10–15 year old units), sump pump problems during heavy rains, and polybutylene pipe failures in some 1980s-era homes. Newer homes sometimes have builder-grade fixtures that fail prematurely."
+      },
+      {
+        "question": "How fast can you get a plumber to Bartlett?",
+        "answer": "Most emergency calls in Bartlett are responded to within 30–60 minutes. We have plumbers in the western suburban DuPage County area available around the clock."
+      },
+      {
+        "question": "Do you install sump pumps in Bartlett?",
+        "answer": "Yes. Bartlett's clay soil and relatively high water table make sump pumps essential for most homes. We install primary pumps, battery backup systems, and can add a second pump for redundancy. Annual sump pump testing before spring is recommended."
+      }
+    ]
   },
   {
     "city_name": "Hickory Hills",
@@ -184,21 +419,51 @@
     "population": "14,049",
     "water_utility": "City of Hickory Hills — purchases water from the City of Chicago",
     "permit_info": "Hickory Hills requires plumbing permits through City Hall for all installations, replacements, and remodeling work.",
-    "neighborhoods": ["Roberts Road area", "95th Street corridor", "Hickory Hills Country Club vicinity"],
+    "neighborhoods": [
+      "Roberts Road area",
+      "95th Street corridor",
+      "Hickory Hills Country Club vicinity"
+    ],
     "common_issues": [
       "Most homes built in the 1960s-1970s with original copper and cast iron plumbing nearing end of life",
       "The city sits in a low-lying area between the Cal-Sag Channel and the Calumet Sag Trail, making basement flooding common",
       "Older clay sewer laterals in the original subdivisions are prone to root intrusion from mature trees",
       "Hard water deposits accumulate faster in older galvanized piping systems"
     ],
-    "nearby_tier1": ["palos-heights", "orland-park", "chicago"],
+    "nearby_tier1": [
+      "palos-heights",
+      "orland-park",
+      "chicago"
+    ],
     "seo": {
       "title": "Plumber in Hickory Hills, IL | 24/7 Emergency Plumbing",
       "description": "Licensed plumber in Hickory Hills, IL. Emergency plumbing, sewer repair, water heater service, drain cleaning & more. Call 833-758-6911."
     },
     "intro_paragraph": "Hickory Hills is a close-knit Cook County community where most homes date to the 1960s and 1970s. Our licensed plumbers specialize in the maintenance and modernization of aging residential plumbing systems that are common in this area.",
     "local_content": "<p>Hickory Hills' residential neighborhoods were primarily developed during the 1960s and 1970s, meaning most homes are now 50-60+ years old. At this age, original copper supply lines may be developing pinhole leaks, cast iron drain stacks may be corroding from the inside, and clay sewer laterals are likely compromised by root intrusion from the mature trees that line the city's streets.</p>\n<p>The city's geography — situated in a relatively low-lying area near the Cal-Sag Channel — makes basement water management a top priority. Many Hickory Hills homes require sump pump systems with battery backup to manage groundwater during wet seasons. The city's storm sewer system can be overwhelmed during intense rainfall events, making a properly functioning sump system your first line of defense against basement flooding.</p>\n<p>Hickory Hills purchases its water from Chicago's Lake Michigan supply, which is delivered through an aging local distribution network. Residents occasionally experience water pressure fluctuations during peak usage periods or when main breaks occur in the system.</p>",
-    "cta_text": "Hickory Hills homeowners: protect your 1960s-1970s home with professional plumbing upgrades."
+    "cta_text": "Hickory Hills homeowners: protect your 1960s-1970s home with professional plumbing upgrades.",
+    "faqs": [
+      {
+        "question": "What plumbing problems are common in Hickory Hills?",
+        "answer": "Hickory Hills homes were largely built in the 1950s–1970s. Common issues include galvanized pipe corrosion causing low water pressure, cast iron drain stack deterioration, tree root intrusion in clay sewer lines, and aging water heaters. The area's clay soil also contributes to foundation settling that can stress drain lines."
+      },
+      {
+        "question": "Does Hickory Hills use well water or city water?",
+        "answer": "Hickory Hills receives Lake Michigan water through the Southwest Suburban Water Commission. The water is treated and relatively soft compared to well water, but mineral buildup can still affect fixtures and water heaters over time."
+      },
+      {
+        "question": "How much does drain cleaning cost in Hickory Hills?",
+        "answer": "A standard drain cleaning in Hickory Hills runs $100–$250 for a single fixture drain and $200–$500 for a main sewer line. Hydro jetting for thorough cleaning costs $400–$900. Emergency after-hours service adds a premium."
+      },
+      {
+        "question": "Do you serve Hickory Hills and nearby southwest suburbs?",
+        "answer": "Yes. We serve Hickory Hills and all surrounding communities including Palos Heights, Palos Hills, Worth, Chicago Ridge, Oak Lawn, Bridgeview, and Justice."
+      },
+      {
+        "question": "Can you install a backwater valve in Hickory Hills?",
+        "answer": "Yes. A backwater valve prevents sewer backups from entering your home during heavy rain — a common problem in southwest suburban communities. Installation runs $1,500–$3,500 depending on access. It's one of the best investments for basement flood prevention."
+      }
+    ]
   },
   {
     "city_name": "Chicago Heights",
@@ -209,21 +474,52 @@
     "population": "29,621",
     "water_utility": "City of Chicago Heights — Water Department (Lake Michigan water, serves multiple surrounding communities)",
     "permit_info": "Chicago Heights requires plumbing permits through the Building Department. The city conducts inspections on all permitted plumbing work.",
-    "neighborhoods": ["East Side", "West Side", "Lincoln Highway corridor", "Hunger area"],
+    "neighborhoods": [
+      "East Side",
+      "West Side",
+      "Lincoln Highway corridor",
+      "Hunger area"
+    ],
     "common_issues": [
       "Chicago Heights has one of the older housing stocks in the south suburbs, with many homes built before 1950",
       "Lead service lines remain in some older sections of the city",
       "Industrial heritage means some properties may have non-standard or oversized plumbing from commercial conversions",
       "The city's water treatment plant serves multiple communities, and occasional water main breaks affect pressure"
     ],
-    "nearby_tier1": ["park-forest", "flossmoor", "matteson"],
+    "nearby_tier1": [
+      "park-forest",
+      "flossmoor",
+      "matteson"
+    ],
     "seo": {
       "title": "Plumber in Chicago Heights, IL | 24/7 Licensed Plumbing",
       "description": "Licensed plumber in Chicago Heights, IL. Emergency plumbing, water heater repair, sewer service, drain cleaning & more. Call 833-758-6911."
     },
     "intro_paragraph": "Chicago Heights is a historic south suburban community with deep industrial roots and a diverse housing stock. Our licensed plumbers are experienced with the city's older homes and the unique plumbing challenges that come with pre-1950s construction.",
     "local_content": "<p>Chicago Heights was one of the earliest industrial centers in Chicago's south suburbs, and its housing stock reflects over a century of development. Homes in the older East Side and West Side neighborhoods frequently have original plumbing systems from the 1920s-1940s that include lead supply lines, cast iron drain pipes, and outdated venting configurations. These systems require careful assessment and often phased replacement to bring them up to modern safety and performance standards.</p>\n<p>The City of Chicago Heights operates its own water treatment plant drawing from Lake Michigan, and serves several surrounding communities including Park Forest, Steger, and South Chicago Heights. This regional water system generally provides reliable service, but the extensive distribution network means water main breaks and maintenance events can occasionally affect pressure and water quality for short periods.</p>\n<p>For homeowners in Chicago Heights, we recommend starting with a comprehensive plumbing inspection if your home hasn't been assessed in the past decade — especially in the older neighborhoods where original systems may be hiding problems behind walls and under floors.</p>",
-    "cta_text": "Chicago Heights homeowners: call for expert service from plumbers who understand your community's infrastructure."
+    "cta_text": "Chicago Heights homeowners: call for expert service from plumbers who understand your community's infrastructure.",
+    "faqs": [
+      {
+        "question": "What makes plumbing in Chicago Heights different?",
+        "answer": "Chicago Heights has some of the oldest housing stock in the south suburbs, with many homes dating to the early 1900s. Original plumbing in these homes includes lead service lines, galvanized supply pipes, and clay sewer lines — all of which are past their useful life. The city's industrial history also means some areas have unique soil and water conditions."
+      },
+      {
+        "question": "Does Chicago Heights have hard water?",
+        "answer": "Chicago Heights gets its water from a deep well system, and it is notably hard. Hard water causes scale buildup in water heaters, white deposits on fixtures, and reduced soap efficiency. A water softener is highly recommended for Chicago Heights homes."
+      },
+      {
+        "question": "How much does a water heater replacement cost in Chicago Heights?",
+        "answer": "A standard 40–50 gallon gas water heater replacement in Chicago Heights runs $800–$1,800 including the unit, installation, and disposal of the old one. Given the hard water, we recommend periodic tank flushing to extend the new heater's life."
+      },
+      {
+        "question": "Do you handle sewer line work in Chicago Heights?",
+        "answer": "Yes. Sewer line cleaning, camera inspection, and replacement are among our most requested services in Chicago Heights. Many homes still have original clay sewer lines that are 80–100+ years old. We use camera inspections to assess condition before recommending cleaning or replacement."
+      },
+      {
+        "question": "Is emergency plumbing service available in Chicago Heights?",
+        "answer": "Yes, 24/7. We respond to emergency calls in Chicago Heights and surrounding south Cook County communities including Park Forest, Steger, South Chicago Heights, Sauk Village, and Lynwood."
+      }
+    ]
   },
   {
     "city_name": "Oak Brook",
@@ -234,21 +530,53 @@
     "population": "8,058",
     "water_utility": "Village of Oak Brook — purchases water from the DuPage Water Commission (Lake Michigan)",
     "permit_info": "Oak Brook requires plumbing permits through the Village Community Development Department. The village has strict inspection requirements.",
-    "neighborhoods": ["Oak Brook Center area", "Ginger Creek", "Trinity Lakes", "Midwest Bank Corporate Corridor"],
+    "neighborhoods": [
+      "Oak Brook Center area",
+      "Ginger Creek",
+      "Trinity Lakes",
+      "Midwest Bank Corporate Corridor"
+    ],
     "common_issues": [
       "Many Oak Brook homes are large custom-built properties with complex plumbing systems including multiple water heaters, whole-house filtration, and irrigation",
       "High-end commercial properties including Oak Brook Center require specialized commercial plumbing maintenance",
       "The village's upscale housing stock demands premium fixture brands and professional-grade installation",
       "Underground sprinkler system backflow prevention is required by village code"
     ],
-    "nearby_tier1": ["elmhurst", "naperville", "chicago", "cicero"],
+    "nearby_tier1": [
+      "elmhurst",
+      "naperville",
+      "chicago",
+      "cicero"
+    ],
     "seo": {
       "title": "Plumber in Oak Brook, IL | Premium Plumbing Services",
       "description": "Licensed plumber in Oak Brook, IL. Residential & commercial plumbing, water heater service, backflow testing, remodeling & more. Call 833-758-6911."
     },
     "intro_paragraph": "Oak Brook is an affluent DuPage County community known for its large residential properties and major commercial centers. Our licensed plumbers provide premium residential and commercial plumbing services tailored to Oak Brook's high-end properties.",
     "local_content": "<p>Oak Brook's residential properties are among the most valuable in DuPage County, and their plumbing systems reflect this — many homes feature multiple water heaters, whole-house water filtration and softener systems, radiant floor heating, and extensive outdoor irrigation systems. Maintaining these complex systems requires licensed plumbers with experience in high-end residential work, including proper backflow preventer testing for irrigation connections as required by village code.</p>\n<p>The village is also home to major commercial centers including Oakbrook Center and numerous corporate headquarters along the 22nd Street and Spring Road corridors. These commercial properties have specialized plumbing requirements including grease trap systems for food service tenants, backflow prevention devices, and high-volume drain systems that require regular professional maintenance.</p>\n<p>Oak Brook receives its water through the DuPage Water Commission from Lake Michigan. The village's well-maintained distribution system generally provides reliable service, but the mineral content of Lake Michigan water means water softener systems are recommended to protect premium fixtures and extend the life of tankless water heaters.</p>",
-    "cta_text": "Oak Brook residents and businesses: call for premium plumbing service matched to your property's needs."
+    "cta_text": "Oak Brook residents and businesses: call for premium plumbing service matched to your property's needs.",
+    "faqs": [
+      {
+        "question": "What plumbing services do Oak Brook homes typically need?",
+        "answer": "Oak Brook is an affluent community with larger homes that have more complex plumbing systems — multiple bathrooms, high-end fixtures, hydronic heating, and elaborate landscaping with irrigation. Common needs include water heater upgrades, bathroom remodel plumbing, backflow testing for irrigation systems, and sewer line maintenance."
+      },
+      {
+        "question": "Does Oak Brook require backflow testing?",
+        "answer": "Yes. If you have an irrigation system, fire suppression system, or any cross-connection, Oak Brook (through DuPage County Health Department) requires annual backflow preventer testing. We test, certify, and file the paperwork."
+      },
+      {
+        "question": "How much does bathroom remodeling plumbing cost in Oak Brook?",
+        "answer": "Given Oak Brook's larger homes and higher-end finishes, bathroom remodeling plumbing typically runs $2,000–$8,000+ depending on scope — from a basic fixture swap to a full master bath gut-and-rebuild with relocated drains and supply lines."
+      },
+      {
+        "question": "Do you work on commercial properties in Oak Brook?",
+        "answer": "Yes. Oak Brook has a significant commercial district including Oakbrook Center and surrounding office complexes. We provide commercial plumbing services including tenant buildouts, drain maintenance, backflow testing, and emergency response."
+      },
+      {
+        "question": "Can you install a tankless water heater in Oak Brook?",
+        "answer": "Yes. Tankless water heaters are popular in Oak Brook due to larger homes with higher hot water demand. We install Rinnai, Navien, and other premium brands. For larger homes, we may recommend multiple units or a recirculation system to eliminate wait times at distant fixtures."
+      }
+    ]
   },
   {
     "city_name": "Elmhurst",
@@ -259,21 +587,55 @@
     "population": "46,800",
     "water_utility": "City of Elmhurst — Utilities Department (Lake Michigan water via DuPage Water Commission)",
     "permit_info": "City of Elmhurst requires plumbing permits for all work beyond basic repairs. Permits and inspections are managed by the Community Development Department.",
-    "neighborhoods": ["Downtown Elmhurst", "Emery Manor", "College View", "Churchville", "Old Elm", "Spring Road corridor"],
+    "neighborhoods": [
+      "Downtown Elmhurst",
+      "Emery Manor",
+      "College View",
+      "Churchville",
+      "Old Elm",
+      "Spring Road corridor"
+    ],
     "common_issues": [
       "Elmhurst experienced severe flooding in 2008, 2013, and 2017 — the city has invested heavily in flood mitigation but homeowners still need robust sump pump systems",
       "Mix of Victorian-era homes downtown and mid-century homes in outlying areas creates diverse plumbing challenges",
       "The city's aggressive tree planting program means mature tree roots frequently infiltrate sewer laterals",
       "Many 1950s-1970s homes have original cast iron drain systems that need replacement"
     ],
-    "nearby_tier1": ["oak-brook", "bartlett", "naperville", "chicago"],
+    "nearby_tier1": [
+      "oak-brook",
+      "bartlett",
+      "naperville",
+      "chicago"
+    ],
     "seo": {
       "title": "Plumber in Elmhurst, IL | 24/7 Emergency Plumbing Services",
       "description": "Licensed plumber in Elmhurst, IL. Emergency plumbing, flood prevention, sewer repair, water heater service & more. Call 833-758-6911."
     },
     "intro_paragraph": "Elmhurst is a charming DuPage County city with a mix of historic downtown homes and mid-century residential neighborhoods. After experiencing multiple major flood events, the city and its homeowners have become especially focused on basement flood prevention — and our licensed plumbers are experts in the sump pump, backup, and drainage solutions that Elmhurst properties need.",
     "local_content": "<p>Elmhurst's history with flooding has made it one of the most sump-pump-conscious communities in the western suburbs. The devastating floods of 2008, 2013, and 2017 prompted massive city infrastructure investment including the Elmhurst Quarry Flood Control Facility, but individual homeowners are still responsible for their own basement protection. This means properly sized sump pumps, battery backup systems, overhead sewer conversions, and backwater valves are not luxuries in Elmhurst — they're necessities.</p>\n<p>The city's diverse housing stock ranges from Victorian and Prairie-style homes in the historic downtown area to Cape Cods and Ranch homes built in the 1950s-1970s in outlying neighborhoods. Each era of construction presents different plumbing challenges: older homes may have knob-and-tube-era plumbing modifications, while mid-century homes often have deteriorating cast iron drain systems and corroding galvanized supply lines.</p>\n<p>Elmhurst receives excellent-quality Lake Michigan water through the DuPage Water Commission. The city's well-maintained infrastructure generally provides reliable pressure and quality, though older service lines on individual properties may need upgrading to take full advantage of the system.</p>",
-    "cta_text": "Elmhurst homeowners: from flood prevention to full repiping, our licensed plumbers have you covered."
+    "cta_text": "Elmhurst homeowners: from flood prevention to full repiping, our licensed plumbers have you covered.",
+    "faqs": [
+      {
+        "question": "What plumbing issues are common in Elmhurst homes?",
+        "answer": "Elmhurst has a mix of pre-war homes and mid-century construction. Common issues include galvanized pipe corrosion in homes built before 1960, sewer line root intrusion from the city's mature tree canopy, and sump pump failures during spring rains. The Elmhurst flooding concerns along Salt Creek also make sump pump reliability critical."
+      },
+      {
+        "question": "Does Elmhurst require plumbing permits?",
+        "answer": "Yes. The City of Elmhurst requires permits for water heater replacements, new fixture installations, sewer work, and remodeling plumbing. Permits are obtained through the Building Division. We handle all permit work and inspection scheduling."
+      },
+      {
+        "question": "How much does sewer camera inspection cost in Elmhurst?",
+        "answer": "A sewer camera inspection in Elmhurst runs $150–$400. We strongly recommend one before buying a home in Elmhurst, as many sewer lines are 50–80 years old. Bundled with sewer cleaning, the total typically runs $350–$700."
+      },
+      {
+        "question": "Do you offer emergency plumbing in Elmhurst?",
+        "answer": "Yes, 24/7. We have plumbers in the DuPage County area available around the clock. Most Elmhurst emergency calls are responded to within 30–45 minutes."
+      },
+      {
+        "question": "Can you help with flood prevention in Elmhurst?",
+        "answer": "Absolutely. Elmhurst has experienced significant flooding events, particularly near Salt Creek. We install sump pumps, battery backup systems, backwater valves, and can assess your home's drainage vulnerabilities. The City of Elmhurst also has a flood assistance program that may help offset costs."
+      }
+    ]
   },
   {
     "city_name": "Monee",
@@ -284,21 +646,51 @@
     "population": "5,435",
     "water_utility": "Village of Monee — Water Department (deep well water)",
     "permit_info": "Village of Monee requires plumbing permits for new installations and major repairs.",
-    "neighborhoods": ["Old Town Monee", "Monee Reservoir area", "University Park border"],
+    "neighborhoods": [
+      "Old Town Monee",
+      "Monee Reservoir area",
+      "University Park border"
+    ],
     "common_issues": [
       "Monee uses deep well water with high iron and mineral content, requiring water treatment systems",
       "Rapid residential growth along the I-57 corridor means new construction plumbing needs alongside aging village infrastructure",
       "Well water supply can produce sulfur odor and staining that requires specialized filtration",
       "Some newer developments have private septic systems that require different maintenance than municipal sewer"
     ],
-    "nearby_tier1": ["chicago-heights", "matteson", "joliet"],
+    "nearby_tier1": [
+      "chicago-heights",
+      "matteson",
+      "joliet"
+    ],
     "seo": {
       "title": "Plumber in Monee, IL | Well Water Specialists | 24/7 Service",
       "description": "Licensed plumber in Monee, IL. Well water treatment, water heater repair, sewer service, new construction plumbing & more. Call 833-758-6911."
     },
     "intro_paragraph": "Monee is a growing Will County village where deep well water and a mix of new and historic properties create specific plumbing requirements. Our licensed plumbers specialize in well water treatment solutions and the full range of residential plumbing services.",
     "local_content": "<p>Monee's deep well water system provides the village with an independent water supply, but the high iron and mineral content typical of Will County groundwater means homeowners need to take an active approach to water treatment. Without proper filtration and softening, well water minerals accelerate water heater sediment buildup, stain fixtures, and shorten the life of appliances. We help Monee homeowners select and install the right combination of water softener, iron filter, and sediment filtration for their specific water chemistry.</p>\n<p>The village is experiencing steady growth, particularly along the I-57 corridor, which brings a mix of new construction plumbing needs and the maintenance requirements of Monee's older housing stock near the village center. Some newer developments in the Monee area still rely on private septic systems rather than municipal sewer, which requires a different approach to wastewater management.</p>\n<p>Whether you're in a new build needing rough-in plumbing or an older home requiring pipe replacement, our licensed plumbers provide comprehensive service throughout Monee and the surrounding south Will County area.</p>",
-    "cta_text": "Monee residents: call for plumbing service from professionals who understand well water systems."
+    "cta_text": "Monee residents: call for plumbing service from professionals who understand well water systems.",
+    "faqs": [
+      {
+        "question": "Does Monee use well water or municipal water?",
+        "answer": "Monee has a municipal water system that draws from deep wells. The water is notably hard due to high mineral content in the aquifer. A water softener is strongly recommended for Monee homes to protect fixtures, appliances, and pipes from scale buildup."
+      },
+      {
+        "question": "What plumbing challenges are unique to Monee?",
+        "answer": "Monee is a growing community in southern Will County with a mix of newer construction and older farmstead homes. Newer subdivisions may have builder-grade plumbing that can fail prematurely. Older properties may have well and septic systems that need upgrades when connecting to municipal services. Hard well water is a universal concern."
+      },
+      {
+        "question": "How much does a water softener cost in Monee?",
+        "answer": "A standard water softener installation in Monee runs $1,200–$3,000 including the unit and labor. Given Monee's very hard well water, a properly sized softener is one of the best investments for protecting your plumbing system and appliances."
+      },
+      {
+        "question": "Do you serve Monee and surrounding Will County communities?",
+        "answer": "Yes. We cover Monee and all surrounding areas including Peotone, Crete, University Park, Beecher, Manhattan, and Frankfort. We're familiar with the mix of municipal and well water systems in this part of Will County."
+      },
+      {
+        "question": "Can you install a sump pump in a Monee new construction home?",
+        "answer": "Yes. Even new homes in Monee benefit from quality sump pump systems. Builder-installed pumps are often undersized or basic models. We upgrade to higher-capacity pumps and add battery backup systems for reliable basement protection."
+      }
+    ]
   },
   {
     "city_name": "Orland Park",
@@ -309,21 +701,53 @@
     "population": "58,590",
     "water_utility": "Village of Orland Park — Water Division (Lake Michigan water via Oak Lawn regional system)",
     "permit_info": "Orland Park requires plumbing permits through the Development Services Department. Inspections are required for all permitted work.",
-    "neighborhoods": ["Orland Square area", "Homer Township", "Crystal Tree", "Centennial Park", "Old Orland Historic District"],
+    "neighborhoods": [
+      "Orland Square area",
+      "Homer Township",
+      "Crystal Tree",
+      "Centennial Park",
+      "Old Orland Historic District"
+    ],
     "common_issues": [
       "Mix of 1970s-1980s established neighborhoods and 2000s newer subdivisions creates two distinct tiers of plumbing needs",
       "Older areas along 151st Street and LaGrange Road have clay sewer laterals reaching end of life",
       "Large commercial retail corridor along LaGrange Road has heavy-duty plumbing and grease trap requirements",
       "Basement flooding is common in areas near Orland Grasslands where water table is high"
     ],
-    "nearby_tier1": ["palos-heights", "hickory-hills", "joliet"],
+    "nearby_tier1": [
+      "palos-heights",
+      "hickory-hills",
+      "joliet"
+    ],
     "seo": {
       "title": "Plumber in Orland Park, IL | 24/7 Licensed Plumbing Services",
       "description": "Licensed plumber in Orland Park, IL. Emergency plumbing, water heater repair, sewer service, commercial plumbing & more. Call 833-758-6911."
     },
     "intro_paragraph": "Orland Park is one of the largest and most commercially active villages in Chicago's southwest suburbs. Our licensed plumbers serve both residential neighborhoods and the extensive commercial corridor with comprehensive plumbing services.",
     "local_content": "<p>Orland Park's development spans several decades, creating distinct plumbing profiles across the village. Established neighborhoods from the 1970s and 1980s — particularly near the Orland Square area and along 151st Street — feature homes with aging copper supply lines, cast iron drain systems, and clay sewer laterals that are increasingly due for inspection and replacement. Meanwhile, newer subdivisions in the western portion of the village have more modern PVC and PEX systems but may face settling-related issues as the formerly agricultural land continues to compact.</p>\n<p>The village's major commercial corridors along LaGrange Road and 159th Street include extensive retail, restaurant, and office properties that require specialized commercial plumbing services including grease trap installation and maintenance, backflow preventer testing, and high-volume drain systems. Our commercial plumbing team handles these specialized requirements for Orland Park businesses.</p>\n<p>Orland Park receives Lake Michigan water through a regional system, providing generally reliable service and quality. The village requires plumbing permits for most work, and our licensed plumbers manage the permit and inspection process to ensure code compliance.</p>",
-    "cta_text": "Orland Park residents and businesses: call for plumbing service from licensed professionals who know your village."
+    "cta_text": "Orland Park residents and businesses: call for plumbing service from licensed professionals who know your village.",
+    "faqs": [
+      {
+        "question": "What plumbing services do Orland Park homeowners need most?",
+        "answer": "Orland Park has a large stock of homes built in the 1970s–1990s. The most common service calls are water heater replacements (units reaching end of 10–15 year life), sewer line cleaning and camera inspection, sump pump repairs, and fixture upgrades during kitchen and bathroom remodels."
+      },
+      {
+        "question": "Does Orland Park have hard water?",
+        "answer": "Orland Park receives Lake Michigan water, which is moderately hard. While not as hard as well water communities, mineral buildup still affects water heaters and fixtures over time. Some homeowners opt for water softeners or conditioning systems."
+      },
+      {
+        "question": "How much does a sewer line replacement cost in Orland Park?",
+        "answer": "Sewer line replacement in Orland Park typically runs $5,000–$15,000 for traditional excavation or $6,000–$18,000 for trenchless methods. Costs depend on pipe length, depth, landscaping impact, and whether the line runs under a driveway or patio."
+      },
+      {
+        "question": "Do you handle plumbing for Orland Park businesses?",
+        "answer": "Yes. Orland Park has a thriving commercial district around Orland Square Mall, LaGrange Road, and 159th Street. We provide commercial plumbing services including restaurant drain maintenance, backflow testing, and emergency response for retail and office spaces."
+      },
+      {
+        "question": "Can you remodel a bathroom in an Orland Park home?",
+        "answer": "Yes. We handle all plumbing aspects of bathroom remodels — fixture installation, shower valve replacement, drain and supply line relocations, and tub-to-shower conversions. We coordinate with your general contractor or work directly with you on plumbing-only projects."
+      }
+    ]
   },
   {
     "city_name": "Palos Heights",
@@ -334,21 +758,51 @@
     "population": "12,515",
     "water_utility": "City of Palos Heights — purchases Lake Michigan water from Oak Lawn",
     "permit_info": "Palos Heights requires plumbing permits through the Building Department. The city is known for thorough inspection requirements.",
-    "neighborhoods": ["Navajo Hills", "Lake Katherine area", "Harlem Avenue corridor"],
+    "neighborhoods": [
+      "Navajo Hills",
+      "Lake Katherine area",
+      "Harlem Avenue corridor"
+    ],
     "common_issues": [
       "Predominantly 1960s-1970s housing stock with aging plumbing systems",
       "Proximity to the Cal-Sag Channel and Lake Katherine creates elevated water table in some areas",
       "The city's mature tree canopy causes frequent sewer lateral root intrusion",
       "Many original homes have undersized water heaters for modern family needs"
     ],
-    "nearby_tier1": ["hickory-hills", "orland-park", "chicago"],
+    "nearby_tier1": [
+      "hickory-hills",
+      "orland-park",
+      "chicago"
+    ],
     "seo": {
       "title": "Plumber in Palos Heights, IL | 24/7 Emergency Plumbing",
       "description": "Licensed plumber in Palos Heights, IL. Emergency plumbing, sewer repair, water heater service, drain cleaning & more. Call 833-758-6911."
     },
     "intro_paragraph": "Palos Heights is a well-maintained Cook County community known for its scenic Lake Katherine and tree-lined residential streets. Most homes date to the 1960s and 1970s, creating consistent plumbing upgrade needs that our licensed professionals address daily.",
     "local_content": "<p>Palos Heights' residential character is defined by well-kept homes built primarily during the 1960s and 1970s. At 50-60+ years old, these homes are at the stage where major plumbing components — water heaters, supply lines, drain stacks, and sewer laterals — are reaching or exceeding their designed lifespan. Proactive replacement of these systems prevents costly emergency failures and potential water damage.</p>\n<p>The city's beautiful mature tree canopy, while a significant community asset, creates ongoing challenges for underground sewer lines. Tree roots naturally seek out moisture and nutrients in sewer pipes, infiltrating joints and cracks in aging clay laterals. Annual sewer inspections and proactive root treatment can extend the life of these systems, but many Palos Heights homeowners ultimately benefit from upgrading to modern PVC sewer laterals that resist root intrusion.</p>\n<p>The elevated water table near Lake Katherine and the Cal-Sag Channel means homes in certain areas of Palos Heights are especially dependent on reliable sump pump systems. We install and maintain primary and battery backup sump pumps to keep basements dry year-round.</p>",
-    "cta_text": "Palos Heights homeowners: modernize your 1960s-era plumbing with our licensed professionals."
+    "cta_text": "Palos Heights homeowners: modernize your 1960s-era plumbing with our licensed professionals.",
+    "faqs": [
+      {
+        "question": "What plumbing problems are common in Palos Heights?",
+        "answer": "Palos Heights homes built in the 1960s–1980s commonly need galvanized pipe replacement, water heater upgrades, and sewer line maintenance. The area's mature trees create root intrusion problems in older clay sewer lines. Sump pump reliability is also critical due to the area's clay soil and drainage patterns."
+      },
+      {
+        "question": "Does Palos Heights require permits for plumbing work?",
+        "answer": "Yes. The City of Palos Heights requires permits for water heater replacements, new fixture installations, sewer work, and remodeling. We handle all permit applications through the Palos Heights Building Department."
+      },
+      {
+        "question": "How much does a water heater replacement cost in Palos Heights?",
+        "answer": "A standard 40–50 gallon gas water heater replacement in Palos Heights runs $800–$1,800 including the unit, installation, venting, and disposal. Tankless upgrades run $2,500–$5,000. We'll help you choose the right option based on your household size and hot water usage."
+      },
+      {
+        "question": "Do you serve Palos Heights and the surrounding Palos area?",
+        "answer": "Yes. We cover Palos Heights, Palos Hills, Palos Park, Worth, and all surrounding southwest suburban communities. We're very familiar with the housing stock and plumbing challenges specific to this area."
+      },
+      {
+        "question": "Can you camera-inspect my sewer line in Palos Heights?",
+        "answer": "Yes. A sewer camera inspection in Palos Heights runs $150–$400 and is especially recommended for homes with mature trees near the sewer line. We'll show you the live footage and explain what we find — roots, cracks, bellies, or buildup. This helps you plan proactively instead of waiting for a backup."
+      }
+    ]
   },
   {
     "city_name": "Flossmoor",
@@ -359,21 +813,52 @@
     "population": "9,464",
     "water_utility": "Village of Flossmoor — Water Department (purchases water from Chicago Heights)",
     "permit_info": "Flossmoor requires plumbing permits for all installations and replacements through the Village Building Department.",
-    "neighborhoods": ["Flossmoor Estates", "Western Avenue area", "Heather Hill", "Flossmoor Station area"],
+    "neighborhoods": [
+      "Flossmoor Estates",
+      "Western Avenue area",
+      "Heather Hill",
+      "Flossmoor Station area"
+    ],
     "common_issues": [
       "Many larger homes from the 1950s-1970s have complex plumbing systems with multiple bathrooms and aging supply lines",
       "Flossmoor's heavily wooded lots mean sewer laterals face constant tree root pressure",
       "The village's commitment to preserving mature trees means root treatment rather than removal is often the preferred approach",
       "Some homes in the Flossmoor Estates area have radiant heating systems that require specialized plumbing maintenance"
     ],
-    "nearby_tier1": ["park-forest", "chicago-heights", "matteson"],
+    "nearby_tier1": [
+      "park-forest",
+      "chicago-heights",
+      "matteson"
+    ],
     "seo": {
       "title": "Plumber in Flossmoor, IL | 24/7 Licensed Plumbing Services",
       "description": "Licensed plumber in Flossmoor, IL. Emergency plumbing, sewer repair, water heater service, drain cleaning & more. Call 833-758-6911."
     },
     "intro_paragraph": "Flossmoor is a prestigious south suburban village known for its wooded lots, historic Metra station, and well-maintained homes. Our licensed plumbers provide the expert service that Flossmoor's distinctive properties require.",
     "local_content": "<p>Flossmoor's residential character is defined by generous lot sizes, mature tree canopies, and homes that range from 1920s-era estates to mid-century modern designs. Many of the larger homes feature multiple full bathrooms, laundry facilities, and outdoor connections that create complex plumbing systems requiring experienced professionals for maintenance and repair.</p>\n<p>The village's signature wooded lots create a persistent challenge for underground sewer and water lines. Mature hardwoods and oaks send roots deep into the soil seeking moisture, and aging clay sewer laterals are a prime target. Flossmoor's community values preserving its tree canopy, so our approach emphasizes root treatment and pipe relining technologies that address root intrusion without requiring tree removal.</p>\n<p>Flossmoor purchases its water from the City of Chicago Heights, which draws from Lake Michigan. Water quality is generally excellent, though residents in homes with older internal plumbing may benefit from point-of-use filtration to address any effects of aging copper or galvanized pipes within the home.</p>",
-    "cta_text": "Flossmoor homeowners: trust your home's plumbing to licensed professionals who respect your property."
+    "cta_text": "Flossmoor homeowners: trust your home's plumbing to licensed professionals who respect your property.",
+    "faqs": [
+      {
+        "question": "What makes Flossmoor's plumbing unique?",
+        "answer": "Flossmoor is known for its beautiful older homes, many dating to the early 1900s through the 1950s. This means original plumbing systems — galvanized supply pipes, cast iron drain stacks, and clay sewer lines — are well past their expected lifespan. The village's mature tree-lined streets also mean aggressive root intrusion in sewer lines."
+      },
+      {
+        "question": "Does Flossmoor have hard water?",
+        "answer": "Flossmoor purchases Lake Michigan water through a regional water commission. The water is moderately hard. While not extreme, long-term mineral buildup affects water heaters and fixtures. A water softener can extend the life of your plumbing system."
+      },
+      {
+        "question": "How much does whole-house repiping cost in Flossmoor?",
+        "answer": "For a typical Flossmoor home, repiping runs $5,000–$12,000 depending on the home's size, number of fixtures, and pipe material chosen. Many Flossmoor homes have 2–3 bathrooms and larger layouts, which increases the scope compared to a basic ranch home."
+      },
+      {
+        "question": "Do you handle historic home plumbing in Flossmoor?",
+        "answer": "Yes. Flossmoor has several historically significant homes that require careful plumbing work. We understand the challenges of working in older structures — unusual pipe routing, plaster walls, and the need to preserve architectural character while modernizing the plumbing."
+      },
+      {
+        "question": "Is emergency plumbing available in Flossmoor?",
+        "answer": "Yes, 24/7. We respond to emergency calls in Flossmoor and surrounding south suburban communities including Homewood, Olympia Fields, Glenwood, and Chicago Heights. Most emergency calls are responded to within 30–60 minutes."
+      }
+    ]
   },
   {
     "city_name": "Naperville",
@@ -384,21 +869,54 @@
     "population": "149,540",
     "water_utility": "City of Naperville — Water Utility (Lake Michigan water via DuPage Water Commission plus local deep wells)",
     "permit_info": "City of Naperville requires plumbing permits through the Transportation, Engineering & Development Department. The city has a rigorous inspection process.",
-    "neighborhoods": ["Downtown Naperville", "Cress Creek", "Ashbury", "Hobson West", "Neuqua Valley", "White Eagle"],
+    "neighborhoods": [
+      "Downtown Naperville",
+      "Cress Creek",
+      "Ashbury",
+      "Hobson West",
+      "Neuqua Valley",
+      "White Eagle"
+    ],
     "common_issues": [
       "Naperville uses a blended water supply of Lake Michigan water and deep well water — the mix varies seasonally, affecting water hardness",
       "Rapid growth from the 1980s-2000s means a large segment of homes are now 25-40 years old and need system upgrades",
       "The city's strict building codes require proper backflow prevention on all irrigation connections",
       "Large custom homes in communities like White Eagle and Ashbury have complex plumbing with multiple zones and water heaters"
     ],
-    "nearby_tier1": ["elmhurst", "bartlett", "oak-brook"],
+    "nearby_tier1": [
+      "elmhurst",
+      "bartlett",
+      "oak-brook"
+    ],
     "seo": {
       "title": "Plumber in Naperville, IL | 24/7 Licensed Plumbing Services",
       "description": "Licensed plumber in Naperville, IL. Emergency plumbing, water heater repair, sewer service, water treatment & more. Call 833-758-6911."
     },
     "intro_paragraph": "Naperville is the fourth-largest city in Illinois and consistently ranked among the best places to live in America. Our licensed plumbers serve Naperville's diverse housing stock — from downtown Victorian homes to expansive estate properties — with expert plumbing services tailored to each property's needs.",
     "local_content": "<p>Naperville's water system is unique in the region, blending Lake Michigan water from the DuPage Water Commission with water from the city's own deep wells. This blended supply means water hardness can vary seasonally depending on the mix ratio, which affects water heater efficiency, fixture maintenance, and water softener settings. Our plumbers help Naperville homeowners optimize their water treatment systems for the city's specific water chemistry.</p>\n<p>The city experienced massive residential growth from the 1980s through 2000s, and these homes are now reaching the 25-40 year age range where original water heaters fail, supply line fittings deteriorate, and first-generation PVC drain connections may develop leaks. This mid-life maintenance window is an ideal time for a comprehensive plumbing inspection to identify aging components before they cause water damage.</p>\n<p>Naperville's building department is known for thorough permit and inspection processes. Our licensed plumbers are experienced with the city's code requirements and handle all permitting to ensure your project is properly documented and approved.</p>",
-    "cta_text": "Naperville homeowners: call for premium plumbing service from licensed professionals who know your city's unique water system."
+    "cta_text": "Naperville homeowners: call for premium plumbing service from licensed professionals who know your city's unique water system.",
+    "faqs": [
+      {
+        "question": "Does Naperville have hard water?",
+        "answer": "Yes. Naperville draws water from both deep wells and Lake Michigan sources. Well-supplied areas have notably hard water. Even the Lake Michigan supply is moderately hard. Many Naperville homeowners install water softeners to protect their plumbing and appliances."
+      },
+      {
+        "question": "What plumbing permits does Naperville require?",
+        "answer": "The City of Naperville requires permits for water heater replacements, new fixture installations, sewer and water line work, and remodeling plumbing. Naperville's inspection process is thorough. We handle all permit applications and coordinate inspections."
+      },
+      {
+        "question": "How much does a tankless water heater cost in Naperville?",
+        "answer": "A whole-house gas tankless water heater installation in Naperville runs $2,500–$5,000 including the unit, gas line upgrade, stainless steel venting, and labor. Popular in Naperville's larger homes where hot water demand is high and homeowners value energy efficiency."
+      },
+      {
+        "question": "Do you serve all of Naperville?",
+        "answer": "Yes. We serve both the DuPage County and Will County portions of Naperville, plus surrounding communities including Aurora, Lisle, Warrenville, Wheaton, and Bolingbrook."
+      },
+      {
+        "question": "Can you help with sump pump issues in Naperville?",
+        "answer": "Yes. Many Naperville neighborhoods — especially near the DuPage River and in newer subdivisions with clay soil — have high water table issues. We install primary sump pumps, battery backup systems, and can upgrade undersized builder-installed pumps to handle heavy water flow."
+      }
+    ]
   },
   {
     "city_name": "Matteson",
@@ -409,21 +927,53 @@
     "population": "19,374",
     "water_utility": "Village of Matteson — Water Department (purchases Lake Michigan water from Chicago Heights)",
     "permit_info": "Village of Matteson requires plumbing permits for all installations and major repairs through the Building Department.",
-    "neighborhoods": ["Matteson Main Street", "Lincoln Mall area", "Governor's Trail", "Sauk Trail area"],
+    "neighborhoods": [
+      "Matteson Main Street",
+      "Lincoln Mall area",
+      "Governor's Trail",
+      "Sauk Trail area"
+    ],
     "common_issues": [
       "Mix of 1960s-1970s original homes and 1990s-2000s newer subdivisions with different plumbing systems",
       "Older homes along the I-57 corridor have aging infrastructure including galvanized supply lines",
       "Some areas experience water pressure fluctuations during peak demand periods",
       "Clay soil in the region causes ground shifting that can stress underground sewer connections"
     ],
-    "nearby_tier1": ["park-forest", "chicago-heights", "flossmoor", "monee"],
+    "nearby_tier1": [
+      "park-forest",
+      "chicago-heights",
+      "flossmoor",
+      "monee"
+    ],
     "seo": {
       "title": "Plumber in Matteson, IL | 24/7 Emergency Plumbing Services",
       "description": "Licensed plumber in Matteson, IL. Emergency plumbing, water heater repair, sewer service, drain cleaning & more. Call 833-758-6911."
     },
     "intro_paragraph": "Matteson is a south suburban Cook County village with a diverse housing stock spanning from the 1960s to recent construction. Our licensed plumbers address the full spectrum of plumbing needs across Matteson's different neighborhoods and property ages.",
     "local_content": "<p>Matteson's development history has created a village with two distinct plumbing profiles. Older neighborhoods near the village center and along the I-57 corridor feature homes from the 1960s and 1970s with original galvanized water lines, cast iron drains, and clay sewer laterals. These systems are at or beyond their expected lifespan and benefit from proactive inspection and planned replacement rather than emergency repairs.</p>\n<p>Newer subdivisions in the western and southern portions of the village have modern PVC and PEX systems that are generally in good condition but may need water heater replacements and fixture upgrades as they reach the 20-25 year mark. The village purchases water from Chicago Heights' Lake Michigan treatment system, providing generally reliable quality and pressure.</p>\n<p>Matteson's clay-heavy soil expands and contracts with moisture changes, which can gradually shift underground pipe connections. Sewer camera inspections are an effective way to assess the condition of lateral connections before small separations become major sewer backups.</p>",
-    "cta_text": "Matteson homeowners: call for professional plumbing service in every neighborhood."
+    "cta_text": "Matteson homeowners: call for professional plumbing service in every neighborhood.",
+    "faqs": [
+      {
+        "question": "What plumbing problems are common in Matteson?",
+        "answer": "Matteson homes built in the 1960s–1980s commonly experience galvanized pipe corrosion, water heater failures, sewer line root intrusion, and sump pump issues. Newer subdivisions may have polybutylene piping that's prone to failure and should be replaced with copper or PEX."
+      },
+      {
+        "question": "Does Matteson have a lead pipe problem?",
+        "answer": "Some older Matteson homes may have lead service lines or lead solder joints. If your home was built before 1986, it's worth having the service line inspected. We can identify lead components and recommend replacement options to protect your family's health."
+      },
+      {
+        "question": "How much does drain cleaning cost in Matteson?",
+        "answer": "Standard drain cleaning in Matteson runs $100–$250 for a single fixture and $200–$500 for a main line. Hydro jetting for thorough cleaning runs $400–$900. We also offer sewer camera inspection to identify the cause of recurring blockages."
+      },
+      {
+        "question": "Do you serve Matteson and surrounding south suburbs?",
+        "answer": "Yes. We cover Matteson and all surrounding communities including Richton Park, Park Forest, Olympia Fields, Country Club Hills, Homewood, and Flossmoor."
+      },
+      {
+        "question": "Can you install a water heater in Matteson?",
+        "answer": "Yes. Water heater replacement is one of our most common calls in Matteson. A standard 40–50 gallon gas unit runs $800–$1,800 installed. We also install tankless units, which are increasingly popular for energy savings and endless hot water."
+      }
+    ]
   },
   {
     "city_name": "Franklin Park",
@@ -434,21 +984,53 @@
     "population": "18,475",
     "water_utility": "Village of Franklin Park — purchases water from the City of Chicago",
     "permit_info": "Franklin Park requires plumbing permits through the Village Building Department for all installations and replacements.",
-    "neighborhoods": ["North Franklin Park", "South Franklin Park", "River Road corridor", "Mannheim Road corridor"],
+    "neighborhoods": [
+      "North Franklin Park",
+      "South Franklin Park",
+      "River Road corridor",
+      "Mannheim Road corridor"
+    ],
     "common_issues": [
       "Dense mix of residential and industrial properties near O'Hare creates diverse plumbing needs",
       "Older housing stock predominantly from 1950s-1960s with aging systems",
       "Proximity to the Des Plaines River means elevated water table and basement flooding risk",
       "Commercial and industrial properties along Mannheim Road have specialized plumbing requirements"
     ],
-    "nearby_tier1": ["park-ridge", "elmhurst", "chicago", "arlington-heights"],
+    "nearby_tier1": [
+      "park-ridge",
+      "elmhurst",
+      "chicago",
+      "arlington-heights"
+    ],
     "seo": {
       "title": "Plumber in Franklin Park, IL | 24/7 Licensed Plumbing",
       "description": "Licensed plumber in Franklin Park, IL. Residential & commercial plumbing, emergency service, water heater repair & more. Call 833-758-6911."
     },
     "intro_paragraph": "Franklin Park is a dynamic Cook County village with a mix of residential neighborhoods and significant commercial/industrial areas near O'Hare Airport. Our licensed plumbers serve both homeowners and businesses with fast, reliable plumbing services.",
     "local_content": "<p>Franklin Park's location adjacent to O'Hare Airport and major transportation corridors gives it a unique character — a blend of established residential neighborhoods and active commercial/industrial zones. The village's housing stock, predominantly built in the 1950s and 1960s, features the plumbing systems typical of that era: galvanized steel supply lines, cast iron drain stacks, and clay sewer laterals that are increasingly in need of modernization.</p>\n<p>The village's proximity to the Des Plaines River creates elevated groundwater conditions in parts of the community, making sump pump systems essential for many homes. Properties near the river and in lower-lying areas of North Franklin Park are particularly susceptible to basement moisture during wet seasons.</p>\n<p>Franklin Park's commercial and industrial corridor along Mannheim Road includes warehouses, manufacturing facilities, and retail properties with specialized plumbing needs including high-volume water supply, industrial drain systems, backflow prevention, and grease trap management for food service operations.</p>",
-    "cta_text": "Franklin Park residents and businesses: call for fast plumbing service from licensed professionals."
+    "cta_text": "Franklin Park residents and businesses: call for fast plumbing service from licensed professionals.",
+    "faqs": [
+      {
+        "question": "What plumbing issues are common in Franklin Park?",
+        "answer": "Franklin Park has a dense stock of post-war homes built in the 1940s–1960s. Common issues include galvanized pipe corrosion causing rusty water and low pressure, deteriorating cast iron sewer stacks, and aging clay sewer lines with root intrusion. The village's proximity to O'Hare also means some homes deal with vibration-related pipe joint issues."
+      },
+      {
+        "question": "Does Franklin Park follow Chicago plumbing codes?",
+        "answer": "No. Franklin Park is an independent municipality following the Illinois State Plumbing Code. Permit requirements differ from Chicago. We work with Franklin Park's Building Department regularly and handle all permit and inspection coordination."
+      },
+      {
+        "question": "How much does a sewer line camera inspection cost in Franklin Park?",
+        "answer": "A sewer camera inspection in Franklin Park runs $150–$400. Given that most Franklin Park homes have original clay sewer lines that are 60–80 years old, a camera inspection is a smart investment — especially before buying a home or if you're experiencing recurring backups."
+      },
+      {
+        "question": "Do you offer commercial plumbing in Franklin Park?",
+        "answer": "Yes. Franklin Park has a large industrial and commercial area. We serve businesses with drain maintenance, backflow testing, water heater service, gas line work, and emergency plumbing response."
+      },
+      {
+        "question": "Can you repipe a Franklin Park home?",
+        "answer": "Yes. Whole-house repiping is one of our most requested services in Franklin Park due to the aging galvanized pipes. A typical Franklin Park ranch or bi-level repipe runs $4,000–$8,000 with PEX or $6,000–$12,000 with copper. The improvement in water pressure and quality is immediate and dramatic."
+      }
+    ]
   },
   {
     "city_name": "Ottawa",
@@ -459,21 +1041,51 @@
     "population": "18,994",
     "water_utility": "City of Ottawa — Water Department (Illinois River/deep well blended supply)",
     "permit_info": "City of Ottawa requires plumbing permits through the Building Inspector's office.",
-    "neighborhoods": ["Downtown Ottawa", "East Side", "West Side", "Dayton Road area", "Route 6 corridor"],
+    "neighborhoods": [
+      "Downtown Ottawa",
+      "East Side",
+      "West Side",
+      "Dayton Road area",
+      "Route 6 corridor"
+    ],
     "common_issues": [
       "Ottawa is at the western edge of the Chicago service area — response times are longer but we provide reliable service",
       "Many homes in the historic downtown area date to the late 1800s and early 1900s with very old plumbing systems",
       "River city location at the confluence of the Illinois and Fox Rivers creates flooding concerns",
       "Blended water supply from river intake and deep wells can vary in mineral content seasonally"
     ],
-    "nearby_tier1": ["joliet"],
+    "nearby_tier1": [
+      "joliet"
+    ],
     "seo": {
       "title": "Plumber in Ottawa, IL | Licensed Plumbing Services LaSalle County",
       "description": "Licensed plumber serving Ottawa, IL and LaSalle County. Emergency plumbing, water heater repair, sewer service & more. Call 833-758-6911."
     },
     "intro_paragraph": "Ottawa, the county seat of LaSalle County, sits at the confluence of the Illinois and Fox Rivers. Our licensed plumbers serve Ottawa's historic housing stock and growing residential areas with comprehensive plumbing services.",
     "local_content": "<p>Ottawa's position as a river city at the confluence of the Illinois and Fox Rivers gives it both scenic beauty and specific plumbing challenges. Properties in lower-lying areas near either river face elevated flood risk, and the city's proximity to major waterways means groundwater management is a consideration for many homeowners. Sump pump systems and backup power solutions are important investments for properties in flood-prone zones.</p>\n<p>The city's historic downtown features homes and commercial buildings dating to the mid-1800s, some with plumbing systems that have been modified and extended multiple times over more than a century. These properties often require careful assessment to identify the mix of pipe materials, connections, and configurations that have accumulated over decades of modifications.</p>\n<p>Ottawa's water system draws from a combination of Illinois River intake and deep wells, creating a blended supply that varies in mineral content through the year. Homeowners may notice seasonal changes in water hardness and should consider water testing to determine if softening or filtration would benefit their specific situation.</p>",
-    "cta_text": "Ottawa and LaSalle County residents: call for professional plumbing service from licensed specialists."
+    "cta_text": "Ottawa and LaSalle County residents: call for professional plumbing service from licensed specialists.",
+    "faqs": [
+      {
+        "question": "Does Ottawa have hard water?",
+        "answer": "Yes. Ottawa's water comes from wells drawing from the local sandstone aquifer, and it's quite hard. Mineral buildup affects water heaters, dishwashers, and fixtures significantly. A water softener is practically essential for Ottawa homes."
+      },
+      {
+        "question": "What plumbing challenges are unique to Ottawa?",
+        "answer": "Ottawa's location at the confluence of the Fox and Illinois Rivers means some properties deal with high water tables and seasonal flooding. The city also has many historic homes with original plumbing that needs updating. Well water hardness is a universal concern that affects every plumbing component."
+      },
+      {
+        "question": "How far is Ottawa from your service area base?",
+        "answer": "Ottawa is at the western edge of our extended service area in LaSalle County. We have plumbers who regularly service Ottawa and surrounding communities. Response times may be slightly longer than in the core Chicagoland area, but we provide the same professional service and 24/7 emergency availability."
+      },
+      {
+        "question": "Do you serve Ottawa and surrounding LaSalle County?",
+        "answer": "Yes. We cover Ottawa and surrounding LaSalle County communities including Streator, LaSalle, Peru, Marseilles, Seneca, and Utica. We're familiar with the area's well water challenges and local code requirements."
+      },
+      {
+        "question": "Can you install a water softener in Ottawa?",
+        "answer": "Yes, and we strongly recommend it. A water softener installation in Ottawa runs $1,200–$3,000 including the unit and labor. Given Ottawa's hard well water, a softener protects your water heater, pipes, fixtures, and appliances while improving water quality throughout your home."
+      }
+    ]
   },
   {
     "city_name": "Marengo",
@@ -484,20 +1096,50 @@
     "population": "7,831",
     "water_utility": "City of Marengo — Water Department (deep well water)",
     "permit_info": "City of Marengo requires plumbing permits through the Building Department.",
-    "neighborhoods": ["Downtown Marengo", "Indian Oaks", "Ridgeview", "Route 20 corridor"],
+    "neighborhoods": [
+      "Downtown Marengo",
+      "Indian Oaks",
+      "Ridgeview",
+      "Route 20 corridor"
+    ],
     "common_issues": [
       "Deep well water with high iron content requires water treatment systems",
       "Mix of historic downtown buildings and newer subdivisions with different plumbing needs",
       "Rural-suburban transition area where some properties still have private wells and septic systems",
       "Hard water accelerates water heater sediment buildup and reduces appliance lifespan"
     ],
-    "nearby_tier1": ["arlington-heights", "bartlett"],
+    "nearby_tier1": [
+      "arlington-heights",
+      "bartlett"
+    ],
     "seo": {
       "title": "Plumber in Marengo, IL | Well Water Specialists | 24/7 Service",
       "description": "Licensed plumber in Marengo, IL. Well water treatment, water heater repair, sewer service & more. Serving McHenry County. Call 833-758-6911."
     },
     "intro_paragraph": "Marengo is a growing McHenry County community where deep well water and a mix of historic and modern properties create specific plumbing needs. Our licensed plumbers specialize in well water treatment and comprehensive residential plumbing services.",
     "local_content": "<p>Marengo's municipal water system draws from deep wells that produce water with naturally high iron and mineral content — characteristic of McHenry County's geology. Without proper treatment, this water can stain fixtures, clog aerators, accelerate water heater corrosion, and leave deposits in pipes. We help Marengo homeowners select and maintain the right water treatment combination — typically iron filtration, water softening, and sediment filtration — to protect their plumbing systems and improve water quality.</p>\n<p>The city's housing stock ranges from historic buildings in the downtown area along Route 20 to newer residential subdivisions like Indian Oaks on the city's perimeter. Some properties in the transitional areas around Marengo still rely on private wells and septic systems rather than municipal services, which requires different plumbing expertise and maintenance schedules.</p>\n<p>As a community on the growing edge of the Chicago metro area, Marengo is seeing new construction that requires rough-in plumbing, fixture selection guidance, and connection to municipal services. Our licensed plumbers handle both new construction and renovation work throughout the Marengo area.</p>",
-    "cta_text": "Marengo residents: call for expert plumbing service from professionals who understand well water systems."
+    "cta_text": "Marengo residents: call for expert plumbing service from professionals who understand well water systems.",
+    "faqs": [
+      {
+        "question": "What plumbing services do Marengo homeowners need?",
+        "answer": "Marengo is a smaller community in McHenry County with a mix of historic downtown homes and newer residential development. Common needs include well pump and water softener service, water heater replacement, sewer line maintenance, and plumbing for new construction and remodels."
+      },
+      {
+        "question": "Does Marengo use well water?",
+        "answer": "Marengo has a municipal water system that draws from deep wells. The water is hard, typical of McHenry County's groundwater. Many Marengo homes — especially those outside the village limits — also have private wells. Either way, water treatment is recommended."
+      },
+      {
+        "question": "How much does emergency plumbing cost in Marengo?",
+        "answer": "Emergency service calls in Marengo run $150–$350 for the dispatch and first hour of labor, plus parts and additional time as needed. After-hours and weekend rates include a premium. We provide pricing before starting work."
+      },
+      {
+        "question": "Do you serve Marengo and surrounding McHenry County?",
+        "answer": "Yes. We cover Marengo and all of McHenry County including Woodstock, Crystal Lake, McHenry, Harvard, and Huntley. We understand the rural and suburban plumbing needs specific to this part of the Chicagoland area."
+      },
+      {
+        "question": "Can you work on a private well system in the Marengo area?",
+        "answer": "Yes. We service well pumps, pressure tanks, and water treatment systems for homes outside of municipal water service. Common well issues in McHenry County include low pressure, pump failure, iron staining, and hard water treatment."
+      }
+    ]
   }
 ]

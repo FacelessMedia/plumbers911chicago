@@ -65,6 +65,18 @@
       </ul>
       {{/if}}
 
+      {{#if faqs}}
+      <h2>Frequently Asked Questions — {{city_name}} Plumbing</h2>
+      <div class="faq-section">
+        {{#each faqs}}
+        <div class="faq-item">
+          <h3>{{question}}</h3>
+          <p>{{answer}}</p>
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+
       <h2>Plumbing Services Available in {{city_name}}, {{state}}</h2>
       <div class="location-services-grid">
         {{#each service_index}}
@@ -86,24 +98,6 @@
         <a href="/contact-us/" class="btn btn-outline btn-block">Request a Call Back</a>
       </div>
 
-      <div class="sidebar-form-mini">
-        <h4>Quick Quote Request</h4>
-        <form method="post" action="/api/contact">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="hidden" name="city" value="{{city_name}}">
-          <select name="service" required>
-            <option value="">Select Service...</option>
-            <option value="emergency">Emergency Plumbing</option>
-            <option value="water-heater">Water Heater Repair</option>
-            <option value="drain">Drain Cleaning</option>
-            <option value="sewer">Sewer Service</option>
-            <option value="remodel">Remodeling</option>
-            <option value="other">Other</option>
-          </select>
-          <button type="submit" class="btn btn-submit">Request Quote</button>
-        </form>
-      </div>
 
       <div class="sidebar-county-link">
         <h4>{{county}} County Service Area</h4>
@@ -157,6 +151,12 @@
   "serviceType": "Plumbing"
 }
 </script>
+
+{{#if faq_schema_json}}
+<script type="application/ld+json">
+{{{faq_schema_json}}}
+</script>
+{{/if}}
 
 <section class="nearby-locations">
   <div class="container" style="text-align:center;">

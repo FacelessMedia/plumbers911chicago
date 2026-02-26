@@ -88,24 +88,6 @@
         <a href="/contact-us/" class="btn btn-outline btn-block">Request a Call Back</a>
       </div>
 
-      <div class="sidebar-form-mini">
-        <h4>Quick Quote Request</h4>
-        <form method="post" action="/api/contact">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="hidden" name="county" value="{{county_name}}">
-          <select name="service" required>
-            <option value="">Select Service...</option>
-            <option value="emergency">Emergency Plumbing</option>
-            <option value="water-heater">Water Heater Repair</option>
-            <option value="drain">Drain Cleaning</option>
-            <option value="sewer">Sewer Service</option>
-            <option value="remodel">Remodeling</option>
-            <option value="other">Other</option>
-          </select>
-          <button type="submit" class="btn btn-submit">Request Quote</button>
-        </form>
-      </div>
 
       {{#if nearby_counties}}
       <div class="sidebar-nearby">

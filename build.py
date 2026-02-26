@@ -171,6 +171,32 @@ def escape_html(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
+def extract_faqs_from_html(html):
+    """Extract FAQ Q&A pairs from HTML content. Looks for H3/P pairs after 'Frequently Asked Questions' heading."""
+    faq_start = html.find("Frequently Asked Questions")
+    if faq_start == -1:
+        return []
+    faq_html = html[faq_start:]
+    questions = re.findall(r"<h3>(.*?)</h3>\s*<p>(.*?)</p>", faq_html, re.DOTALL)
+    faqs = []
+    for q, a in questions:
+        q_clean = re.sub(r"<[^>]+>", "", q).strip()
+        a_clean = re.sub(r"<[^>]+>", "", a).strip()
+        if q_clean and a_clean:
+            faqs.append({"question": q_clean, "answer": a_clean})
+    return faqs
+
+
+def make_faq_schema_json(faqs):
+    """Generate FAQPage schema JSON from a list of FAQ dicts."""
+    if not faqs:
+        return ""
+    entities = [{"@type": "Question", "name": f["question"],
+                 "acceptedAnswer": {"@type": "Answer", "text": f["answer"]}} for f in faqs]
+    return json.dumps({"@context": "https://schema.org", "@type": "FAQPage",
+                        "mainEntity": entities}, ensure_ascii=False)
+
+
 def write_page(url_path, html):
     """Write HTML to dist directory, creating index.html files for clean URLs."""
     url_path = url_path.strip("/")
@@ -264,6 +290,20 @@ def normalize_urls(html):
         body = re.sub(r'We provide free estimates and ', 'We provide ', body)
         body = re.sub(r'free estimates and transparent', 'transparent', body)
         body = re.sub(r'Call [^\.<]*for a free estimate\.?', '', body)
+        # Strip broken WP CTA block: "Ready to get started? Call...for a Licensed, bonded, and insured."
+        body = re.sub(
+            r'<div[^>]*style="[^"]*border-left:\s*4px solid #e52521[^"]*"[^>]*>.*?</div>',
+            '',
+            body,
+            flags=re.DOTALL
+        )
+        # Also strip any "Ready to get started?" paragraphs in content
+        body = re.sub(
+            r'<p[^>]*>Ready to get started\?.*?</p>',
+            '',
+            body,
+            flags=re.DOTALL
+        )
         html = parts[0] + "</head>" + body
     return html
 
@@ -633,9 +673,11 @@ def build():
 
     # --- SERVICES (Chicago only — skip Arlington Heights sub-pages) ---
     services = load_json("services.json")
+    svc_rewrites = load_json("service_rewrites.json") if os.path.exists(os.path.join(DATA_DIR, "service_rewrites.json")) else {}
     svc_tpl = load_template("service.html")
     svc_built = 0
     svc_skipped = 0
+    svc_rewritten = 0
     for svc in services:
         if is_arlington_service_page(svc.get("url_path", "")):
             svc_skipped += 1
@@ -646,17 +688,33 @@ def build():
             continue
         cp = make_canonical(svc["url_path"])
         crumbs = [("Home", "/"), ("Services", "/chicago-il-plumbing/"), (svc.get("service_name", svc.get("title", "")), cp)]
-        ctx = {**global_ctx, **svc, "page_type": "service",
+        # Overlay rewritten content if available
+        svc_data = dict(svc)
+        if svc_slug in svc_rewrites:
+            rw = svc_rewrites[svc_slug]
+            if rw.get("content"):
+                svc_data["content"] = rw["content"]
+            if rw.get("seo"):
+                svc_data["seo"] = rw["seo"]
+            svc_rewritten += 1
+        # Extract FAQs from content for schema
+        svc_faq_schema = ""
+        content_html = svc_data.get("content", "")
+        svc_faqs = extract_faqs_from_html(content_html)
+        if svc_faqs:
+            svc_faq_schema = make_faq_schema_json(svc_faqs)
+        ctx = {**global_ctx, **svc_data, "page_type": "service",
                "canonical_path": cp,
                "breadcrumb_schema": make_breadcrumb_schema(crumbs),
-               "robots_meta": ROBOTS_INDEX}
-        if svc.get("seo"):
-            ctx["seo"] = svc["seo"]
+               "robots_meta": ROBOTS_INDEX,
+               "faq_schema_json": svc_faq_schema}
+        if svc_data.get("seo"):
+            ctx["seo"] = svc_data["seo"]
         html = build_page(base_tpl, svc_tpl, ctx)
         write_page(svc["url_path"], html)
         built_pages.append(svc["url_path"])
         svc_built += 1
-    print("  " + str(svc_built) + " service pages (" + str(svc_skipped) + " Arlington Heights sub-pages removed)")
+    print("  " + str(svc_built) + " service pages (" + str(svc_skipped) + " skipped, " + str(svc_rewritten) + " rewritten)")
 
     # --- TIER 1 LOCATION PAGES (20 cities with genuinely unique content) ---
     loc_tpl = load_template("location.html")
@@ -686,6 +744,15 @@ def build():
         # Join neighborhoods into text
         neighborhoods = t1.get("neighborhoods", [])
         neighborhoods_text = ", ".join(neighborhoods) if neighborhoods else ""
+        # Generate FAQ schema JSON if FAQs present
+        faq_schema_json = ""
+        if t1.get("faqs"):
+            faq_entities = []
+            for faq in t1["faqs"]:
+                faq_entities.append({"@type": "Question", "name": faq["question"],
+                    "acceptedAnswer": {"@type": "Answer", "text": faq["answer"]}})
+            faq_schema_json = json.dumps({"@context": "https://schema.org",
+                "@type": "FAQPage", "mainEntity": faq_entities}, ensure_ascii=False)
         ctx = {**global_ctx, **t1, "page_type": "location",
                "canonical_path": cp,
                "breadcrumb_schema": make_breadcrumb_schema(crumbs),
@@ -693,7 +760,8 @@ def build():
                "county_hub_slug": county_hub_slug,
                "county_city_count": str(county_city_count),
                "neighborhoods_text": neighborhoods_text,
-               "nearby_tier1_links": nearby_tier1_links}
+               "nearby_tier1_links": nearby_tier1_links,
+               "faq_schema_json": faq_schema_json}
         if t1.get("seo"):
             ctx["seo"] = t1["seo"]
         html = build_page(base_tpl, loc_tpl, ctx)

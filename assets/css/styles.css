@@ -228,9 +228,9 @@ p { margin-bottom: 1rem; }
 .breadcrumb a { color: rgba(255,255,255,.7); }
 .breadcrumb a:hover { color: var(--white); }
 .breadcrumb span { color: var(--white); }
-.hero-actions { display: flex; gap: .75rem; margin-top: 1.25rem; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: .75rem; margin-top: 1.25rem; flex-wrap: wrap; justify-content: center; }
 
-.trust-strip { display: flex; gap: 1.5rem; flex-wrap: wrap; padding: 1rem 0 1.5rem; border-bottom: 1px solid var(--gray-200); margin-bottom: 1.5rem; }
+.trust-strip { display: flex; gap: 1.5rem; flex-wrap: wrap; padding: .75rem 0 1rem; border-bottom: 1px solid var(--gray-200); margin-bottom: 1rem; }
 .trust-item { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--gray-700); }
 
 .sidebar-cta { background: var(--navy); color: var(--white); padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: center; }
@@ -580,7 +580,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 }
 
 /* ===== BREADCRUMB BAR (below hero) ===== */
-.breadcrumb-bar { background: var(--gray-100); border-bottom: 1px solid var(--gray-200); padding: .6rem 0; font-size: .85rem; color: var(--gray-500); }
+.breadcrumb-bar { background: var(--gray-100); border-bottom: 1px solid var(--gray-200); padding: .5rem 0; font-size: .82rem; color: var(--gray-500); margin-bottom: 0; }
 .breadcrumb-bar a { color: var(--gray-500); text-decoration: none; }
 .breadcrumb-bar a:hover { color: var(--red); }
 .breadcrumb-bar span { color: var(--gray-700); }
@@ -603,6 +603,14 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-ra
 .sidebar-nearby li { padding: .4rem 0; border-bottom: 1px solid var(--gray-200); }
 .sidebar-nearby li:last-child { border-bottom: none; }
 .sidebar-nearby a { color: var(--blue); font-weight: 500; }
+
+/* ===== FAQ SECTIONS ===== */
+.faq-section { margin: 2rem 0; }
+.faq-item { border-bottom: 1px solid var(--gray-200); padding: 1.25rem 0; }
+.faq-item:first-child { padding-top: 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: .5rem; }
+.faq-item p { color: var(--gray-700); line-height: 1.7; margin: 0; }
 
 /* ===== TIER 1 LOCATION PAGES ===== */
 .location-intro { font-size: 1.1rem; line-height: 1.7; color: var(--gray-700); margin-bottom: 1.5rem; font-style: italic; border-left: 3px solid var(--red); padding-left: 1rem; }

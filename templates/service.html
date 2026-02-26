@@ -56,15 +56,6 @@
         <a href="/contact-us/" class="btn btn-outline btn-block">Request a Call Back</a>
       </div>
 
-      <div class="sidebar-form-mini">
-        <h4>Quick Quote Request</h4>
-        <form method="post" action="/api/contact">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="hidden" name="service" value="{{service_name}}">
-          <button type="submit" class="btn btn-submit">Request Quote</button>
-        </form>
-      </div>
 
       <div class="sidebar-services">
         <h4>Our Services</h4>
@@ -106,6 +97,12 @@
   "serviceType": "{{service_name}}"
 }
 </script>
+
+{{#if faq_schema_json}}
+<script type="application/ld+json">
+{{{faq_schema_json}}}
+</script>
+{{/if}}
 
 <section class="cta-banner">
   <div class="container">
